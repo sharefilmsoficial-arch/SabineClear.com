@@ -286,7 +286,7 @@ const MOVIES = [
     rating: "PG-13",
     genres: ["Acción", "Músical","Animación"],
     description: "Cuando no están llenando estadios, las superestrellas del k-pop Rumi, Mira y Zoey usan sus superpoderes secretos para proteger a sus fans de Gwi-Ma y los demonios.",
-    trailerUrl: sampleTrailer,
+    trailerUrl: "trailers/kpop-hunters.mp4",
     image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTnhJm-1TfFrjrNNCmN3DAmNNMsnS7RqlKT8J6MkoOvZwF9Zw_q",
     post: "https://sm.ign.com/ign_latam/gallery/k/kpop-demon/kpop-demon-hunters-gallery_9frv.jpg",
     movie: "https://drive.google.com/file/u/0/d/1yn5s7n8Cf3hnMtJdND3xG6gMq0DO3kfO/preview"
@@ -446,7 +446,8 @@ const MOVIES = [
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
     image: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     post: "https://i.ytimg.com/vi/D0hX6VvGgBg/maxresdefault.jpg",
-    movie: ""
+    movie: "",
+    estreno: "Próximamente"
   },
   {
     id: "five-nights-at-freddys3",
@@ -459,7 +460,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/five-nights-at-freddys-3-movie-poster-fan-made-by-me-model-v0-jv59k3jszvmf1.webp",
     post: "https://nintenduo.com/wp-content/uploads/2024/09/FNAF-3-Pelicula-Destacada.webp",
-    movie: ""
+    movie: "",
+    estreno: "Próximamente"
   },
   {
     id: "five-nights-at-freddys4",
@@ -472,7 +474,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/@fredbearfilms.jpg",
     post: "https://store-images.s-microsoft.com/image/apps.27998.14319236246610425.66fb0c70-79cc-471f-8a96-e56f4d317469.768e364a-76d9-473e-a1c8-c602e834dfdd?q=90&w=480&h=270",
-    movie: ""
+    movie: "",
+    estreno: "Próximamente"
   },
   {
     id: "logan-wolverine",
@@ -705,14 +708,14 @@ const MOVIES = [
   {
     id: "bright-burn",
     title: "El Hijo de la Oscuridad: Próximamente",
-    year: 2016,
-    duration: "1h 37min",
-    rating: "PG-13",
-    genres: ["Acción", "Aventura"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    year: 2019,
+    duration: "1h 30min",
+    rating: "B-15",
+    genres: ["Terror","Ciencia Ficción"],
+    description: "Años atrás, las plegarias de una pareja son respondidas cuando un objeto llega a la Tierra transportando una forma de vida que parece ser un bebé, el cúal adoptaron, pero ahora notan que se está volviendo malvado… y tiene superpoderes que comienza a usar sus poderes de forma siniestra...",
     trailerUrl: sampleTrailer,
     image: "images/bright-burn.webp",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/65c7ac8246393ba005c09e0b8d5120f200499436242e2496f6c90789236d91c3.jpg",
+    post: "posters/bright-burn.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -811,14 +814,14 @@ const MOVIES = [
   {
     id: "final destination_6-bloodlines",
     title: "Destino Final - Lazos de Sangre: Próximamente",
-    year: 2016,
-    duration: "1h 37min",
-    rating: "PG-13",
-    genres: ["Acción", "Aventura"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    year: 2025,
+    duration: "1h 50min",
+    rating: "C",
+    genres: ["Terror","Misterio","Suspenso"],
+    description:"Atormentada por una violenta pesadilla recurrente, la universitaria Stefani regresa a su hogar para encontrar a la única persona que podría romper el ciclo y salvar a su familia de la terrible e inevitable muerte que les espera.",
     trailerUrl: sampleTrailer,
-    image: "images/destino-final-lazos-de-sangre.jpg",
-    post: "",
+    image: "images/destino-final-lazos-de-sangre.webp",
+    post: "posters/destination_6-bloodlines.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1004,7 +1007,7 @@ const MOVIES = [
     year: 1999,
     duration: "1h 37min",
     rating: "PG-13",
-    genres: ["Acción", "Aventura"],
+    genres: ["Terror","Fantasía"],
     description:"Un policía de la época colonial descubre una serie de horribles decapitaciones en una villa del norte de Nueva York.",
     trailerUrl: sampleTrailer,
     image: "images/la-leyenda-del-jinete-sin-cabeza.jpg",
@@ -1174,7 +1177,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/dumbo-2019.webp",
     post: "posters/dumbo-2019.webp",
-    movie: ":https://drive.google.com/file/d/1lBRVAwr0wW6uI9sFQUKCixhxCVLvxZXc/preview"
+    movie: "https://drive.google.com/file/d/1lBRVAwr0wW6uI9sFQUKCixhxCVLvxZXc/preview"
 },
   {
     id: "shark-tale",
@@ -1244,7 +1247,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/the-super-mario-bros-movie.webp",
     post: "posters/the-super-mario-bros-movie.webp",
-    movie: "https://drive.google.com/file/d/1tPHwylgsP2hoEYEJdMs_SBTLZDlKePq0/preview"
+    movie: "https://drive.google.com/file/d/1tPHwylgsP2hoEYEJdMs_SBTLZDlKePq0/preview",
+    estreno: "Próximamente"
 },
   {
     id: "the-super-mario-galaxy-movie",
@@ -1315,8 +1319,21 @@ const MOVIES = [
     image: "images/a-wild-robot.webp",
     post: "posters/a-wild-robot.webp",
     movie: "https://drive.google.com/file/d/1UJTDaH5QL2RY6T0KvWXIjO0kbqT32Bg9/preview"
+},
+{
+    id: "click",
+    title: "Click: Perdiendo el Control",
+    year: 2006,
+    duration: "1h 48m",
+    rating: "B",
+    calidad: "Calidad 360p",
+    genres: ["Comedia","Fantasía","Aventura","Ciencia Ficción"],
+    description:"Un arquitecto que trabaja demasiado obtiene un control remoto universal que le permite controlar el mundo que lo rodea.",
+    trailerUrl: "trailers/",
+    image: "images/click.webp",
+    post: "posters/click.webp",
+    movie: "https://drive.google.com/file/d/1v8vndnsnNz8iYM1A8gxVlq178QfG2iIr/preview"
 }
 ];
-
 // (Opcional) Exponerlo globalmente
 window.MOVIES = MOVIES; 
