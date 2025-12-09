@@ -70,7 +70,7 @@ if(!movie){
 }
 
 qs('#title').textContent = movie.title;
-qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • ${movie.rating || ''} • ${movie.calidad || ''}`;
+qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • ${movie.rating || ''}  ${movie.calidad || ''}`;
 qs('#description').textContent = movie.description || "Sin descripción disponible.";
 
 // Definir bgVideo y toggleMute en scope global
@@ -229,7 +229,7 @@ fetchVotes();
 <input type="hidden" name="hosted_button_id" value="TU_CODIGO_DE_PAYPAL" />
  <input type="submit" value="Donar" />
 </form>
-
+  
 </section>
 
 <script>
@@ -334,41 +334,129 @@ clearComments.addEventListener('click', async ()=>{
 loadComments();
 </script>
 
-<style>
-footer {
-  text-align:center;
-  padding:25px;
-  background: rgba(20, 20, 20, 0.55);
-  color:#ccc;
-  margin-top:60px;
-  border-top:1px solid #0099ff;
-  box-shadow:0 -4px 20px #0099ff;
-  backdrop-filter: blur(12px);
+<section id="relatedSection" style="padding:32px; margin-top:40px;">
+  <h2 style="margin-bottom:16px;">También te podría interesar</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="relatedCarousel"></div>
+
+    <button class="carousel-btn prev">❮</button>
+    <button class="carousel-btn next">❯</button>
+  </div>
+</section>
+
+<script>
+// =============================
+// 🎬 CARRUSEL DE PELÍCULAS SIMILARES
+// =============================
+
+// 1. Obtener sagas / relacionadas por franquicia
+function getSagaMovies(movie) {
+  if (!movie.saga) return [];
+
+  return MOVIES.filter(m => m.saga === movie.saga && m.id !== movie.id);
 }
 
-footer a {
-  color:#0099ff;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
+// 2. Obtener por género (después de las sagas)
+function getGenreMovies(movie) {
+  if (!movie.genre) return [];
+  return MOVIES.filter(m => m.genre === movie.genre && m.id !== movie.id);
 }
 
-footer a:hover {
-  color:#fff;
-  text-shadow:0 0 10px #0099ff;
-}
-</style>
+const sagaMovies = getSagaMovies(movie);
+const genreMovies = getGenreMovies(movie);
 
+// 3. Combinar sin repetir
+const related = [...sagaMovies, ...genreMovies].filter(
+  (itm, idx, arr) => arr.findIndex(x => x.id === itm.id) === idx
+);
+
+// 4. Crear tarjetas en el carrusel
+const track = document.getElementById("relatedCarousel");
+
+related.forEach(m => {
+  const item = document.createElement("div");
+  item.className = "carousel-item";
+  item.innerHTML = `
+    <img src="${m.post || m.image}" alt="${m.title}">
+    <span>${m.title}</span>
+  `;
+  item.addEventListener("click", () => {
+    window.location.href = "movie.html?id=" + m.id;
+  });
+  track.appendChild(item);
+});
+
+// =============================
+// 🎡 LÓGICA DEL CARRUSEL
+// =============================
+let position = 0;
+const cardWidth = 165; // card + gap
+
+const btnPrev = document.querySelector(".carousel-btn.prev");
+const btnNext = document.querySelector(".carousel-btn.next");
+
+btnNext.addEventListener("click", () => moveCarousel(-cardWidth));
+btnPrev.addEventListener("click", () => moveCarousel(cardWidth));
+
+function moveCarousel(amount) {
+  position += amount;
+
+  const maxScroll = -(cardWidth * (related.length - 5));
+
+  if (position < maxScroll) position = 0;          // loop
+  if (position > 0) position = maxScroll;         // loop
+
+  track.style.transform = `translateX(${position}px)`;
+}
+
+// =============================
+// 🔁 AUTO-DESPLAZAMIENTO
+// =============================
+let autoScroll = setInterval(() => moveCarousel(-cardWidth), 3000);
+
+// Pausar al pasar el mouse
+document.querySelector(".carousel-container")
+  .addEventListener("mouseenter", () => clearInterval(autoScroll));
+
+document.querySelector(".carousel-container")
+  .addEventListener("mouseleave", () => {
+    autoScroll = setInterval(() => moveCarousel(-cardWidth), 3000);
+  });
+
+// =============================
+// 📱 DESLIZAR CON EL DEDO O MOUSE
+// =============================
+let startX = 0;
+
+track.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+track.addEventListener("touchend", e => {
+  let endX = e.changedTouches[0].clientX;
+  if (endX < startX - 40) moveCarousel(-cardWidth);
+  if (endX > startX + 40) moveCarousel(cardWidth);
+});
+
+// Mouse
+track.addEventListener("mousedown", e => startX = e.clientX);
+track.addEventListener("mouseup", e => {
+  let endX = e.clientX;
+  if (endX < startX - 40) moveCarousel(-cardWidth);
+  if (endX > startX + 40) moveCarousel(cardWidth);
+});
+</script>
+
+<!-- === FOOTER === -->
 <footer>
 © 2025 Share Films — Todos los derechos reservados.<br>
-<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
-<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
-<a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
-<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
-<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a> · 
-<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a> · 
-<a target="_blank" href="https://icons8.com/icon/83166/facebook-like">Me gusta</a> icono de <a target="_blank" href="https://icons8.com">Icons8</a>
+| <a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a>| · |
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a>| · |
+<a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a>| · |
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a>| · |
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a>| · |
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>|
 </footer>
+</body>
+</html>
 
 </body>
 </html>
