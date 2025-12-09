@@ -730,7 +730,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/030f9ae65cadc9afc0e3c51ed35d2ddeb814f213d7a87fc5aa4445738ebb32b9.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/5a5cf867eb9d4fc1e5d44fa81bca4ced972e299967c7d040f5ff49fef7b49b51.jpg",
-    movie: "https://drive.google.com/file/d/1F__HmYqKuxrvZHAFu2bwZxi1AyI2mk1p/view?usp=sharing"
+    movie: "https://drive.google.com/file/d/1F__HmYqKuxrvZHAFu2bwZxi1AyI2mk1p/view?usp=sharing",
+    saga: "shrek"
   },
   {
     id: "shrek-2",
@@ -743,7 +744,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://playmax.xyz/img/c/400/1/1439814412/487.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/f8b6c8fa6508e343804cd3bbe314ae604d234a2fec1bf9a3cdd91b872feb93dc.jpg",
-    movie: "https://drive.google.com/file/d/1tcjSGMbUh0eeOYiklHTcZzsPEpexAzn6/preview"
+    movie: "https://drive.google.com/file/d/1tcjSGMbUh0eeOYiklHTcZzsPEpexAzn6/preview",
+    saga: "shrek"
   },
   {
     id: "shrek-3",
@@ -756,7 +758,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/5b38695d4ad8fd3f6d59c9dec6e58dcce5113dbe58ba079a5c6034104fad7a84.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/837b0e7c4907d6dc41949aba42156710ecbb936bac5e82ee47f3deef6ceb049f.jpg",
-    movie: "https://drive.google.com/file/d/1UVAxq8NMLnvEm1XA-Pm90xRjfIDla7FC/preview"
+    movie: "https://drive.google.com/file/d/1UVAxq8NMLnvEm1XA-Pm90xRjfIDla7FC/preview",
+    saga: "shrek"
   },
   {
     id: "shrek-4",
@@ -769,7 +772,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/a330d6bf726c4af2b90f2df1c3ebd0d0a61b2344ac70441bb9e9206c2b2674da.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/8c42560ed597df398e1d76ba5bbd1e4de50226d38f63d8e3b3a65b68b564168c.jpg",
-    movie: "https://drive.google.com/file/d/1MisCrcxcKlHoGJRYSslZw_ZRaF8avhth/preview"
+    movie: "https://drive.google.com/file/d/1MisCrcxcKlHoGJRYSslZw_ZRaF8avhth/preview",
+    saga: "shrek"
   },
   {
     id: "puss-in-boots",
@@ -782,7 +786,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/puss-in-boots.webp",
     post: "posters/puss-in-boots.webp",
-    movie: "https://drive.google.com/file/d/1t5s9MtKAT2wcUjhe2rVp5FBrOTEnTzr7/preview"
+    movie: "https://drive.google.com/file/d/1t5s9MtKAT2wcUjhe2rVp5FBrOTEnTzr7/preview",
+    saga: "puss in boots"
   },
   {
     id: "puss-in-boots2:the-last-wish",
@@ -795,7 +800,8 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/puss-in-boots2_the-last-wish.webp",
     post: "posters/puss-in-boots2_the-last-wish.webp",
-    movie: "https://drive.google.com/file/d/1LpqXYYV4c38oSWcNnZ8kQU-4zPVyKLLU/preview"
+    movie: "https://drive.google.com/file/d/1LpqXYYV4c38oSWcNnZ8kQU-4zPVyKLLU/preview",
+    saga: "puss in boots"
   },
   {
     id: "The_Gangster_The_Cop_The_Devil",
@@ -1333,7 +1339,22 @@ const MOVIES = [
     image: "images/click.webp",
     post: "posters/click.webp",
     movie: "https://drive.google.com/file/d/1v8vndnsnNz8iYM1A8gxVlq178QfG2iIr/preview"
+},
+{
+    id: "zootopia2",
+    title: "Zootopia 2: Próximamente",
+    year: 2025,
+    duration: "1h 48m",
+    rating: "B",
+    calidad: "Calidad 360p",
+    genres: ["Comedia","Infantil","Animación"],
+    description:"Judy y Nick se enfrentan a un nuevo y enigmático desafío cuando un misterioso reptil llega a Zootopia y altera por completo la vida en la metrópolis de los mamíferos. Siguiendo su peligrosa pista, ambos se ven obligados a meterse de incógnito en rincones que nunca antes habían explorado de la ciudad, donde descubrirán secretos ocultos, se toparán con inesperados obstáculos.",
+    trailerUrl: "trailers/",
+    image: "images/zootopia2.webp",
+    post: "posters/zootopia2.jpeg",
+    movie: ""
 }
 ];
+
 // (Opcional) Exponerlo globalmente
 window.MOVIES = MOVIES; 
