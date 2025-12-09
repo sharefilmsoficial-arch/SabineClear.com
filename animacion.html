@@ -38,12 +38,26 @@
   <ul>
     <li><a href="index.html">Inicio</a></li>
     <li><a href="series.html">Series</a></li>
+
+    <li class="dropdown">
+  <span class="drop-btn">Géneros ▾</span>
+  <ul class="dropdown-menu">
+    <li><a href="accion.html">Acción</a></li>
+    <li><a href="animacion.html">Animación</a></li>
     <li><a href="comedia.html">Comedia</a></li>
     <li><a href="terror.html">Terror</a></li>
-    <li><a href="accion.html">Acción</a></li>
-    <li><a href="mas-recientes.html">Más Recientes</a></li>
-    <li><a href="proximamente.html">Próximamente</a></li>
     <li><a href="jokefilms.html">Joke</a></li>
+  </ul>
+    </li>
+
+    <li class="dropdown">
+  <span class="drop-btn">Más ▾</span>
+  <ul class="dropdown-menu">
+    <li><a href="proximamente.html">Próximamente</a></li>
+    <li><a href="mas-recientes.html">Más Recientes</a></li>
+    <li><a href="mas-viejitas.html">Más Viejitas</a></li>
+  </ul>
+    </li>
   </ul>
 </nav>
 
@@ -164,6 +178,18 @@ function togglePassword(id, icon) {
     icon.textContent = "👁️";
   }
 }
+</script>
+
+<!-- === Menú Desplegable(Funcion de desplegamiento) === -->
+<script>
+document.querySelectorAll(".dropdown").forEach(drop => {
+  const btn = drop.querySelector(".drop-btn");
+  const menu = drop.querySelector(".dropdown-menu");
+
+  btn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  });
+});
 </script>
 
 <!-- === FOOTER === -->
