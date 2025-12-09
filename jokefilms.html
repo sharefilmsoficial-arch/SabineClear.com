@@ -21,20 +21,38 @@
   <input id="search" placeholder="Buscar películas..." />
 </header>
 
+<!-- === MENÚ LATERAL === -->
 <nav class="side-menu" id="sideMenu">
   <ul>
     <li><a href="index.html">Inicio</a></li>
     <li><a href="series.html">Series</a></li>
-    <li><a href="#">Comedia</a></li>
-    <li><a href="#">Terror</a></li>
-    <li><a href="#">Acción</a></li>
-    <li><a href="mas-recientes.html">Más Recientes</a></li>
-    <li><a href="proximamente.html">Próximamente</a></li>
+
+    <li class="dropdown">
+  <span class="drop-btn">Géneros ▾</span>
+  <ul class="dropdown-menu">
+    <li><a href="accion.html">Acción</a></li>
+    <li><a href="animacion.html">Animación</a></li>
+    <li><a href="comedia.html">Comedia</a></li>
+    <li><a href="terror.html">Terror</a></li>
     <li><a href="jokefilms.html">Joke</a></li>
+  </ul>
+    </li>
+
+    <li class="dropdown">
+  <span class="drop-btn">Más ▾</span>
+  <ul class="dropdown-menu">
+    <li><a href="proximamente.html">Próximamente</a></li>
+    <li><a href="mas-recientes.html">Más Recientes</a></li>
+    <li><a href="mas-viejitas.html">Más Viejitas</a></li>
+  </ul>
+    </li>
   </ul>
 </nav>
 
 <main>
+  <h2 style="padding:20px; color:#00C0FF; text-shadow:0 0 10px #00c0ff75;">
+    Joke
+  </h2>
   <section class="gallery" id="gallery"></section>
   <section class="gallery" id="recentSection" style="display:none;"></section>
 </main>
@@ -113,37 +131,28 @@ document.addEventListener('click', (e) => {
   }
 });
 </script>
-<style>footer {
-  text-align:center;
-  padding:25px;
-  background: rgba(20, 20, 20, 0.55);
-  color:#ccc;
-  margin-top:60px;
-  border-top:1px solid #0099ff;
-  box-shadow:0 -4px 20px #0099ff;
-  backdrop-filter: blur(12px);
-}
 
-footer a {
-  color:#0099ff;
-  text-decoration:none;
-  font-weight:600;
-  transition:0.3s;
-}
+<!-- === Menú Desplegable(Funcion de desplegamiento) === -->
+<script>
+document.querySelectorAll(".dropdown").forEach(drop => {
+  const btn = drop.querySelector(".drop-btn");
+  const menu = drop.querySelector(".dropdown-menu");
 
-footer a:hover {
-  color:#fff;
-  text-shadow:0 0 10px #0099ff;
-}</style>
+  btn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  });
+});
+</script>
 
+<!-- === FOOTER === -->
 <footer>
 © 2025 Share Films — Todos los derechos reservados.<br>
-<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
-<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
-<a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
-<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
-<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a> · 
-<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>
+| <a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a>| · |
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a>| · |
+<a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a>| · |
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a>| · |
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a>| · |
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a> |
 </footer>
 </body>
 </html>
