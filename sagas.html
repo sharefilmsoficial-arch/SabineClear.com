@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Share Sagas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="menu-toggle" id="menuToggle">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="logo">
+  <img src="share-series.jpeg" alt="ShareSeries">
+</div>
+  <input id="search" placeholder="Buscar series..." />
+</header>
+
+<!-- === MENÚ LATERAL === -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="series.html">Series</a></li>
+
+    <li class="dropdown">
+      <span class="drop-btn">Géneros ▾</span>
+      <ul class="dropdown-menu">
+        <li><a href="accion.html">Acción</a></li>
+        <li><a href="animacion.html">Animación</a></li>
+        <li><a href="comedia.html">Comedia</a></li>
+        <li><a href="terror.html">Terror</a></li>
+        <li><a href="jokefilms.html">Joke</a></li>
+      </ul>
+    </li>
+
+    <li class="dropdown">
+      <span class="drop-btn">Más ▾</span>
+      <ul class="dropdown-menu">
+        <li><a href="proximamente.html">Próximamente</a></li>
+        <li><a href="mas-recientes.html">Más Recientes</a></li>
+        <li><a href="mas-viejitas.html">Más Viejitas</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <section class="gallery" id="sagasGallery"></section>
+</main>
+
+<script>
+/* === SAGAS === */
+const SAGAS = [
+  {
+    id: "inside-out",
+    title: "Intensamente",
+    year: 2015,
+    image: "images/inside-out.webp",
+  },
+  {
+    id: "spiderman-2018",
+    title: "Spderman: Miles Morales",
+    year: 2018,
+    image: "images/spiderman-into-the-spiderverse.webp",
+  }
+];
+
+/* Guardar */
+localStorage.setItem('sagasData', JSON.stringify(SAGAS));
+
+
+/* === TARJETAS === */
+const gallery = document.getElementById('sagasGallery');
+
+function createSagasCard(saga){
+  const a = document.createElement('a');
+  a.className = 'card-link';
+  a.href = `saga.html?id=${saga.id}`;
+
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.style.backgroundImage = `url(${saga.image})`;
+
+  const info = document.createElement('div');
+  info.className = 'card-info';
+  info.innerHTML = `<h3>${saga.title}</h3>`;
+
+  card.appendChild(info);
+  a.appendChild(card);
+  return a;
+}
+
+SAGAS.forEach(s => gallery.appendChild(createSagasCard(s)));
+
+
+/* === BUSCADOR === */
+document.getElementById('search').addEventListener('input', e => {
+  const q = e.target.value.toLowerCase();
+  gallery.innerHTML = '';
+  SAGAS.filter(s => s.title.toLowerCase().includes(q))
+       .forEach(s => gallery.appendChild(createSagasCard(s)));
+});
+
+
+/* === MENÚ HAMBURGUESA === */
+const menuToggle = document.getElementById('menuToggle');
+const sideMenu = document.getElementById('sideMenu');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  sideMenu.classList.toggle('active');
+});
+
+// cerrar al hacer click en links
+document.querySelectorAll('#sideMenu a').forEach(link => {
+  link.addEventListener('click', () => {
+    sideMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
+});
+
+// cerrar al hacer clic FUERA
+document.addEventListener('click', e => {
+  const insideMenu = sideMenu.contains(e.target);
+  const onToggle = menuToggle.contains(e.target);
+
+  if (sideMenu.classList.contains('active') && !insideMenu && !onToggle){
+    sideMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+  }
+});
+</script>
+
+<!-- === Menú Desplegable(Funcion de desplegamiento) === -->
+<script>
+document.querySelectorAll(".dropdown").forEach(drop => {
+  const btn = drop.querySelector(".drop-btn");
+  const menu = drop.querySelector(".dropdown-menu");
+
+  btn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  });
+});
+</script>
+
+<!-- === FOOTER === -->
+<footer>
+© 2025 Share Films — Todos los derechos reservados.<br>
+<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
+<a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a> · 
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>
+</footer>
+</body>
+</html>

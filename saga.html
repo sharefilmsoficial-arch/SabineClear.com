@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Sagas</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+body {
+    background: #041220;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.saga-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding: 24px;
+}
+
+/* ===== Hero ===== */
+.saga-hero {
+    flex: 2;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.saga-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(2,8,15,0.3), rgba(2,8,15,0.95));
+}
+
+.saga-info {
+    position: relative;
+    z-index: 2;
+    padding: 32px;
+    max-width: 700px;
+}
+
+.saga-info h1 {
+    margin: 0 0 10px;
+    font-size: 36px;
+}
+
+.saga-info p {
+    margin: 0 0 16px;
+    opacity: 0.8;
+}
+
+.play-btn {
+    padding: 14px 22px;
+    background: #2b6be6;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.play-btn:hover {
+    background: #478aff;
+}
+
+/* ===== Lista ===== */
+.movies-list {
+    flex: 1;
+    min-width: 280px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 10px;
+    padding: 16px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.movies-list h2 {
+    margin: 0 0 16px;
+    font-size: 20px;
+    color: #00C0FF;
+}
+
+.movie-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255,255,255,0.03);
+    margin-bottom: 10px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    background: rgba(0,192,255,0.1);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+
+.movie-card.active {
+    background: rgba(0,192,255,0.2);
+    box-shadow: 0 0 15px rgba(0,192,255,0.4);
+    transform: scale(1.02);
+}
+
+.movie-card img {
+    width: 60px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.movie-card span {
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body class="movie-page">
+
+<div class="back-btn"><a href="javascript:history.back()">← Volver</a></div>
+
+<div class="saga-container">
+  <div class="saga-hero" id="sagaHero">
+    <div class="saga-info" id="sagaInfo"></div>
+  </div>
+  <div class="movies-list" id="moviesList"></div>
+</div>
+
+<script>
+/* === SAGAS === */
+const SAGAS = [
+  {
+    id: "inside-out",
+    title: "Intensamente",
+    year: 2015,
+    image: "images/inside-out.webp",
+    movies: [
+      {
+        id: "inside-out",
+        n: 1,
+        name: "Intensamente",
+        thumb: "posters/inside-out.webp",
+        image: "posters/inside-out.webp",
+        drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
+      },
+      {
+        id: "inside-out2",
+        n: 2,
+        name: "Intensamente 2",
+        thumb: "posters/inside-out2.webp",
+        image: "posters/inside-out2.webp",
+        drive: "https://drive.google.com/file/d/19t0x3ixt8Xbf9ZV9dqhqdGWZevUsnt-K/preview"
+      }
+    ]
+  },
+  {
+    id: "spiderman-2018",
+    title: "Spiderman: Miles Morales",
+    year: 2018,
+    image: "images/spiderman-into-the-spiderverse.webp",
+    movies: [
+      {
+        id: "spiderman-into-the-spiderverse",
+        n: 1,
+        name: "Spiderman: Un Nuevo Universo",
+        thumb: "posters/spiderman-into-the-spiderverse.webp",
+        image: "posters/spiderman-into-the-spiderverse.webp",
+        drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
+      },
+      {
+        id: "spiderman2-across-the-spiderverse",
+        n: 2,
+        name: "Spiderman: A Través del Spiderverso",
+        thumb: "posters/spiderman2-across-the-spiderverse.webp",
+        image: "posters/spiderman2-across-the-spiderverse.webp",
+        drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
+      },
+      {
+        id: "spiderman3-beyond-the-spiderverse",
+        n: 3,
+        name: "Spiderman: Beyond the Spiderverse",
+        thumb: "posters/beyond-the-spiderverse.webp",
+        image: "posters/beyond-the-spiderverse.webp",
+        drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
+      }
+    ]
+  }
+];
+
+const params = new URLSearchParams(location.search);
+const sagaId = params.get('id');
+const movieParam = params.get('movie');
+
+const saga = SAGAS.find(s => s.id === sagaId);
+
+if (!saga) {
+  document.body.innerHTML = '<p style="padding:40px">Saga no encontrada. <a href="sagas.html">Volver</a></p>';
+  throw new Error("Saga no encontrada");
+}
+
+let currentMovie = movieParam ? saga.movies.find(m => m.n == movieParam) : saga.movies[0];
+
+// HERO
+function renderHero(movie) {
+  const hero = document.getElementById('sagaHero');
+  const bgImage = movie.image ? movie.image : saga.image;
+
+  hero.style.backgroundImage = `url(${bgImage})`;
+
+  document.getElementById('sagaInfo').innerHTML = `
+    <h1>${saga.title}</h1>
+    <p>${saga.year} • Película ${movie.n}: ${movie.name}</p>
+    <button class="play-btn" onclick="window.open('${movie.drive}', '_blank')">▶ Reproducir</button>
+  `;
+}
+
+// LISTA
+function renderList() {
+  const list = document.getElementById('moviesList');
+  list.innerHTML = '<h2>Películas</h2>' +
+    saga.movies.map(movie => `
+      <div class="movie-card ${movie.n === currentMovie.n ? 'active' : ''}" onclick="selectMovie(${movie.n})">
+        <img src="${movie.thumb}" alt="P${movie.n}">
+        <span><strong>${movie.n}:</strong> ${movie.name}</span>
+      </div>
+    `).join('');
+}
+
+function selectMovie(num) {
+  currentMovie = saga.movies.find(m => m.n === num);
+  history.replaceState(null, '', `?id=${saga.id}&movie=${num}`);
+  renderHero(currentMovie);
+  renderList();
+}
+
+renderHero(currentMovie);
+renderList();
+</script>
+
+<footer>
+© 2025 Share Films — Todos los derechos reservados.<br>
+<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
+<a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Prototipo</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/">PrimeFilms</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/">Share Films 3.0</a>
+</footer>
+
+</body>
+</html>
