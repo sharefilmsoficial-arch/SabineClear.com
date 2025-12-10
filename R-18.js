@@ -11,10 +11,11 @@ const MOVIES = [
     description: "",
     trailerUrl: sampleTrailer,
     image: "R-18/images/the-ugly-stepsister.webp",
-    poster: "R-18/posters/the-ugly-stepsister.webp"
+    poster: "R-18/posters/the-ugly-stepsister.webp",
     movie: ""
   }
 ];
 
 // (Opcional) Exponerlo globalmente
 window.MOVIES = MOVIES;
+
