@@ -12,7 +12,7 @@
 
   <div class="movie-hero" id="hero">
     <div id="videoContainer">
-
+       
       <video id="bgVideo" autoplay muted playsinline></video>
     </div>
 
@@ -107,15 +107,26 @@ playTrailerBtn.addEventListener("click", () => {
   };
 });
 
-// Fondo estático si no hay tráiler
+/// 🎨 Fondo estático debajo del video (siempre visible antes del tráiler)
 const hero = qs('#hero');
-if (movie.post) {
-  hero.style.backgroundImage = `url(${movie.post})`;
-  hero.style.backgroundSize = "cover";
-  hero.style.backgroundPosition = "center";
-} else {
+
+// Elegir la mejor imagen disponible
+const bgImage =
+  movie.post ||
+  movie.image ||
+  "default-bg.jpg"; // opcional: una imagen por defecto
+
+hero.style.backgroundImage = `url(${bgImage})`;
+hero.style.backgroundSize = "cover";
+hero.style.backgroundPosition = "center";
+hero.style.backgroundRepeat = "no-repeat";
+
+// Si el tráiler existe, el video se mostrará encima.
+// Si NO existe tráiler, el fondo estático queda visible.
+if (!movie.trailerUrl) {
   hero.classList.add('no-video');
 }
+
 
 // 🔇 Botón mute/unmute
 const muteIcon = document.getElementById("muteIcon");
