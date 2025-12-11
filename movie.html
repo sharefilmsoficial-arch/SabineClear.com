@@ -164,6 +164,7 @@ toggleMute.addEventListener('click', () => {
   muteIcon.src = bgVideo.muted ? "icons/vol.png" : "icons/mudo.png";
 });
 
+
 const shareBtn = document.getElementById("shareBtn");
 shareBtn.addEventListener("click", openShareMenu);
 
@@ -207,8 +208,6 @@ document.getElementById("shareFacebook").addEventListener("click", () => {
 
     window.open(facebookUrl, "_blank");
 });
-
- 
 // ▶ Reproducir película
 qs('#playMovie').addEventListener('click', ()=>{
   if(movie.movie && movie.movie.startsWith('http')){
