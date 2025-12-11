@@ -39,15 +39,49 @@
           </button>
 
           <button id="playTrailerBtn" class="icon">▶Tráiler</button>
-          <button id="toggleMute" class="icon">
-                      <img id="muteIcon" src="icons/vol.png" style="width:22px;vertical-align:middle;">
+          <button id="toggleMute" class="icon"> 
+                    <img id="muteIcon" src="icons/vol.png" style="width:22px;vertical-align:middle;">
           </button>
 
+          <button id="shareBtn" class="icon">
+                   <img src="icons/share.png" style="width:22px;vertical-align:middle;">
+          </button>
         </div>
       </div>
     </div>
 
   </div>
+</div>
+<!-- MODAL PARA COMPARTIR -->
+<div id="shareModal" class="share-modal">
+    <div class="share-content">
+        <span class="close-share" onclick="closeShareMenu()">✕</span>
+
+        <h3>Compartir en</h3>
+
+        <div class="share-options">
+            <div id="copyLink" class="copy-option">
+                <div class="share-icon">
+                    <img src="icons/clipboard.png">
+                </div>
+                     Copiar link
+            </div>
+
+            <a id="shareWhatsapp" target="_blank">
+                <div class="share-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+                </div>
+                WhatsApp
+            </a>
+            <a id="shareFacebook" target="_blank">
+              <div class="share-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+              </div>
+                    Facebook
+            </a>
+
+        </div>
+    </div>
 </div>
 
 <script src="movies.js"></script>
@@ -130,6 +164,51 @@ toggleMute.addEventListener('click', () => {
   muteIcon.src = bgVideo.muted ? "icons/vol.png" : "icons/mudo.png";
 });
 
+const shareBtn = document.getElementById("shareBtn");
+shareBtn.addEventListener("click", openShareMenu);
+
+function openShareMenu() {
+    const modal = document.getElementById("shareModal");
+    modal.style.display = "flex";
+
+    const url = encodeURIComponent(window.location.href);
+
+    document.getElementById("shareWhatsapp").href =
+        "https://wa.me/?text=" + url;
+
+    document.getElementById("shareFacebook").href =
+        "https://www.facebook.com/sharer/sharer.php?u=" + url;
+}
+
+
+function closeShareMenu() {
+    document.getElementById("shareModal").style.display = "none";
+}
+
+document.getElementById("copyLink").addEventListener("click", () => {
+    const url = window.location.href;
+
+    navigator.clipboard.writeText(url)
+        .then(() => {
+            alert("✔ Enlace copiado al portapapeles");
+            closeShareMenu();
+        })
+        .catch(err => {
+            console.error("Error al copiar:", err);
+            alert("No se pudo copiar el enlace");
+        });
+});
+
+document.getElementById("shareFacebook").addEventListener("click", () => {
+    const url = encodeURIComponent(window.location.href);
+
+    // URL de compartir en Facebook
+    const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+
+    window.open(facebookUrl, "_blank");
+});
+
+ 
 // ▶ Reproducir película
 qs('#playMovie').addEventListener('click', ()=>{
   if(movie.movie && movie.movie.startsWith('http')){
@@ -347,31 +426,24 @@ loadComments();
 
 <script>
 // =============================
-// 🎬 CARRUSEL DE PELÍCULAS SIMILARES
+// 🎬 CARRUSEL DE PELÍCULAS SIMILARES (solo género)
 // =============================
 
-// 1. Obtener sagas / relacionadas por franquicia
-function getSagaMovies(movie) {
-  if (!movie.saga) return [];
-
-  return MOVIES.filter(m => m.saga === movie.saga && m.id !== movie.id);
-}
-
-// 2. Obtener por género (después de las sagas)
 function getGenreMovies(movie) {
   if (!movie.genre) return [];
   return MOVIES.filter(m => m.genre === movie.genre && m.id !== movie.id);
 }
 
-const sagaMovies = getSagaMovies(movie);
-const genreMovies = getGenreMovies(movie);
+// Obtener relacionadas
+let related = getGenreMovies(movie);
 
-// 3. Combinar sin repetir
-const related = [...sagaMovies, ...genreMovies].filter(
-  (itm, idx, arr) => arr.findIndex(x => x.id === itm.id) === idx
-);
+// Aleatorizar
+related = related.sort(() => Math.random() - 0.5);
 
-// 4. Crear tarjetas en el carrusel
+// Limitar cuántas aparecen
+related = related.slice(0, 15);
+
+// Crear tarjetas
 const track = document.getElementById("relatedCarousel");
 
 related.forEach(m => {
@@ -455,8 +527,5 @@ track.addEventListener("mouseup", e => {
 <a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a>| · |
 <a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>|
 </footer>
-</body>
-</html>
-
 </body>
 </html>
