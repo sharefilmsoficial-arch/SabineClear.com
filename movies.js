@@ -1,7 +1,8 @@
 // movies.js — versión corregida compatible con index.html
 
 const sampleTrailer = "https://www.w3schools.com/html/mov_bbb.mp4"; // Tráiler genérico temporal
-
+const loading = "icons/loading.gif";
+const image = "icons/image-loading.gif";
 const MOVIES = [
   {
     id: "spiderman-into-the-spiderverse",
@@ -1355,21 +1356,21 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1ivdIuaIVLdr_Ov7pv2Hfp5_0ctRNRW3m/preview"
 },
 {
-    id: "un-movie1",
+    id: "spiderman-no-way-home",
     title: "Proximamente | Spiderman: No Way Home",
-    year: 2000,
-    duration: "1h ",
+    year: 2021,
+    duration: "2h 28m ",
     rating: "B",
     calidad: "Calidad 360p",
-    genres: ["..."],
-    description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
+    genres: ["Superhéroes","Acción","Ciencia ficción"],
+    description:"Tras descubrirse la identidad secreta de Peter Parker como Spider-Man, la vida del joven se vuelve una locura. Peter le pide ayuda al Doctor Strange para recuperar su vida, pero algo sale mal y provoca una fractura en el multiverso.",
     trailerUrl: "trailers/",
-    image: "icons/un-movie.png",
-    post: "posters/.jpeg",
-    movie: ""
+    image: "images/spiderman-no-way-home.webp",
+    post: "posters/spiderman-no-way-home.webp",
+    movie: "https://drive.google.com/file/d/1lr69sZq9KWpden-f7CMKDSn57lKl95Eo/preview"
 },
 {
-    id: "un-movie2",
+    id: "transporter3",
     title: "Proximamente | El Transportador 3",
     year: 2000,
     duration: "1h ",
@@ -1378,12 +1379,12 @@ const MOVIES = [
     genres: ["..."],
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
-    image: "icons/un-movie.png",
-    post: "posters/.jpeg",
+    image: image,
+    post: loading,
     movie: ""
 },
 {
-    id: "un-movie3",
+    id: "the-expendables",
     title: "Proximamente | Los Indestructibles",
     year: 2000,
     duration: "1h ",
@@ -1392,12 +1393,12 @@ const MOVIES = [
     genres: ["..."],
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
-    image: "icons/un-movie.png",
-    post: "posters/.jpeg",
+    image: image,
+    post: loading,
     movie: ""
 },
 {
-    id: "un-movie4",
+    id: "kong:skull-island",
     title: "Proximamente | Kong : La Isla Calavera",
     year: 2000,
     duration: "1h ",
@@ -1406,50 +1407,50 @@ const MOVIES = [
     genres: ["..."],
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
-    image: "icons/un-movie.png",
-    post: "posters/.jpeg",
+    image: image,
+    post: loading,
     movie: ""
 },
 {
-    id: "un-movie5",
+    id: "ultraviolet",
     title: "Proximamente | Ultravioleta",
-    year: 2000,
+    year: 2006,
     duration: "1h ",
     rating: "B",
     calidad: "Calidad 360p",
     genres: ["..."],
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
-    image: "icons/un-movie.png",
-    post: "posters/.jpeg",
+    image: image,
+    post: loading,
     movie: ""
 },
 {
-    id: "un-movie6",
+    id: "elektra",
     title: "Proximamente | Elektra",
-    year: 2000,
+    year: 2005,
     duration: "1h ",
     rating: "B",
     calidad: "Calidad 360p",
     genres: ["..."],
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
-    image: "icons/un-movie.png",
-    post: "posters/.jpeg",
+    image: image,
+    post: loading,
     movie: ""
 },
 {
-    id: "un-movie7",
-    title: "Proximamente | Revenge, Devastatión",
-    year: 2000,
+    id: "rampage",
+    title: "Proximamente | Rampage: Devastatión",
+    year: 2018,
     duration: "1h ",
     rating: "B",
     calidad: "Calidad 360p",
     genres: ["..."],
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
-    image: "icons/un-movie.png",
-    post: "posters/.jpeg",
+    image: image,
+    post: loading,
     movie: ""
 }
 ];
