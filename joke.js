@@ -45,7 +45,7 @@ const MOVIES = [
     rating: "PG",
     genres: ["Animación", "Acción", "Aventura"],
     description: "",
-    image: "jokes/inside-snout.jpg",
+    image: "jokes/inside-snout2.jpg",
     trailerUrl: "trailers/",
     movie: ""
   },
@@ -181,3 +181,4 @@ const MOVIES = [
 
 // (Opcional) Exponerlo globalmente
 window.MOVIES = MOVIES;
+
