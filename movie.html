@@ -38,7 +38,7 @@
                 <span id="dislikeCount">0</span>
           </button>
 
-         <button id="playTrailerBtn" class="icon">▶Tráiler</button>
+          <button id="playTrailerBtn" class="icon">▶Tráiler</button>
           <button id="toggleMute" class="icon"> 
                     <img id="muteIcon" src="icons/vol.png" style="width:22px;vertical-align:middle;">
           </button>
@@ -104,7 +104,7 @@ if(!movie){
 }
 
 qs('#title').textContent = movie.title;
-qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • ${movie.rating || ''}  ${movie.calidad || ''}`;
+qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • Clasificación: ${movie.rating || ''} • Calidad: ${movie.calidad || ''}`;
 qs('#description').textContent = movie.description || "Sin descripción disponible.";
 
 // Definir bgVideo y toggleMute en scope global
@@ -164,7 +164,6 @@ toggleMute.addEventListener('click', () => {
   muteIcon.src = bgVideo.muted ? "icons/vol.png" : "icons/mudo.png";
 });
 
-
 const shareBtn = document.getElementById("shareBtn");
 shareBtn.addEventListener("click", openShareMenu);
 
@@ -208,6 +207,8 @@ document.getElementById("shareFacebook").addEventListener("click", () => {
 
     window.open(facebookUrl, "_blank");
 });
+
+ 
 // ▶ Reproducir película
 qs('#playMovie').addEventListener('click', ()=>{
   if(movie.movie && movie.movie.startsWith('http')){
