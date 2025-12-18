@@ -509,8 +509,8 @@ footer a:hover {
 .share-content {
     background: #232323;
     color: #22C3E6; /* Letra */
-    padding: 25px;
-    width: 260px;
+    padding: 40px; /* Relleno*/
+    width: 520px; /* Ancho*/
     border-radius: 18px;
     text-align: center;
     position: relative;
