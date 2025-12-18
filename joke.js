@@ -50,7 +50,7 @@ const MOVIES = [
     movie: ""
   },
   {
-    id: "inside-vie2",
+    id: "inside-vice2",
     title: "Vicio Intenso 2",
     year: 2000,
     duration: "",
@@ -97,7 +97,72 @@ const MOVIES = [
     description:"Ha pasado un año desde la pesadilla sobrenatural en la pizzería Freddy Fazbear. La historia de lo que ocurrió allí se ha convertido en leyenda local, dando pie al primer “Fazfest”. Mike y Vanessa han mantenido en secreto la verdad a Abby, la hermana de 11 años de Mike. Pero cuando Abby decide reencontrarse con Freddy, Bonnie, Chica y Foxy, desata una serie de eventos aterradores que revelarán oscuros secretos sobre el origen de Freddy’s, desvelando un horror oculto por décadas.",
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
     image: "jokes/la-desnutricion-del-87.jpg",
-    post: "jokes/faiv-naigs-at-freddys2.png",
+    post: "jokes/",
+    movie: ""
+  },
+  {
+    id: "la-cariñosa-del-87",
+    title: "La Cariñosa del 87",
+    year: 20,
+    duration: "1h ",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "jokes/la-cariñosa-del-87.jpg",
+    post: "jokes/",
+    movie: ""
+  },
+  {
+    id: "cloudy-with-achance-of-awa",
+    title: "Lluvia de Awa",
+    year: 20,
+    duration: "1h ",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "jokes/cloudy-with-achance-of-awa.webp",
+    post: "jokes/",
+    movie: ""
+  },
+  {
+    id: "naruto-live-action",
+    title: "Naruto :Live Action",
+    year: 20,
+    duration: "1h ",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "jokes/naruto-live-action.jpg",
+    post: "jokes/",
+    movie: ""
+  },
+  {
+    id: "pvz-live-action",
+    title: "PvZ :Live Action",
+    year: 20,
+    duration: "1h ",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "jokes/pvz-live-action.jpg",
+    post: "jokes/",
+    movie: ""
+  },
+  {
+    id: "ratatouille-live-action",
+    title: "Ratatouille :Live Action",
+    year: 20,
+    duration: "1h ",
+    rating: "PG-13",
+    genres: [""],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "jokes/ratatouille-live-action.jpg",
+    post: "jokes/",
     movie: ""
   }
 ];
