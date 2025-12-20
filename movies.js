@@ -1423,7 +1423,8 @@ const MOVIES = [
     trailerUrl: "trailers/",
     image: image,
     post: loading,
-    movie: ""
+    movie: "",
+    estreno: "Próximamente"
 },
 {
     id: "elektra",
@@ -1437,7 +1438,8 @@ const MOVIES = [
     trailerUrl: "trailers/",
     image: image,
     post: loading,
-    movie: ""
+    movie: "",
+    estreno: "Próximamente"
 },
 {
     id: "rampage",
@@ -1451,7 +1453,8 @@ const MOVIES = [
     trailerUrl: "trailers/",
     image: image,
     post: loading,
-    movie: ""
+    movie: "",
+    estreno: "Próximamente"
 }
 ];
 
