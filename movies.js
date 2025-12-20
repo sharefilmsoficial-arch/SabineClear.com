@@ -1254,8 +1254,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/the-super-mario-bros-movie.webp",
     post: "posters/the-super-mario-bros-movie.webp",
-    movie: "https://drive.google.com/file/d/1tPHwylgsP2hoEYEJdMs_SBTLZDlKePq0/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1tPHwylgsP2hoEYEJdMs_SBTLZDlKePq0/preview"
 },
   {
     id: "the-super-mario-galaxy-movie",
