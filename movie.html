@@ -9,7 +9,7 @@
 <body class="movie-page">
 
 <div id="app">
-  <div class="back-btn"><a href="javascript:history.back()">← Volver</a></div>
+  <div class="back-btn"><a href="#" onclick="goBack(event)">← Volver</a></div>
 
   <div class="movie-hero" id="hero">
     <div id="videoContainer">
@@ -85,6 +85,20 @@
 </div>
 
 <script src="movies.js"></script>
+
+<script>
+function goBack(e) {
+  e.preventDefault();
+
+  // Si hay página anterior en el historial
+  if (document.referrer && document.referrer !== window.location.href) {
+    history.back();
+  } else {
+    // Si no hay historial → ir a index.html
+    window.location.href = "index.html";
+  }
+}
+</script>
 
 <script>
 /* user id */
