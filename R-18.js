@@ -23,8 +23,8 @@ const MOVIES = [
     genres: ["Comedia","Aventura","Crimen"],
     description: "David, un distribuidor de marihuana de poca monta,aprende por las malas que ninguna buena acción queda sin castigo. Al intentar ayudar a unos jóvenes, es sorprendido por unos criminales, perdiendo su dinero y producto. David está endeudado con su proveedor y para solucionarlo, debe ir a México para recoger el nuevo cargamento. Para lograr la misión, David idea un plan infalible: reúne a una familia falsa y la sube a una casa rodante para dirigirse al sur durante un fin de semana salvaje.",
     trailerUrl: sampleTrailer,
-    image: "R-18/images/we're-the-millers.webp",
-    post: "R-18/posters/we're-the-millers.webp",
+    image: "R-18/images/quienes-son-los-millers.webp",
+    post: "R-18/posters/quienes-son-los-millers.webp",
     movie: ""
   }
 ];
