@@ -1356,7 +1356,7 @@ const MOVIES = [
 },
 {
     id: "spiderman-no-way-home",
-    title: "Proximamente | Spiderman: No Way Home",
+    title: "Spiderman: No Way Home",
     year: 2021,
     duration: "2h 28m ",
     rating: "B",
@@ -1394,7 +1394,7 @@ const MOVIES = [
     trailerUrl: "trailers/",
     image: "images/transporter3.webp",
     post: "posters/transporter3.webp",
-    movie: ""
+    movie: "https://drive.google.com/file/d/1kHmk_vDRQsi4D_iGT9J0Jg94NGODDruu/preview"
 },
 {
     id: "kong:skull-island",
@@ -1409,6 +1409,62 @@ const MOVIES = [
     image: "images/kong_skull_island.webp",
     post: "posters/kong_skull_island.webp",
     movie: "https://drive.google.com/file/d/1Noki1Ua8NOfzfb1UVz2Y9MA_uI5-6Oi9/preview"
+},
+{
+    id: "demon-slayer-kimetsu-no-yaiba-infinity-castle",
+    title: "Demon Slayer: El Castillo Infinito",
+    year: 2000,
+    duration: "1h 58m",
+    rating: "B",
+    calidad: "360p",
+    genres: ["Acción","Aventura"],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "images/demon-slayer-kimetsu-no-yaiba-infinity-castle.webp",
+    post: "posters/demon-slayer-kimetsu-no-yaiba-infinity-castle.webp",
+    movie: "https://drive.google.com/file/d/1XH7FFhRD4hjz_Hf5LATYZ0Ri9vmLu7u1/preview"
+},
+{
+    id: "hotaru-no-mori-e",
+    title: "En el bosque de la luz de las luciérnagas",
+    year: 2000,
+    duration: "1h 58m",
+    rating: "B",
+    calidad: "360p",
+    genres: ["Acción","Aventura"],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "images/hotaru-no-mori-e.webp",
+    post: "posters/hotaru-no-mori-e.webp",
+    movie: "https://drive.google.com/file/d/1iXOI6IpSTAJKBT6IRDP99hq0a96AJdJd/preview"
+},
+{
+    id: "the-king-lion2-simba-s-pride",
+    title: "El Rey León 2: El Reinado de Simba",
+    year: 2000,
+    duration: "1h 58m",
+    rating: "B",
+    calidad: "360p",
+    genres: ["Acción","Aventura"],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "images/the-king-lion2-simba-s-pride.webp",
+    post: "posters/the-king-lion2-simba-s-pride.webp",
+    movie: "https://drive.google.com/file/d/1j48ltJRZY1FXXOJvA2avmBDh3RxWDcJH/preview"
+},
+{
+    id: "the_last_airbender",
+    title: "El Último Maestro del Aire",
+    year: 2000,
+    duration: "1h 58m",
+    rating: "B",
+    calidad: "360p",
+    genres: ["Acción","Aventura"],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "images/the_last_airbender.webp",
+    post: "posters/the_last_airbender.webp",
+    movie: "https://drive.google.com/file/d/1SH_Hey_mrDEmzZVAn2HhAjzjdHgx-nlv/preview"
 },
 {
     id: "ultraviolet",
