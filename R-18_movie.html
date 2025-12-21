@@ -67,7 +67,7 @@ if(!movie){
 }
 
 qs('#title').textContent = movie.title;
-qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • ${movie.rating || ''}`;
+qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • Clasificación: ${movie.rating || ''}`;
 qs('#description').textContent = movie.description || "Sin descripción disponible.";
 
 // Definir bgVideo y toggleMute en scope global
