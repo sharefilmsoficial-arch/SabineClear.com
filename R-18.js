@@ -12,7 +12,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "R-18/images/the-ugly-stepsister.webp",
     post: "R-18/posters/the-ugly-stepsister.webp",
-    movie: ""
+    movie: "https://drive.google.com/file/d/1x-44SfqShcU8_FamhccxsLxXZoJygCJ4/preview"
   },
   {
     id: "we're-the-millers",
