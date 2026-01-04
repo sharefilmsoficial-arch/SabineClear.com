@@ -9,9 +9,9 @@ const MOVIES = [
     title: "Spiderman: Un Nuevo Universo",
     year: 2018,
     duration: "1h 56min",
-    rating: "PG",
-    genres: ["Animación", "Aventura"],
-    description: "Miles Morales se convierte en Spider-Man y conoce a otros héroes arácnidos de universos paralelos.",
+    rating: "A",
+    genres: ["Animación", "Aventura","Infantil","Acción"],
+    description: "Luego de ser mordido por una araña radioactiva, el joven Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
     trailerUrl: "trailers/spiderman-into-the-spiderverse.mp4",
     image: "images/spiderman-into-the-spiderverse.webp",
     post : "posters/spiderman-into-the-spiderverse.webp",
@@ -27,7 +27,7 @@ const MOVIES = [
     description: "Después de reunirse con Gwen Stacy, el amigable vecino de tiempo completo de Brooklyn Spiderman, es lanzado a través del multiverso, donde se encuentra a un equipo de gente araña encomendada con proteger su mera existencia.",
     image: "images/spiderman2-across-the-spiderverse.webp",
     post: "posters/spiderman2-across-the-spiderverse.webp",
-    trailerUrl: "trailers/across-the-spiderverse(2).mp4",
+    trailerUrl: "trailers/across-the-spiderverse.mp4",
     movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
   },
   {
@@ -40,7 +40,7 @@ const MOVIES = [
     description: "[Próximamente]",
     image: "images/beyond-the-spiderverse.jpg",
     post: "https://m.media-amazon.com/images/M/MV5BMjQwZWExNzAtOTEzZC00NTI3LTk1MDctYjQ1M2M1MzQ5YzljXkEyXkFqcGc@._V1_.jpg",
-    trailerUrl: "IJ3o8oX1nyjbsyfpDwkH-cS/preview",
+    trailerUrl: "",
     movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
   },
   {
@@ -64,13 +64,13 @@ const MOVIES = [
     rating: "PG-13",
     genres: ["Ciencia ficción", "Drama", "Aventura"],
     description:  "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad mientras la Tierra agoniza.",
-    trailerUrl: "trailers/interestellar.mp4",
+    trailerUrl: "trailers/interestellar-trailer-2.mp4",
     image: "images/interestellar.webp",
     post: "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/aa5b9295-8f9c-44f5-809b-3f2b84badfbf/8a7dd34b09c9c25336a3d850d4c431455e1aaaf0.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom",
     movie: "https://drive.google.com/file/d/1cVVPgzsRjlombZxDsP2YWa9F9cHs0xa7/preview"
   },
   {
-    id: "karatekid-1984",
+    id: "karate-kid-1984",
     title: "Karate Kid (1984)",
     year: 1984,
     duration: "2h 6min",
@@ -82,6 +82,48 @@ const MOVIES = [
     image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
     movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview"
+  },
+  {
+    id: "karate-kid-part-2",
+    title: "Karate Kid 2: La Historia Continúa (1986) | Próximamente",
+    year: 1986,
+    duration: "2h ",
+    rating: "PG",
+    genres: ["Drama", "Deportes", "Inspiradora"],
+    description:"",
+    trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
+    movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
+    estreno: "Próximamente"
+  },
+  {
+    id: "karate-kid-part-3",
+    title: "Karate Kid 3: El Desafío Final (1989) | Próximamente",
+    year: 1989,
+    duration: "2h ",
+    rating: "PG",
+    genres: ["Drama", "Deportes", "Inspiradora"],
+    description:"",
+    trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
+    movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
+    estreno: "Próximamente"
+  },
+  {
+    id: "the-next-karate-kid",
+    title: "El Nuevo Karate Kid | Próximamente",
+    year: 1994,
+    duration: "2h ",
+    rating: "PG",
+    genres: ["Drama","Deportes", "Inspiradora"],
+    description:"",
+    trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
+    image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
+    post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
+    movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
+    estreno: "Próximamente"
   },
   {
     id: "karate-kid-legends",
@@ -97,7 +139,77 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1A26SVMjdf0MWh_HmFkXG_qtOv_C4lYK2/preview"
   },
   {
-    id: "laleyendade-loschaneques",
+    id: "la-leyenda-de-la-nahuala",
+    title: "La Leyenda de la Nahuala | Próximamente",
+    year: 2007,
+    duration: "1h ",
+    rating: "A",
+    genres: ["Animación", "Fantasía", "Aventura"],
+    description: "",
+    trailerUrl: "trailers/",
+    image: "images/la-leyenda-de-la-nahuala.webp",
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "la-leyenda-de-la-llorona",
+    title: "La Leyenda de la Llorona",
+    year: 2011,
+    duration: "1h ",
+    rating: "A",
+    genres: ["Animación", "Fantasía", "Aventura"],
+    description: "",
+    trailerUrl: "trailers/",
+    image: image,
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "la-leyenda-de-las-momias",
+    title: "La Leyenda de las Momias",
+    year: 2014,
+    duration: "1h ",
+    rating: "A",
+    genres: ["Animación", "Fantasía", "Aventura"],
+    description: "",
+    trailerUrl: "trailers/",
+    image: image,
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "la-leyenda-del-chupacabras",
+    title: "La Leyenda del ChupaCabras",
+    year: 2016,
+    duration: "1h ",
+    rating: "A",
+    genres: ["Animación", "Fantasía", "Aventura"],
+    description: "",
+    trailerUrl: "trailers/",
+    image: image,
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "la-leyenda-del-charro-negro",
+    title: "La Leyenda del Charro Negro",
+    year: 2018,
+    duration: "1h ",
+    rating: "A",
+    genres: ["Animación", "Fantasía", "Aventura"],
+    description: "",
+    trailerUrl: "trailers/",
+    image: image,
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "la-leyenda-de-los-chaneques",
     title: "La Leyenda de los Chaneques",
     year: 2023,
     duration: "1h 25min",
@@ -110,8 +222,36 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1j2-DvVDho1-u6DoJhZpr3fG6mpyAMGL5/preview"
   },
   {
+    id: "venom",
+    title: "Venom | Próximamente",
+    year: 2018,
+    duration: "1h 52m",
+    rating: "PG-13",
+    genres: ["Acción", "Ciencia ficción"],
+    description: "El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.",
+    trailerUrl: "trailers/venom.mp4",
+    image: image,
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "venom2",
+    title: "Venom 2: Carnage Liberado | Próximamente",
+    year: 2021,
+    duration: "1h 37m",
+    rating: "B",
+    genres: ["Acción","Ciencia ficción"],
+    description: "Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady.",
+    trailerUrl: "trailers/venom-2.mp4",
+    image: image,
+    post: loading,
+    movie: "hola",
+    estreno: "Próximamente"
+  },
+  {
     id: "venom3",
-    title: "Venom 3: The Last Dance",
+    title: "Venom 3: El Último Baile",
     year: 2024,
     duration: "2h 0min",
     rating: "PG-13",
@@ -163,17 +303,16 @@ const MOVIES = [
   },
   {
     id: "how-train-your-dragon",
-    title: "Cómo Entrenar a tu Dragón : Próximamente",
-    year: 2014,
+    title: "Cómo Entrenar a tu Dragón",
+    year: 2010,
     duration: "1h 42min",
-    rating: "PG",
+    rating: "A",
     genres: ["Animación","Aventura","Infantil","Acción"],
     description:"Hipo, un adolescente vikingo inadaptado ve la oportunidad de cambiar el curso del futuro de su clan cuando se hace amigo de un dragón herido.",
     trailerUrl: "trailers/dragon.mp4",
     image: "images/dragon.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/2216969f4080744c6652d39f24f3889577623e22dbb36656145b4c2d4939a107.jpg",
-    movie: "",
-    estreno: "Próximamente"
+    movie: ""
   },
   {
     id: "how-train-your-dragon-2",
@@ -201,6 +340,19 @@ const MOVIES = [
     post: "https://criticinema.com/wp-content/uploads/2019/02/C%C3%B3mo-entrenar-a-tu-drag%C3%B3n-3-cover-1024x436.jpg",
     movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
   },
+  {
+    id: "how-train-your-dragon-live-action",
+    title: "Cómo Entrenar a tu Dragón | Live Action",
+    year: 2025,
+    duration: "1h 42min",
+    rating: "PG",
+    genres: ["Animación","Aventura","Infantil","Acción"],
+    description:"Hipo, un adolescente vikingo inadaptado ve la oportunidad de cambiar el curso del futuro de su clan cuando se hace amigo de un dragón herido.",
+    trailerUrl: "trailers/",
+    image: "images/how-to-train-your-dragon-2025.webp",
+    post: "posters/how-to-train-your-dragon-2025.webp",
+    movie: ""
+  },
   { id: "avatar-2009",
     title: "Avatar",
     year: 2009,
@@ -210,7 +362,7 @@ const MOVIES = [
     description: "En un exuberante planeta llamado Pandora viven los Na'vi, seres que aparentan ser primitivos pero que en realidad son muy evolucionados. Debido a que el ambiente de Pandora es venenoso, los híbridos humanos/Na'vi, llamados Avatares, están relacionados con las mentes humanas, lo que les permite moverse libremente por Pandora. Jake Sully, un exinfante de marina paralítico se transforma a través de un Avatar, y se enamora de una mujer Na'vi..",
     trailerUrl: sampleTrailer,
     image: "images/avatar.jpeg",
-    post: "https://spoilertown.com/wp-content/uploads/2024/07/avatar-2009.webp",
+    post: "posters/avatar-2009.webp",
     movie: "https://drive.google.com/file/d/16JSSJ3zfvpZGG7zNGXqZ2DicCFyqrfGU/preview"
   },
   {
@@ -229,14 +381,14 @@ const MOVIES = [
   {
     id: "avatar3-fireandash",
     title: "Avatar 3 Próximamente (2026) - Fuego y Cenizas",
-    year: 2026,
+    year: 2025,
     duration: "3h 12min",
     rating: "PG-13",
     genres: ["Ciencia ficción", "Aventura"],
     description:"Avatar 3: Fuego y cenizas trata de la familia Sully lidiando con el duelo por la muerte de Neteyam, enfrentando una nueva amenaza: un clan Na'vi más agresivo conocido como el Pueblo de Ceniza, liderado por Varang. Esta nueva tribu, que ha rechazado a Eywa y está dispuesta a usar la violencia, podría aliarse con el Coronel Quaritch, intensificando un conflicto que amenaza con destruir Pandora.",
     trailerUrl: "trailers/avatar3-fireandash.mp4",
     image: "images/avatar3-fireandash.webp",
-    post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/41ae7704-8740-4eb8-bb01-e4285e3b9011/compose?aspectRatio=1.78&format=webp&width=1200",
+    post: "posters/avatar3-fireandash.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -438,17 +590,16 @@ const MOVIES = [
   },
   {
     id: "five-nights-at-freddys2",
-    title: "Five Nights At Freddy's 2: Próximamente",
-    year: 2026,
+    title: "Five Nights At Freddy's 2",
+    year: 2025,
     duration: "1h 45min",
     rating: "PG-13",
     genres: ["Terror","Misterio"],
     description:"Ha pasado un año desde la pesadilla sobrenatural en la pizzería Freddy Fazbear. La historia de lo que ocurrió allí se ha convertido en leyenda local, dando pie al primer “Fazfest”. Mike y Vanessa han mantenido en secreto la verdad a Abby, la hermana de 11 años de Mike. Pero cuando Abby decide reencontrarse con Freddy, Bonnie, Chica y Foxy, desata una serie de eventos aterradores que revelarán oscuros secretos sobre el origen de Freddy’s, desvelando un horror oculto por décadas.",
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
-    image: "https://m.media-amazon.com/images/M/MV5BZmQ3NmIxNTgtYjFiNS00NzliLWI0YzAtZDkxY2E0YWIxZDEwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+    image: "images/five-nights-at-freddys2.webp",
     post: "https://i.ytimg.com/vi/D0hX6VvGgBg/maxresdefault.jpg",
-    movie: "",
-    estreno: "Próximamente"
+    movie: ""
   },
   {
     id: "five-nights-at-freddys3",
@@ -731,9 +882,8 @@ const MOVIES = [
     description:"Un ogro llamado Shrek vive en su pantano, pero su preciada soledad se ve súbitamente interrumpida por la invasión de los ruidosos personajes de los cuentos de hadas. Todos fueron expulsados de sus reinos por el malvado Lord Farquaad. Decidido a salvar su hogar, Shrek hace un trato con Farquaad y se prepara para rescatar a la princesa Fiona, quien será la esposa de Farquaad.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/030f9ae65cadc9afc0e3c51ed35d2ddeb814f213d7a87fc5aa4445738ebb32b9.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/5a5cf867eb9d4fc1e5d44fa81bca4ced972e299967c7d040f5ff49fef7b49b51.jpg",
-    movie: "https://drive.google.com/file/d/1F__HmYqKuxrvZHAFu2bwZxi1AyI2mk1p/view?usp=sharing",
-    saga: "shrek"
+    post: "posters/shrek.webp",
+    movie: "https://drive.google.com/file/d/1F__HmYqKuxrvZHAFu2bwZxi1AyI2mk1p/view?usp=sharing"
   },
   {
     id: "shrek-2",
@@ -745,9 +895,8 @@ const MOVIES = [
     description:"Los padres de la princesa y reyes de Muy, Muy Lejano invitan a cenar Shrek y Fiona, pero el rey Harold descubre que su yerno es un ogro y acude al Hada Madrina para alejar a Shrek de Fiona y lograr que se case con el guapo Príncipe Encantador.",
     trailerUrl: sampleTrailer,
     image: "https://playmax.xyz/img/c/400/1/1439814412/487.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/f8b6c8fa6508e343804cd3bbe314ae604d234a2fec1bf9a3cdd91b872feb93dc.jpg",
-    movie: "https://drive.google.com/file/d/1tcjSGMbUh0eeOYiklHTcZzsPEpexAzn6/preview",
-    saga: "shrek"
+    post: "posters/shrek-2.webp",
+    movie: "https://drive.google.com/file/d/1tcjSGMbUh0eeOYiklHTcZzsPEpexAzn6/preview"
   },
   {
     id: "shrek-3",
@@ -759,9 +908,8 @@ const MOVIES = [
     description:"Shrek y sus amigos van en busca del verdadero heredero de la Tierra Muy Muy Lejana, mientras la Princesa Fiona intenta evitar que el Príncipe Encantador ocupe el trono.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/5b38695d4ad8fd3f6d59c9dec6e58dcce5113dbe58ba079a5c6034104fad7a84.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/837b0e7c4907d6dc41949aba42156710ecbb936bac5e82ee47f3deef6ceb049f.jpg",
-    movie: "https://drive.google.com/file/d/1UVAxq8NMLnvEm1XA-Pm90xRjfIDla7FC/preview",
-    saga: "shrek"
+    post: "posters/shrek-3.webp",
+    movie: "https://drive.google.com/file/d/1UVAxq8NMLnvEm1XA-Pm90xRjfIDla7FC/preview"
   },
   {
     id: "shrek-4",
@@ -773,9 +921,8 @@ const MOVIES = [
     description:"Instalado en su vida matrimonial y totalmente domesticado, Shrek empieza a extrañar los días en los que él se sentía como un verdadero ogro. Engañado para firmar un contrato con el tortuoso Rumpelstiltskin, él se encuentra a sí mismo en una versión alterna de Muy Muy Lejano, donde los ogros son cazados, Rumpelstiltskin manda, y él y Fiona nunca se conocieron. Shrek debe hallar la forma de cancelar el contrato para restaurar su mundo y reclamar su amor verdadero.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/a330d6bf726c4af2b90f2df1c3ebd0d0a61b2344ac70441bb9e9206c2b2674da.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/8c42560ed597df398e1d76ba5bbd1e4de50226d38f63d8e3b3a65b68b564168c.jpg",
-    movie: "https://drive.google.com/file/d/1MisCrcxcKlHoGJRYSslZw_ZRaF8avhth/preview",
-    saga: "shrek"
+    post: "posters/shrek-4.webp",
+    movie: "https://drive.google.com/file/d/1MisCrcxcKlHoGJRYSslZw_ZRaF8avhth/preview"
   },
   {
     id: "puss-in-boots",
@@ -788,8 +935,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/puss-in-boots.webp",
     post: "posters/puss-in-boots.webp",
-    movie: "https://drive.google.com/file/d/1t5s9MtKAT2wcUjhe2rVp5FBrOTEnTzr7/preview",
-    saga: "puss in boots"
+    movie: "https://drive.google.com/file/d/1t5s9MtKAT2wcUjhe2rVp5FBrOTEnTzr7/preview"
   },
   {
     id: "puss-in-boots2:the-last-wish",
@@ -845,6 +991,34 @@ const MOVIES = [
     image: "images/ironman.webp",
     post: "posters/ironman.webp",
     movie: "https://drive.google.com/file/d/1alwjffczAyX8wRrJ3gb7Z5rEHOzUtzZQ/preview"
+  },
+  {
+    id: "ironman-2",
+    title: "Ironman 2",
+    year: 2008,
+    duration: "2h 6m",
+    rating: "PG-13",
+    genres: ["Acción","Ciencia ficción"],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: image,
+    post: loading,
+    movie: "hola",
+    estreno: "Próximamente"
+  },
+  {
+    id: "ironman-3",
+    title: "Ironman 3",
+    year: 2008,
+    duration: "2h 6m",
+    rating: "PG-13",
+    genres: ["Acción","Ciencia ficción"],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: image,
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
   },
   {
     id: "captain-america",
@@ -1105,7 +1279,7 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1Yup4h__yTj6cBzcHoKD_Jci4q68hbI8a/preview"
   },
   {
-    id: "black-in-men",
+    id: "men-in-black",
     title: "Hombres de Negro",
     year: 1997,
     duration: "1h 38m",
@@ -1113,9 +1287,51 @@ const MOVIES = [
     genres: ["Ciencia ficción","Acción"],
     description:"Los hombres de negro son el secreto mejor guardado del universo: su misión es monitorear a los extraterrestres desde la Tierra.",
     trailerUrl: sampleTrailer,
-    image: "images/black-in-men.webp",
-    post: "posters/black-in-men.webp",
+    image: "images/men-in-black.webp",
+    post: "posters/men-in-black.webp",
     movie: "https://drive.google.com/file/d/1kHJ0aEsuEst6nsp0ghvGk6BtkAUzj62Y/preview"
+  },
+  {
+    id: "men-in-black-2",
+    title: "Hombres de Negro 2 | Próximamente",
+    year: 1997,
+    duration: "1h 38m",
+    rating: "PG-13",
+    genres: ["Ciencia ficción","Acción"],
+    description:"Kay y Jay unen fuerzas para consolidar la mejor defensa contra una mujer muy seductora: Serleena, un monstruo que se convierte en un enorme desafío para los hombres de negro.",
+    trailerUrl: sampleTrailer,
+    image: "images/men-in-black-2.webp",
+    post: "posters/men-in-black-2.webp",
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "men-in-black-3",
+    title: "Hombres de Negro 3 | Próximamente",
+    year: 1997,
+    duration: "1h 38m",
+    rating: "PG-13",
+    genres: ["Ciencia ficción","Acción"],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "images/men-in-black-3.webp",
+    post: "posters/men-in-black-3.webp",
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "men-in-black-international",
+    title: "Hombres de Negro Internacional | Próximamente",
+    year: 1997,
+    duration: "1h 38m",
+    rating: "PG-13",
+    genres: ["Ciencia ficción","Acción"],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "images/men-in-black-3.webp",
+    post: "posters/men-in-black-3.webp",
+    movie: "",
+    estreno: "Próximamente"
   },
   {
     id: "inside-out",
@@ -1146,7 +1362,37 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/19t0x3ixt8Xbf9ZV9dqhqdGWZevUsnt-K/preview"
   },
   {
-    id: "thor3-ragnarok",
+    id: "thor",
+    title: "Thor | Próximamente",
+    year: 2017,
+    duration: "",
+    rating: "PG-13",
+    calidad: "360p",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "images/thor-2.webp",
+    post: "posters/thor-2.webp",
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "thor-2",
+    title: "Thor 2 | Próximamente",
+    year: 2017,
+    duration: "",
+    rating: "PG-13",
+    calidad: "360p",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "images/thor-2.webp",
+    post: "posters/thor-2.webp",
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
+    id: "thor-3-ragnarok",
     title: "Thor 3: Ragnarok ",
     year: 2017,
     duration: "",
@@ -1158,7 +1404,7 @@ const MOVIES = [
     image: "images/thor3-ragnarok.webp",
     post: "posters/thor3-ragnarok.webp",
     movie: "https://drive.google.com/file/d/1q9OT3pAQyRcEBKGH4yFS_Kl3O4V8Ds2X/preview"
-},
+  },
   {
     id: "thor4-love-and-thunder",
     title: "Thor 4: Amor y Trueno",
@@ -1259,7 +1505,7 @@ const MOVIES = [
 },
   {
     id: "the-super-mario-galaxy-movie",
-    title: "Super Mario Bros Galaxy",
+    title: "Super Mario Bros Galaxy | Próximamente",
     year: 2028,
     duration: "1h 32m ",
     rating: "PG-13",
@@ -1342,6 +1588,35 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1v8vndnsnNz8iYM1A8gxVlq178QfG2iIr/preview"
 },
 {
+    id: "free-guy",
+    title: "Free Guy : Tómando el Control | Próximamente",
+    year: 2006,
+    duration: "1h 48m",
+    rating: "B",
+    calidad: "360p",
+    genres: ["Comedia","Fantasía","Aventura","Ciencia Ficción"],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "images/free-guy.webp",
+    post: "posters/free-guy.webp",
+    movie: "",
+    estreno:"Próximamente"
+},
+{
+    id: "zootopia",
+    title: "Zootopia | Próximamente",
+    year: 2016,
+    duration: "1h 48m",
+    rating: "AA",
+    calidad: "360p",
+    genres: ["Infantil","Comedia"],
+    description:"La metrópoli Zootopía es una ciudad de mamíferos, donde muchos animales viven y se desarrollan. Allí, la optimista agente Judy Hopps se convierte en la primera conejita de un cuerpo policial compuesto por animales duros y enormes. Judy está decidida a demostrar su valentía y se mete en un caso con Nick Wilde, un zorro parlanchín y estafador.",
+    trailerUrl: "trailers/",
+    image: "images/zootopia.webp",
+    post: "posters/zootopia.webp",
+    movie: ""
+},
+{
     id: "zootopia2",
     title: "Zootopia 2",
     year: 2025,
@@ -1418,7 +1693,7 @@ const MOVIES = [
     duration: "1h 58m",
     rating: "B",
     calidad: "360p",
-    genres: ["Acción","Aventura"],
+    genres: ["Acción","Aventura","Anime"],
     description:"",
     trailerUrl: "trailers/",
     image: "images/demon-slayer-kimetsu-no-yaiba-infinity-castle.webp",
@@ -1432,7 +1707,7 @@ const MOVIES = [
     duration: "1h 58m",
     rating: "B",
     calidad: "360p",
-    genres: ["Acción","Aventura"],
+    genres: ["Acción","Aventura","Anime"],
     description:"",
     trailerUrl: "trailers/",
     image: "images/hotaru-no-mori-e.webp",
@@ -1473,13 +1748,13 @@ const MOVIES = [
     year: 2005,
     duration: "1h 44m",
     rating: "B",
-    calidad: "360p",
+    calidad: "720p",
     genres: ["Acción","Ciencia Ficción"],
     description:"Una asesina es contratada para matar a un hombre y a su hija, pero decide protegerlos mientras lucha contra sus adversarios.",
     trailerUrl: "trailers/",
     image: "images/elektra.webp",
     post: "posters/elektra.webp",
-    movie: ""
+    movie: "https://drive.google.com/file/d/1NWue1HA6TQOdPFA28Fy3m-ut3Bf_HEKk/preview"
 },
 {
     id: "rampage",
@@ -1493,7 +1768,7 @@ const MOVIES = [
     trailerUrl: "trailers/",
     image: "images/rampage.webp",
     post: "posters/rampage.webp",
-    movie: ""
+    movie: "https://drive.google.com/file/d/1phFBf-6vvL9uyMQdl4Nt9tMsbWXk-C32/preview"
 },
 {
     id: "whiplash",
@@ -1505,8 +1780,8 @@ const MOVIES = [
     genres: ["Drama","Cine Independiente"],
     description:"Andrew Neiman es un joven y ambicioso baterista de jazz. Marcado por el fracaso de la carrera literaria de su padre, está obsesionado con alcanzar la cima dentro del elitista conservatorio de música de la Costa Este en el que estudia.",
     trailerUrl: "trailers/",
-    image: "images/whisplash.webp",
-    post: "posters/whisplash.webp",
+    image: "images/whiplash.webp",
+    post: "posters/whiplash.webp",
     movie: "https://drive.google.com/file/d/1G-49Y-6ITQ_JpQpgvPyVN7IEKl06_J6X/preview",
 },
 {
@@ -1519,15 +1794,44 @@ const MOVIES = [
     genres: ["Suspenso","Romance"],
     description:"Nick viaja a Colombia en busca de tranquilidad, pero se enamora de nada más ni nada menos que la sobrina del famoso narcotraficante Pablo Escobar.",
     trailerUrl: "trailers/",
-    image: "image",
-    post: "posters/.webp",
+    image: "images/escobar-paradise-lost.webp",
+    post: "posters/escobar-paradise-lost.webp",
+    movie: "https://drive.google.com/file/d/1zjbTZeN-QK0j1rTOssyAqmAdryejPp3E/preview"
+},
+{
+    id: "pistolero-desperado",
+    title: "Pistolero (Desperado) | Próximamente",
+    year: 1995,
+    duration: "1h 44m",
+    rating: "B-15",
+    calidad: "360p",
+    genres: ["Acción","Wéstern"],
+    description:"Como todo hombre que lleva un arma, el Mariachi tienen problemas. Ya no es aquel joven inocente que acabó haciéndose pistolero por culpa de las circunstancias. Ahora se ha convertido en un auténtico hombre de acción, que esconde cualquier tipo de pistolas en el viejo estuche de su guitarra.",
+    trailerUrl: "trailers/",
+    image: "images/desperado.webp",
+    post: "posters/desperado.webp",
     movie: "",
     estreno: "Próximamente"
 },
 {
-    id: "movie-3",
-    title: "Proximamente | Pistolero",
-    year: 2014,
+    id: "movie-4.1",
+    title: "Proximamente | Spiderman: Lejos de Casa",
+    year: 2017,
+    duration: "1h ",
+    rating: "B",
+    calidad: "360p",
+    genres: ["..."],
+    description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
+    trailerUrl: "trailers/",
+    image: image,
+    post: loading,
+    movie: "",
+    estreno: "Próximamente"
+},
+{
+    id: "movie-4.2",
+    title: "Proximamente | Spiderman: De Regreso a Casa",
+    year: 2019,
     duration: "1h ",
     rating: "B",
     calidad: "360p",
@@ -1693,14 +1997,14 @@ const MOVIES = [
     id: "elena-and-secret-of-avalor",
     title: "Proximamente | Elena y el Secreto de Avalor",
     year: 2016,
-    duration: "1h ",
+    duration: "1h 3m",
     rating: "B",
     calidad: "360p",
-    genres: ["..."],
+    genres: ["Aventura","Fantasía"],
     description:"",
     trailerUrl: "trailers/",
-    image: image,
-    post: loading,
+    image: "images/elena-and-secret-of-avalor.webp",
+    post: "posters/elena-and-secret-of-avalor.webp",
     movie: "",
     estreno: "Próximamente"
 }
