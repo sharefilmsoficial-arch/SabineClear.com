@@ -148,7 +148,7 @@ const MOVIES = [
     description: "",
     trailerUrl: "trailers/",
     image: "images/la-leyenda-de-la-nahuala.webp",
-    post: loading,
+    post: "posters/la-leyenda-de-la-nahuala.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -236,7 +236,7 @@ const MOVIES = [
     estreno: "Próximamente"
   },
   {
-    id: "venom2",
+    id: "venom-2-let-there-be-carnage",
     title: "Venom 2: Carnage Liberado | Próximamente",
     year: 2021,
     duration: "1h 37m",
@@ -245,7 +245,7 @@ const MOVIES = [
     description: "Después de encontrar un cuerpo anfitrión en el periodista de investigación Eddie Brock, el simbionte alienígena debe enfrentarse a un nuevo enemigo, Carnage, el alter ego del asesino en serie Cletus Kasady.",
     trailerUrl: "trailers/venom-2.mp4",
     image: image,
-    post: loading,
+    post: "posters/venom-let-there-be-carnage.webp",
     movie: "hola",
     estreno: "Próximamente"
   },
@@ -344,10 +344,10 @@ const MOVIES = [
     id: "how-train-your-dragon-live-action",
     title: "Cómo Entrenar a tu Dragón | Live Action",
     year: 2025,
-    duration: "1h 42min",
-    rating: "PG",
-    genres: ["Animación","Aventura","Infantil","Acción"],
-    description:"Hipo, un adolescente vikingo inadaptado ve la oportunidad de cambiar el curso del futuro de su clan cuando se hace amigo de un dragón herido.",
+    duration: "2h 5m",
+    rating: "A",
+    genres: ["Aventura","Infantil","Acción"],
+    description:"Un niño vikingo llamado Hipo desafía la tradición al hacerse amigo de un dragón llamado Chimuelo. Cuando surge una antigua amenaza que pone en peligro a ambas especies, la amistad de Hipo con Chimuelo se convierte en la clave para un nuevo futuro.",
     trailerUrl: "trailers/",
     image: "images/how-to-train-your-dragon-2025.webp",
     post: "posters/how-to-train-your-dragon-2025.webp",
@@ -652,7 +652,7 @@ const MOVIES = [
     description:"Deadpool cuenta la historia de Wade Wilson, un mercenario que, tras ser diagnosticado con cáncer terminal, se somete a un experimento para curarse que le otorga un factor de curación y lo desfigura. Con su nuevo aspecto y un sentido del humor retorcido, adopta la identidad de Deadpool para cazar al villano que arruinó su vida y, a pesar de sus temores, buscar a su novia.",
     trailerUrl: sampleTrailer,
     image: "images/deadpool.png",
-    post: "posters/.jpg",
+    post: "posters/deadpool.webp",
     movie: "aun no",
     estreno: "Próximamente"
   },
@@ -666,7 +666,7 @@ const MOVIES = [
     description:"Deadpool debe proteger a Russell, un adolescente mutante, de Cable, un soldado del futuro genéticamente modificado. Deadpool se alía con otros superhéroes para poder derrotar al poderoso Cable.",
     trailerUrl: sampleTrailer,
     image: "images/deadpool2.jpg",
-    post: "",
+    post: "posters/deadpool-2.webp",
     movie: "aun no",
     estreno: "Próximamente"
   },
@@ -706,7 +706,7 @@ const MOVIES = [
     description:"Saldrá una luna cosecha azul, y las hadas utilizarán una piedra lunar para restaurar el Árbol del Polvillo de Hadas, la fuente de su magia. Pero cuando Tinker Bell pone en riesgo todo Pixie Hollow, deberá aventurarse por el mar en una búsqueda para arreglar las cosas. Con su amigo Terence y la luciérnaga encantadora y pícara Blaze, Tink se enfrentará a un nuevo mundo y descubrirá el mejor tesoro.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/e6c0b227ea58c607a5812d7f908a0665c85154f7dd1527ce9694fdb386b43bb2.jpg",
-    post: "",
+    post: "posters/tinkerbell-2.webp",
     movie: "https://drive.google.com/file/d/1iL5GrlinMujHqedzyQU0ebS7gVaSCkPP/preview"
   },
   {
@@ -719,7 +719,7 @@ const MOVIES = [
     description:"Antes de conocer a Wendy y los Niños Perdidos, Tinker Bell conoció a Lizzy, una niña que cree en las hadas. En la campiña se da un encuentro cuando Tink es descubierta por Lizzy. Sus mundos se unen y Tink desarrolla un lazo con la niña curiosa que necesita una amiga. Sus hadas compañeras lanzan un audaz rescate, y Tinker Bell pone en riesgo su seguridad y el futuro de las hadas.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/I/81cwwSrr5OL._AC_UF894,1000_QL80_.jpg",
-    post: "",
+    post: "posters/tinkerbell-3.webp",
     movie: "https://drive.google.com/file/d/1shBNCAb3QkavzXx7PKbe8HLahWQo7fCt/preview"
   },
   {
@@ -771,7 +771,7 @@ const MOVIES = [
     description:"Una esposa(Coral) asesinada por un asesino serial y de su hijo(Nemo) que tiene un problema físico, tiempo después su hijo es secuestrado y el padre(Marlin) tiene que rastrear y perseguir al secuestrador por varios kilómetros con ayuda de una mujer(Dory) que tiene problemas mentales.",
     trailerUrl: sampleTrailer,
     image: "images/finding-nemo.jpeg",
-    post: "",
+    post: "posters/finding-nemo.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -855,7 +855,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/37a1cbe1b9066e7535fd7874fcfc4778e9f746d7a5365680a27761a6cac1da4e.jpg",
-    post: "",
+    post: "posters/apocalypto.webp",
     movie: "https://drive.google.com/file/d/1pwo5WpW_nZQnQzlXa3B6xJYEYZW__qbg/preview"
   },
   {
@@ -961,7 +961,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "images/The_Gangster_The_Cop_The_Devil.jpg",
-    post: "",
+    post: "posters/The_Gangster_The_Cop_The_Devil.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -975,13 +975,13 @@ const MOVIES = [
     description:"Atormentada por una violenta pesadilla recurrente, la universitaria Stefani regresa a su hogar para encontrar a la única persona que podría romper el ciclo y salvar a su familia de la terrible e inevitable muerte que les espera.",
     trailerUrl: sampleTrailer,
     image: "images/destino-final-lazos-de-sangre.webp",
-    post: "posters/destination_6-bloodlines.webp",
+    post: "posters/final-destination_6-bloodlines.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
   {
     id: "ironman",
-    title: "Ironman",
+    title: "Ironman: El Hombre de Hierro",
     year: 2008,
     duration: "2h 6m",
     rating: "PG-13",
@@ -1043,7 +1043,7 @@ const MOVIES = [
     description:"",
     trailerUrl: sampleTrailer,
     image: "images/captain-america2.jpg",
-    post: "",
+    post: "posters/captain-america2.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1084,7 +1084,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/b14b33a4a541520ab9d9d217678375991e5adc5e400dfcd7ff4bde8966669863.jpg",
-    post: "",
+    post: "posters/toy-story-2.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1098,7 +1098,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/a460a32bc1a4a2cbd111a1fd95d11291b6fa6542aae39cc67c1f8def4d6a6d58.jpg",
-    post: "",
+    post: "posters/toy-story-3.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1125,7 +1125,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://lumiere-a.akamaihd.net/v1/images/toy_story_c00b8d79.jpeg?region=0,0,1080,1350",
-    post: "",
+    post: "posters/toy-story-5.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1139,7 +1139,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/M/MV5BYWI0NTNlN2MtMWRjNy00M2QwLWFlZTgtZTlkMTZiYTU2NTk1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-    post: "",
+    post: "posters/guardians-of-the-galaxy.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1166,7 +1166,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://lumiere-a.akamaihd.net/v1/images/lat_2ae5e247.jpeg",
-    post: "",
+    post: "posters/guardians-of-the-galaxy-3.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1248,6 +1248,7 @@ const MOVIES = [
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
     image: "https://zoomf7.net/wp-content/uploads/2016/03/24qz9huzy8k3cdo4hrwkmztt7gh.jpg",
+    post:"posters/kung-fu-panda-3.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1294,11 +1295,11 @@ const MOVIES = [
   {
     id: "men-in-black-2",
     title: "Hombres de Negro 2 | Próximamente",
-    year: 1997,
+    year: 2002,
     duration: "1h 38m",
     rating: "PG-13",
     genres: ["Ciencia ficción","Acción"],
-    description:"Kay y Jay unen fuerzas para consolidar la mejor defensa contra una mujer muy seductora: Serleena, un monstruo que se convierte en un enorme desafío para los hombres de negro.",
+    description:"K y J unen fuerzas para consolidar la mejor defensa contra una mujer muy seductora: Serleena, un monstruo que se convierte en un enorme desafío para los hombres de negro.",
     trailerUrl: sampleTrailer,
     image: "images/men-in-black-2.webp",
     post: "posters/men-in-black-2.webp",
@@ -1308,7 +1309,7 @@ const MOVIES = [
   {
     id: "men-in-black-3",
     title: "Hombres de Negro 3 | Próximamente",
-    year: 1997,
+    year: 2012,
     duration: "1h 38m",
     rating: "PG-13",
     genres: ["Ciencia ficción","Acción"],
@@ -1322,14 +1323,14 @@ const MOVIES = [
   {
     id: "men-in-black-international",
     title: "Hombres de Negro Internacional | Próximamente",
-    year: 1997,
+    year: 2019,
     duration: "1h 38m",
     rating: "PG-13",
     genres: ["Ciencia ficción","Acción"],
     description:"",
     trailerUrl: sampleTrailer,
-    image: "images/men-in-black-3.webp",
-    post: "posters/men-in-black-3.webp",
+    image: "images/men-in-black-international.webp",
+    post: "posters/men-in-black-international.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -1490,6 +1491,20 @@ const MOVIES = [
     movie: "https://drive.google.com/file/d/1tdtIb-bdH_z5IvC3srq8Oa7smExnbI8i/preview"
 },
   {
+    id: "wonder-woman-84",
+    title: "La Mujer Maravilla 1984",
+    year: 2002,
+    duration: "1h ",
+    rating: "PG-13",
+    calidad: "360p",
+    genres: [""],
+    description:"",
+    trailerUrl: sampleTrailer,
+    image: "images/wonder-woman-84.webp",
+    post: "posters/wonder-woman-84.webp",
+    movie: ""
+},
+  {
     id: "the-super-mario-bros-movie",
     title: "Super Mario Bros",
     year: 2023,
@@ -1627,7 +1642,7 @@ const MOVIES = [
     description:"Judy y Nick se enfrentan a un nuevo y enigmático desafío cuando un misterioso reptil llega a Zootopia y altera por completo la vida en la metrópolis de los mamíferos. Siguiendo su peligrosa pista, ambos se ven obligados a meterse de incógnito en rincones que nunca antes habían explorado de la ciudad, donde descubrirán secretos ocultos, se toparán con inesperados obstáculos.",
     trailerUrl: "trailers/",
     image: "images/zootopia2.webp",
-    post: "posters/zootopia2.jpeg",
+    post: "posters/zootopia2.webp",
     movie: "https://drive.google.com/file/d/1ivdIuaIVLdr_Ov7pv2Hfp5_0ctRNRW3m/preview"
 },
 {
@@ -1685,6 +1700,20 @@ const MOVIES = [
     image: "images/kong_skull_island.webp",
     post: "posters/kong_skull_island.webp",
     movie: "https://drive.google.com/file/d/1Noki1Ua8NOfzfb1UVz2Y9MA_uI5-6Oi9/preview"
+},
+{
+    id: "kong-x-godzilla",
+    title: "Kong X Godzilla",
+    year: 2017,
+    duration: "1h 58m",
+    rating: "B",
+    calidad: "360p",
+    genres: ["Acción","Aventura"],
+    description:"En la década de 1970, un grupo de soldados y exploradores, acompañados por una fotoperiodista, llega a una isla del Pacífico habitada por un simio gigantesco y otros monstruos. Marlow, un peculiar habitante del lugar, guía a los aventureros a través de las misteriosas junglas y marismas de la isla.",
+    trailerUrl: "trailers/",
+    image: "images/kong_skull_island.webp",
+    post: "posters/kong_skull_island.webp",
+    movie: ""
 },
 {
     id: "demon-slayer-kimetsu-no-yaiba-infinity-castle",
