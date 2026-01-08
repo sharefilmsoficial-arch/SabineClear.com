@@ -463,17 +463,34 @@ footer a:hover {
 .carousel-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; 
+  position: relative;
+  z-index: 1;
 }
 
 .carousel-item span {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  padding: 6px;
-  font-size: 13px;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+
+  padding: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #fff;
+  z-index: 2;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.85),
+    rgba(0,0,0,0.2),
+    transparent
+  );
+
+  text-shadow: 0 2px 6px rgba(0,0,0,0.9);
 }
+
 
 .carousel-btn {
   position: absolute;
@@ -575,7 +592,7 @@ footer a:hover {
 .prime-card{
   width: 230px;
   min-width: 230px;
-  background:#111;
+  background:#333;
   border-radius:14px;
   overflow:hidden;
   display:flex;
@@ -603,9 +620,10 @@ footer a:hover {
 
 /* Parte gris de abajo */
 .prime-info{
-  background:#2b2b2b;
+  background:#333;
   padding:12px 14px;
   color:#fff;
+  position: relative;
 }
 
 /* Título */
@@ -613,17 +631,55 @@ footer a:hover {
   font-size:15px;
   font-weight:bold;
   display:block;
-  margin-bottom:4px;
+
+  width: 62%;        /* ← solo ocupa el 60% del cuadro gris */
+  line-height: 1.2;
+
+  /* permite varias líneas */
+  word-wrap: break-word;
 }
 
 /* Texto Amazon */
 .prime-sub{
   font-size:13px;
-  margin:0 0 10px 0;
   opacity:0.9;
+  margin:0 0 10px 0;
+
+  width: 60%;        /* ← mismo ancho que el título */
+  line-height: 1.3;
+
+  word-wrap: break-word;
 }
 
-/* Botón */
+/* Botón Ver más estilo Amazon Prime */
 .prime-btn{
-  background:#3d3d3d;
-  color:white;
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+
+  background:#4a4a4a;
+  color:#fff;
+
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 600;
+
+  border-radius: 10px;
+  border: none;
+
+  width: auto;          /* ← ya NO ocupa el 40% */
+  height: auto;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: background .25s ease, transform .2s ease;
+}
+
+/* Hover como Amazon */
+.prime-btn:hover{
+  background:#5a5a5a;
+  transform: scale(1.05);
+}
