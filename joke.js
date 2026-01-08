@@ -38,16 +38,19 @@ const MOVIES = [
     movie: ""
   },
   {
-    id: "inside-snout",
-    title: "Intenso Hozico",
+    id: "inside-snout2",
+    title: "Intenso Hozico 2",
     year: 2023,
-    duration: "2h 20min 05s",
-    rating: "PG",
-    genres: ["Animación", "Acción", "Aventura"],
-    description: "",
+    year: 2024,
+    duration: "1h 36m",
+    rating: "PG-13",
+    calidad: "360p",
+    genres: ["Infantil","Comedia","Animación"],
+    description:"Ahora que es adolescente, Riley experimenta nuevos sentimientos como Ansiedad y Envidia, que se imponen a los viejos mientras ella duda sobre si abandonar a sus antiguas amigas por otras de la escuela secundaria.",
+    trailerUrl: sampleTrailer,
     image: "jokes/inside-snout2.jpg",
-    trailerUrl: "trailers/",
-    movie: ""
+    post: "posters/inside-out2.webp",
+    movie: "https://drive.google.com/file/d/19t0x3ixt8Xbf9ZV9dqhqdGWZevUsnt-K/preview"
   },
   {
     id: "fast_and_the_fragile_the_final_lap",
@@ -64,14 +67,16 @@ const MOVIES = [
   {
     id: "inside-vice2",
     title: "Vicio Intenso 2",
-    year: 2000,
-    duration: "",
-    rating: "PG",
-    genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
-    description: "Luego de ser mordido por una araña radioactiva, Miles Morales desarrolla misteriosos poderes que lo transforman en el Hombre Araña. Ahora deberá usar sus nuevas habilidades ante el malvado Kingpin, un enorme demente que puede abrir portales hacia otros universos.",
+    year: 2024,
+    duration: "1h 36m",
+    rating: "PG-13",
+    calidad: "360p",
+    genres: ["Infantil","Comedia","Animación"],
+    description:"Ahora que es adolescente, Riley experimenta nuevos sentimientos como Ansiedad y Envidia, que se imponen a los viejos mientras ella duda sobre si abandonar a sus antiguas amigas por otras de la escuela secundaria.",
+    trailerUrl: sampleTrailer,
     image: "jokes/vicio-intenso2.jpg",
-    trailerUrl: "trailers/across-the-spiderverse.mp4",
-    movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
+    post: "posters/inside-out2.webp",
+    movie: "https://drive.google.com/file/d/19t0x3ixt8Xbf9ZV9dqhqdGWZevUsnt-K/preview"
   },
   {
     id: "faiv-naigs-at-freddys2",
@@ -176,9 +181,35 @@ const MOVIES = [
     image: "jokes/ratatouille-live-action.jpg",
     post: "jokes/",
     movie: ""
+  },
+  {
+    id: "women-tale",
+    title: "El Espanta Viejas",
+    year: 2004,
+    duration: "1h 30m",
+    rating: "A",
+    calidad: "360p",
+    genres: ["Infantil","Aventura","Animación"],
+    description:"El hijo de un tiburón mafioso muere cuando le cae un ancla encima. Un pez con mucho descaro y sueños de grandeza se encontraba en la escena del crimen y, para darse importancia, se atribuye la muerte. Sin duda, un grave error.",
+    trailerUrl: sampleTrailer,
+    image: "jokes/espanta-viejas.png",
+    post: "posters/shark-tale.webp",
+    movie: "https://drive.google.com/file/d/1DVb8BQ_YxwUtDA_HBRh0PK2Ez16AB7S5/preview"
+},
+  {
+    id: "Secret-of-the-Wings-2-Beyond-the-Glow",
+    title: "TinkerBell 7: El Secreto de las Alas 2: Más Allá del Resplandor",
+    year: 2012,
+    duration: "1h 15min",
+    rating: "PG-13",
+    genres: ["Comedia", "Acción","Animación"],
+    description:"El Secreto de las Alas 2: Más Allá del Resplandor (2025) cautiva al público con un mágico regreso a Pixie Hollow, donde Campanilla y sus amigas hadas se embarcan en una nueva aventura que combina imágenes impresionantes, momentos emotivos y emocionantes descubrimientos. Esta secuela profundiza el vínculo entre Tink y Periwinkle, a la vez que presenta nuevos reinos y desafíos que celebran la unidad y la maravilla.",
+    trailerUrl: sampleTrailer,
+    image: "jokes/Secret-of-the-Wings-2-Beyond-the-Glow.jpg",
+    post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/1ca81c90-6871-47be-b6f1-3057b17e48e5/compose?aspectRatio=1.78&format=webp&width=1200",
+    movie: "https://drive.google.com/file/d/1FbnSkyTL26eRGxc-PZGHgQLz7Kqpa0GB/preview"
   }
 ];
 
 // (Opcional) Exponerlo globalmente
 window.MOVIES = MOVIES;
-
