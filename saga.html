@@ -126,7 +126,7 @@ body {
 
 <body class="movie-page">
 
-<div class="back-btn"><a href="javascript:history.back()">← Volver</a></div>
+<div class="back-btn"><a href="#" onclick="goBack(event)">← Volver</a></div>
 
 <div class="saga-container">
   <div class="saga-hero" id="sagaHero">
@@ -204,32 +204,32 @@ const SAGAS = [
         id: "shrek",
         n: 1,
         name: "Shrek",
-        thumb: "posters/spiderman-into-the-spiderverse.webp",
-        image: "posters/spiderman-into-the-spiderverse.webp",
+        thumb: "posters/shrek.webp",
+        image: "posters/shrek.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
         id: "shrek-2",
         n: 2,
         name: "Shrek 2",
-        thumb: "posters/spiderman2-across-the-spiderverse.webp",
-        image: "posters/spiderman2-across-the-spiderverse.webp",
+        thumb: "posters/shrek-2.webp",
+        image: "posters/shrek-2.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
         id: "shrek-3",
         n: 3,
         name: "Shrek Tercero",
-        thumb: "posters/beyond-the-spiderverse.webp",
-        image: "posters/beyond-the-spiderverse.webp",
+        thumb: "posters/shrek-3.webp",
+        image: "posters/shrek-3.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
         id: "shrek-4",
         n: 4,
         name: "Shrek Para Siempre ",
-        thumb: "posters/beyond-the-spiderverse.webp",
-        image: "posters/beyond-the-spiderverse.webp",
+        thumb: "posters/shrek-4.webp",
+        image: "posters/shrek-4.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       }
     ]
@@ -273,27 +273,27 @@ const SAGAS = [
     image: "https://m.media-amazon.com/images/S/pv-target-images/030f9ae65cadc9afc0e3c51ed35d2ddeb814f213d7a87fc5aa4445738ebb32b9.jpg",
     movies: [
       {
-        id: "shrek",
+        id: "avatar",
         n: 1,
         name: "Avatar",
-        thumb: "posters/spiderman-into-the-spiderverse.webp",
-        image: "posters/spiderman-into-the-spiderverse.webp",
+        thumb: "posters/avatar-2009.webp",
+        image: "posters/avatar-2009.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
-        id: "shrek-2",
+        id: "avatar-2",
         n: 2,
         name: "Avatar 2",
-        thumb: "posters/spiderman2-across-the-spiderverse.webp",
-        image: "posters/spiderman2-across-the-spiderverse.webp",
+        thumb: "posters/avatar2.webp",
+        image: "posters/avatar2.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
-        id: "shrek-3",
+        id: "avatar-3",
         n: 3,
         name: "Avatar 3",
-        thumb: "posters/beyond-the-spiderverse.webp",
-        image: "posters/beyond-the-spiderverse.webp",
+        thumb: "posters/avatar3-fireandash.webp",
+        image: "posters/avatar3-fireandash.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       }
     ]
@@ -305,15 +305,15 @@ const SAGAS = [
     image: "https://m.media-amazon.com/images/S/pv-target-images/030f9ae65cadc9afc0e3c51ed35d2ddeb814f213d7a87fc5aa4445738ebb32b9.jpg",
     movies: [
       {
-        id: "miraculous-world1",
+        id: "miraculous-world-1",
         n: 1,
         name: "Miraculous World: Nueva York: Héroes Unidos",
-        thumb: "posters/spiderman-into-the-spiderverse.webp",
-        image: "posters/spiderman-into-the-spiderverse.webp",
+        thumb: "posters/miraculous-world-1.webp",
+        image: "posters/miraculous-world-1.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
-        id: "miraculous-world2",
+        id: "miraculous-world-2",
         n: 2,
         name: "Miraculous World 2: Shangai: La Leyenda de LadyDragon",
         thumb: "images/miraculous-world-2.webp",
@@ -353,7 +353,7 @@ const SAGAS = [
     image: "https://m.media-amazon.com/images/S/pv-target-images/030f9ae65cadc9afc0e3c51ed35d2ddeb814f213d7a87fc5aa4445738ebb32b9.jpg",
     movies: [
       {
-        id: "shrek",
+        id: "sonic-the-hedgehog",
         n: 1,
         name: "Sonic el Herizo",
         thumb: "posters/spiderman-into-the-spiderverse.webp",
@@ -361,7 +361,7 @@ const SAGAS = [
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
-        id: "shrek-2",
+        id: "sonic-the-hedgehog-2",
         n: 2,
         name: "Sonic 2",
         thumb: "posters/spiderman2-across-the-spiderverse.webp",
@@ -369,7 +369,7 @@ const SAGAS = [
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
-        id: "shrek-3",
+        id: "sonic-the-hedgehog-3",
         n: 3,
         name: "Sonic 3",
         thumb: "posters/beyond-the-spiderverse.webp",
@@ -396,8 +396,8 @@ const SAGAS = [
         id: "five-nights-at-freddys2",
         n: 2,
         name: "Five Nights At Freddy's 2",
-        thumb: "posters/spiderman2-across-the-spiderverse.webp",
-        image: "posters/spiderman2-across-the-spiderverse.webp",
+        thumb: "posters/five-nights-at-freddys3.webp",
+        image: "posters/five-nights-at-freddys3.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
@@ -417,25 +417,25 @@ const SAGAS = [
     image: "images/deadpool.png",
     movies: [
       {
-        id: "five-nights-at-freddys",
+        id: "deadpool",
         n: 1,
-        name: "Five Nights At Freddy's",
+        name: "Deadpool",
         thumb: "posters/spiderman-into-the-spiderverse.webp",
         image: "images/deadpool.png",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
-        id: "five-nights-at-freddys2",
+        id: "deadpool-2",
         n: 2,
-        name: "Five Nights At Freddy's 2",
+        name: "Deadpool 2",
         thumb: "posters/spiderman2-across-the-spiderverse.webp",
         image: "posters/spiderman2-across-the-spiderverse.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
       },
       {
-        id: "five-nights-at-freddys3",
+        id: "deadpool-3",
         n: 3,
-        name: "Five Nights At Freddy's 3",
+        name: "DeadPool 3 • Wolverine",
         thumb: "images/five-nights-at-freddys-3-movie-poster-fan-made-by-me-model-v0-jv59k3jszvmf1.webp",
         image: "posters/five-nights-at-freddys3.webp",
         drive: "https://drive.google.com/file/d/1kslY9Cn_36FdWj5ken5k_zJIUoshuxIA/preview"
@@ -522,7 +522,7 @@ function renderHero(movie) {
 
   document.getElementById('sagaInfo').innerHTML = `
     <h1>${saga.title}</h1>
-    <p>${saga.year} • Película ${movie.n}: ${movie.name}</p>
+    <p>${saga.year} • ${movie.name}</p>
     <button class="play-btn" onclick="window.open('${movie.drive}', '_blank')">▶ Reproducir</button>
   `;
 }
@@ -549,7 +549,19 @@ function selectMovie(num) {
 renderHero(currentMovie);
 renderList();
 </script>
+<script>
+function goBack(e) {
+  e.preventDefault();
 
+  // Si existe historial real
+  if (window.history.length > 1) {
+    window.history.back();
+  } else {
+    // Fallback seguro
+    window.location.href = "sagas.html";
+  }
+}
+</script>
 <footer>
 © 2025 Share Films — Todos los derechos reservados.<br>
 <a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
