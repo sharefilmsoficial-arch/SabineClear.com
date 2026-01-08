@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>SabineClear Películas</title>
+<title>Película</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="movie-page">
@@ -171,8 +171,15 @@ if (movie.post) {
 function restorePoster() {
   bgVideo.pause();
   bgVideo.currentTime = 0;
-  bgVideo.src = "";              // quita el video
-  bgVideo.style.display = "none"; // oculta el video
+  bgVideo.src = "";
+  bgVideo.style.display = "none";
+
+  // 🔁 Volver a mostrar el poster
+  if (movie.post) {
+    hero.style.backgroundImage = `url(${movie.post})`;
+    hero.style.backgroundSize = "cover";
+    hero.style.backgroundPosition = "center";
+  }
 }
 
 // 🔇 Botón mute/unmute
@@ -591,7 +598,8 @@ PRIME_MOVIES.forEach(m => {
 <a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a>| · |
 <a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a>| · |
 <a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a>| · |
-<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>|
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>| · |
+<a href="https://pseint-codigos-faciles.odoo.com/" target="_blank">Códigos Fáciles en Pseint</a>|
 </footer>
 </body>
 </html>
