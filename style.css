@@ -21,6 +21,12 @@ body {
   z-index: 5;
 }
 
+.logo-anime img {
+  height: 100px;
+  width: auto;
+  max-width: 180px;   /* LIMITA EL ANCHO */
+  object-fit: contain;
+}
 .logo img {
   height: 40px;
   width: auto;
@@ -565,3 +571,59 @@ footer a:hover {
 #playTrailerBtn {
     color: #22C3E6;   /* ← el color que quieras */
 }
+/* === TARJETAS AMAZON PRIME === */
+.prime-card{
+  width: 230px;
+  min-width: 230px;
+  background:#111;
+  border-radius:14px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+}
+/* Forzar estructura correcta solo en PRIME */
+.carousel-track .prime-card{
+  display:flex !important;
+  flex-direction:column;
+  height:auto !important;
+}
+
+/* Evitar que la imagen tape lo gris */
+.carousel-track .prime-card img{
+  height:auto !important;
+}
+
+/* Imagen cuadrada */
+.prime-card img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  display:block;
+}
+
+/* Parte gris de abajo */
+.prime-info{
+  background:#2b2b2b;
+  padding:12px 14px;
+  color:#fff;
+}
+
+/* Título */
+.prime-title{
+  font-size:15px;
+  font-weight:bold;
+  display:block;
+  margin-bottom:4px;
+}
+
+/* Texto Amazon */
+.prime-sub{
+  font-size:13px;
+  margin:0 0 10px 0;
+  opacity:0.9;
+}
+
+/* Botón */
+.prime-btn{
+  background:#3d3d3d;
+  color:white;
