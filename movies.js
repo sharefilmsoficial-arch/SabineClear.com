@@ -42,7 +42,7 @@ const MOVIES = [
     image: "images/beyond-the-spiderverse.jpg",
     post: "https://m.media-amazon.com/images/M/MV5BMjQwZWExNzAtOTEzZC00NTI3LTk1MDctYjQ1M2M1MzQ5YzljXkEyXkFqcGc@._V1_.jpg",
     trailerUrl: "",
-    movie: "https://drive.google.com/file/d/11SMv4hmFUM71MWcPYm5qXf5j-tJgeAWp/preview"
+    movie: "aun-no"
   },
   {
     id: "face-off",
@@ -95,7 +95,7 @@ const MOVIES = [
     trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
     image: "images/karate-kid-part-2.webp",
     post: "posters/karate-kid-part-2.webp",
-    movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
+    movie: "Próximamente",
     estreno: "Próximamente"
   },
   {
@@ -109,7 +109,7 @@ const MOVIES = [
     trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
     image: "images/karate-kid-part-3.webp",
     post: "posters/karate-kid-part-3.webp",
-    movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
+    movie: "Próximamente",
     estreno: "Próximamente"
   },
   {
@@ -123,7 +123,7 @@ const MOVIES = [
     trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
     image: "images/the-next-karate-kid.webp",
     post: "posters/the-next-karate-kid.webp",
-    movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
+    movie: "Próximamente",
     estreno: "Próximamente"
   },
   {
@@ -233,7 +233,7 @@ const MOVIES = [
     trailerUrl: "trailers/venom.mp4",
     image: image,
     post: "posters/venom.webp",
-    movie: "",
+    movie: "Próximamente",
     estreno: "Próximamente"
   },
   {
@@ -350,8 +350,8 @@ const MOVIES = [
     genres: ["Aventura","Infantil","Acción"],
     description:"Un niño vikingo llamado Hipo desafía la tradición al hacerse amigo de un dragón llamado Chimuelo. Cuando surge una antigua amenaza que pone en peligro a ambas especies, la amistad de Hipo con Chimuelo se convierte en la clave para un nuevo futuro.",
     trailerUrl: "trailers/",
-    image: "images/how-to-train-your-dragon-2025.webp",
-    post: "posters/how-to-train-your-dragon-2025.webp",
+    image: "images/how-train-your-dragon-2025.webp",
+    post: "posters/how-train-your-dragon-2025.webp",
     movie: "https://drive.google.com/file/d/1H38GlsIAHeh0wPGTgpz7woih5sktNfwB/preview"
   },
   { id: "avatar-2009",
@@ -364,7 +364,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/avatar.jpeg",
     post: "posters/avatar-2009.webp",
-    movie: "https://drive.google.com/file/d/16JSSJ3zfvpZGG7zNGXqZ2DicCFyqrfGU/preview"
+    movie: "https://drive.google.com/file/d/1nKQ1tPidCTYulHAHgrngI5eDGYKnW0He/preview"
   },
   {
     id: "avatar2-elcaminodelagua",
@@ -390,7 +390,7 @@ const MOVIES = [
     trailerUrl: "trailers/avatar3-fireandash.mp4",
     image: "images/avatar3-fireandash.webp",
     post: "posters/avatar3-fireandash.webp",
-    movie: "",
+    movie: "Próximamente",
     estreno: "Próximamente"
   },
   {
@@ -2056,4 +2056,4 @@ const MOVIES = [
 ];
 
 // (Opcional) Exponerlo globalmente
-window.MOVIES = MOVIES;
+window.MOVIES = MOVIES; 
