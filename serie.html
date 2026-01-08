@@ -130,7 +130,7 @@ body {
 </style>
 </head>
 <body class="movie-page">
-<div class="back-btn"><a href="series.html">← Volver</a></div>
+<div class="back-btn"><a href="#" onclick="goBack(event)">← Volver</a></div>
 
 <div class="serie-container">
   <div class="serie-hero" id="serieHero">
@@ -727,6 +727,21 @@ function selectEpisode(num) {
 renderHero(currentEp);
 renderList();
 </script>
+
+<script>
+function goBack(e) {
+  e.preventDefault();
+
+  // Si existe historial real
+  if (window.history.length > 1) {
+    window.history.back();
+  } else {
+    // Fallback seguro
+    window.location.href = "series.html";
+  }
+}
+</script>
+
 </body>
 <footer>
 © 2025 Share Films — Todos los derechos reservados.<br>
