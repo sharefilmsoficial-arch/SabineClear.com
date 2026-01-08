@@ -15,7 +15,8 @@ const MOVIES = [
     trailerUrl: "trailers/spiderman-into-the-spiderverse.mp4",
     image: "images/spiderman-into-the-spiderverse.webp",
     post : "posters/spiderman-into-the-spiderverse.webp",
-    movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview"
+    movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview",
+    productoras: ["Sony Pictures Entertainment","Marvel Entertainment","Columbia Pictures","Sony Pictures Animation","Avi Arad Productions","Lord Miller"]
   },
   {
     id: "spiderman2-across-the-spiderverse",
@@ -92,8 +93,8 @@ const MOVIES = [
     genres: ["Drama", "Deportes", "Inspiradora"],
     description:"",
     trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
+    image: "images/karate-kid-part-2.webp",
+    post: "posters/karate-kid-part-2.webp",
     movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
     estreno: "Próximamente"
   },
@@ -2040,4 +2041,4 @@ const MOVIES = [
 ];
 
 // (Opcional) Exponerlo globalmente
-window.MOVIES = MOVIES; 
+window.MOVIES = MOVIES;
