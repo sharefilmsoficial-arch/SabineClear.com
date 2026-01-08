@@ -107,22 +107,22 @@ const MOVIES = [
     genres: ["Drama", "Deportes", "Inspiradora"],
     description:"",
     trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
+    image: "images/karate-kid-part-3.webp",
+    post: "posters/karate-kid-part-3.webp",
     movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
     estreno: "Próximamente"
   },
   {
     id: "the-next-karate-kid",
-    title: "El Nuevo Karate Kid | Próximamente",
+    title: "Karate Kid 4: La Nueva Aventura | Próximamente",
     year: 1994,
     duration: "2h ",
     rating: "PG",
     genres: ["Drama","Deportes", "Inspiradora"],
     description:"",
     trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
+    image: "images/the-next-karate-kid.webp",
+    post: "posters/the-next-karate-kid.webp",
     movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview",
     estreno: "Próximamente"
   },
@@ -163,7 +163,7 @@ const MOVIES = [
     description: "",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/la-leyenda-de-la-llorona.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -177,7 +177,7 @@ const MOVIES = [
     description: "",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/la-leyenda-de-las-momias.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -191,7 +191,7 @@ const MOVIES = [
     description: "",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/la-leyenda-del-chupacabras.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -205,7 +205,7 @@ const MOVIES = [
     description: "",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/la-leyenda-del-charro-negro.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -232,7 +232,7 @@ const MOVIES = [
     description: "El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.",
     trailerUrl: "trailers/venom.mp4",
     image: image,
-    post: loading,
+    post: "posters/venom.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -260,7 +260,7 @@ const MOVIES = [
     description: "Eddie y Venom están huyendo. Perseguidos por sus dos mundos y con la red cerrándose, el dúo se ve obligado a tomar una decisión devastadora que echará el telón al último baile de Venom y Eddie.",
     trailerUrl: "trailers/venom-3.mp4",
     image: "https://m.media-amazon.com/images/S/pv-target-images/c2d6430ada2a73209fc05ff1e79cd3dfdf46c92326bed76262d40bd5033e2bb4.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/b6ecdea0a5f796ac6716aac314cd15b49bfd5efcb863aecaac91ef12a0fe3625.jpg",
+    post: "posters/venom-the-last-dance.webp",
     movie: "https://drive.google.com/file/d/1-I98WaJ_C622i2YMeBFjcEn43808KgmR/preview"
   },
   {
@@ -313,7 +313,7 @@ const MOVIES = [
     trailerUrl: "trailers/dragon.mp4",
     image: "images/dragon.jpg",
     post: "https://m.media-amazon.com/images/S/pv-target-images/2216969f4080744c6652d39f24f3889577623e22dbb36656145b4c2d4939a107.jpg",
-    movie: ""
+    movie: "https://drive.google.com/file/d/1SogsL2NEz3IsfK2FnIj0RaWSrwXpGOLP/preview"
   },
   {
     id: "how-train-your-dragon-2",
@@ -352,7 +352,7 @@ const MOVIES = [
     trailerUrl: "trailers/",
     image: "images/how-to-train-your-dragon-2025.webp",
     post: "posters/how-to-train-your-dragon-2025.webp",
-    movie: ""
+    movie: "https://drive.google.com/file/d/1H38GlsIAHeh0wPGTgpz7woih5sktNfwB/preview"
   },
   { id: "avatar-2009",
     title: "Avatar",
@@ -600,7 +600,7 @@ const MOVIES = [
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
     image: "images/five-nights-at-freddys2.webp",
     post: "https://i.ytimg.com/vi/D0hX6VvGgBg/maxresdefault.jpg",
-    movie: ""
+    movie: "https://drive.google.com/file/d/1KUJquo9WMVegVQWaanyXAuWEWo4PjdAF/preview"
   },
   {
     id: "five-nights-at-freddys3",
@@ -1003,7 +1003,7 @@ const MOVIES = [
     description:"",
     trailerUrl: sampleTrailer,
     image: image,
-    post: loading,
+    post: "posters/ironman-2.webp",
     movie: "hola",
     estreno: "Próximamente"
   },
@@ -1017,7 +1017,7 @@ const MOVIES = [
     description:"",
     trailerUrl: sampleTrailer,
     image: image,
-    post: loading,
+    post: "posters/ironman-3.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -1070,8 +1070,8 @@ const MOVIES = [
     genres: ["Acción", "Aventura","Comedia","Animación"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBzlHxBqvhvJFyM6qx1PSuKzjDmahiwmLd7w&s",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/8d3f810be9313db33593677e5baac43e1e96d527cbf8b0f4edbf2721b5c5846f._UR1920,1080_SX500_FMjpg_.jpg",
+    image: "images/toy-story.webp",
+    post: "posters/toy-story.webp",
     movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
     estreno: "Próximamente"
   },
@@ -1373,8 +1373,8 @@ const MOVIES = [
     genres: [""],
     description:"",
     trailerUrl: sampleTrailer,
-    image: "images/thor-2.webp",
-    post: "posters/thor-2.webp",
+    image: "images/thor.webp",
+    post: "posters/thor.webp",
     movie: "",
     estreno: "Próximamente"
   },
@@ -1696,25 +1696,41 @@ const MOVIES = [
     rating: "B",
     calidad: "360p",
     genres: ["Acción","Aventura"],
-    description:"En la década de 1970, un grupo de soldados y exploradores, acompañados por una fotoperiodista, llega a una isla del Pacífico habitada por un simio gigantesco y otros monstruos. Marlow, un peculiar habitante del lugar, guía a los aventureros a través de las misteriosas junglas y marismas de la isla.",
+    description:"E",
     trailerUrl: "trailers/",
     image: "images/kong_skull_island.webp",
     post: "posters/kong_skull_island.webp",
     movie: "https://drive.google.com/file/d/1Noki1Ua8NOfzfb1UVz2Y9MA_uI5-6Oi9/preview"
 },
 {
-    id: "kong-x-godzilla",
-    title: "Kong X Godzilla",
+    id: "kong-vs-godzilla.webp",
+    title: "Kong vs Godzilla | Próximamente",
     year: 2017,
     duration: "1h 58m",
     rating: "B",
     calidad: "360p",
     genres: ["Acción","Aventura"],
-    description:"En la década de 1970, un grupo de soldados y exploradores, acompañados por una fotoperiodista, llega a una isla del Pacífico habitada por un simio gigantesco y otros monstruos. Marlow, un peculiar habitante del lugar, guía a los aventureros a través de las misteriosas junglas y marismas de la isla.",
+    description:"",
     trailerUrl: "trailers/",
-    image: "images/kong_skull_island.webp",
-    post: "posters/kong_skull_island.webp",
-    movie: ""
+    image: "images/kong-vs-godzilla.webp",
+    post: "posters/kong-vs-godzilla.webp",
+    movie: "",
+    estreno: "Próximamente"
+},
+{
+    id: "kong-x-godzilla-new-empire",
+    title: "Kong X Godzilla: Nuevo Imperio | Próximamente",
+    year: 2017,
+    duration: "1h 58m",
+    rating: "B",
+    calidad: "360p",
+    genres: ["Acción","Aventura"],
+    description:"",
+    trailerUrl: "trailers/",
+    image: "images/kong-x-godzilla-new-empire.webp",
+    post: "posters/kong-x-godzilla-new-empire.webp",
+    movie: "",
+    estreno: "Próximamente"
 },
 {
     id: "demon-slayer-kimetsu-no-yaiba-infinity-castle",
@@ -1830,7 +1846,7 @@ const MOVIES = [
 },
 {
     id: "pistolero-desperado",
-    title: "Pistolero (Desperado) | Próximamente",
+    title: "Pistolero (Desperado)",
     year: 1995,
     duration: "1h 44m",
     rating: "B-15",
@@ -1840,8 +1856,7 @@ const MOVIES = [
     trailerUrl: "trailers/",
     image: "images/desperado.webp",
     post: "posters/desperado.webp",
-    movie: "",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1EkxM67tdGXVt8i1e2ZJn2PrOuXwQB83L/preview"
 },
 {
     id: "movie-4.1",
