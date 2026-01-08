@@ -3,13 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Película</title>
+<title>SabineClear Películas</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="movie-page">
 
 <div id="app">
-  <div class="back-btn"><a href="#" onclick="goBack(event)">← Volver</a></div>
+
+  <div class="back-btn">
+  <a href="#" onclick="goBack(event)">← Volver</a>
+  </div>
 
   <div class="movie-hero" id="hero">
     <div id="videoContainer">
@@ -85,16 +88,17 @@
 </div>
 
 <script src="movies.js"></script>
+<script src="amazon-prime/publicidad.js"></script>
 
 <script>
 function goBack(e) {
   e.preventDefault();
 
-  // Si hay página anterior en el historial
-  if (document.referrer && document.referrer !== window.location.href) {
-    history.back();
+  // Si existe historial real
+  if (window.history.length > 1) {
+    window.history.back();
   } else {
-    // Si no hay historial → ir a index.html
+    // Fallback seguro
     window.location.href = "index.html";
   }
 }
@@ -118,7 +122,7 @@ if(!movie){
 }
 
 qs('#title').textContent = movie.title;
-qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • Clasificación: ${movie.rating || ''} • Calidad: ${movie.calidad || ''}`;
+qs('#meta').textContent = `${movie.year || ''} • ${movie.duration || ''} • Clasificación: ${movie.rating || ''} • Calidad: ${movie.calidad || ''} • Géneros: ${movie.genres || ''}`;
 qs('#description').textContent = movie.description || "Sin descripción disponible.";
 
 // Definir bgVideo y toggleMute en scope global
@@ -130,33 +134,30 @@ const playTrailerBtn = document.getElementById("playTrailerBtn");
 setTimeout(() => {
   if (!movie.trailerUrl) return;
 
+  bgVideo.style.display = "block";
   bgVideo.src = movie.trailerUrl;
   bgVideo.muted = true;
+  bgVideo.currentTime = 0;
 
-  bgVideo.load();
   bgVideo.play().catch(e => console.warn("Autoplay bloqueado:", e));
 
-  bgVideo.onended = () => {
-    bgVideo.pause();
-    bgVideo.currentTime = 0;
-  };
-
+  bgVideo.onended = restorePoster;
 }, 6000);
 
 // ▶ Botón para reproducir SOLO el tráiler
 playTrailerBtn.addEventListener("click", () => {
   if (!movie.trailerUrl) return;
 
+  bgVideo.style.display = "block";
   bgVideo.src = movie.trailerUrl;
   bgVideo.muted = false;
   bgVideo.currentTime = 0;
-  bgVideo.play();
 
-  bgVideo.onended = () => {
-    bgVideo.pause();
-    bgVideo.currentTime = 0;
-  };
+  bgVideo.play();
+  bgVideo.onended = restorePoster;
+
 });
+
 
 // Fondo estático si no hay tráiler
 const hero = qs('#hero');
@@ -166,6 +167,12 @@ if (movie.post) {
   hero.style.backgroundPosition = "center";
 } else {
   hero.classList.add('no-video');
+}
+function restorePoster() {
+  bgVideo.pause();
+  bgVideo.currentTime = 0;
+  bgVideo.src = "";              // quita el video
+  bgVideo.style.display = "none"; // oculta el video
 }
 
 // 🔇 Botón mute/unmute
@@ -440,22 +447,28 @@ loadComments();
 
 <script>
 // =============================
-// 🎬 CARRUSEL DE PELÍCULAS SIMILARES (solo género)
+// 🎬 CARRUSEL - PELÍCULAS SIGUIENTES
 // =============================
 
-function getGenreMovies(movie) {
-  if (!movie.genre) return [];
-  return MOVIES.filter(m => m.genre === movie.genre && m.id !== movie.id);
+// Encontrar índice de la película actual
+const currentIndex = MOVIES.findIndex(m => m.id === movie.id);
+
+// Si no la encuentra, evita error
+let related = [];
+if (currentIndex !== -1) {
+  for (let i = currentIndex + 1; i < MOVIES.length; i++) {
+    related.push(MOVIES[i]);
+  }
+
+  // Si quieres que continúe desde el inicio cuando se acaben
+  for (let i = 0; i < currentIndex; i++) {
+    related.push(MOVIES[i]);
+  }
 }
 
-// Obtener relacionadas
-let related = getGenreMovies(movie);
-
-// Aleatorizar
-related = related.sort(() => Math.random() - 0.5);
-
-// Limitar cuántas aparecen
+// Limitar cuántas mostrar
 related = related.slice(0, 15);
+
 
 // Crear tarjetas
 const track = document.getElementById("relatedCarousel");
@@ -529,6 +542,45 @@ track.addEventListener("mouseup", e => {
   if (endX < startX - 40) moveCarousel(-cardWidth);
   if (endX > startX + 40) moveCarousel(cardWidth);
 });
+</script>
+<section id="gallerySection" style="padding:32px; margin-top:40px;">
+  <h2 style="margin-bottom:16px;">Descarga Amazon Prime para una mejor cálidad y variedad</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-track" id="galleryCarousel"></div>
+
+    <button class="carousel-btn prev" id="galleryPrev">❮</button>
+    <button class="carousel-btn next" id="galleryNext">❯</button>
+  </div>
+</section>
+
+<script>
+// =============================
+// ⭐ CARRUSEL AMAZON PRIME
+// =============================
+const galleryTrack = document.getElementById("galleryCarousel");
+
+// Usar PRIME_MOVIES desde publicidad.js
+PRIME_MOVIES.forEach(m => {
+  const item = document.createElement("div");
+  item.className = "carousel-item prime-card";
+
+  item.innerHTML = `
+    <img src="${m.image}" alt="${m.title}">
+    
+    <div class="prime-info">
+      <strong class="prime-title">${m.title}</strong>
+      <p class="prime-sub">Disponible en Amazon Prime</p>
+
+      <button class="prime-btn" onclick="window.open('${m.link}', '_blank')">
+        Ver más
+      </button>
+    </div>
+  `;
+
+  galleryTrack.appendChild(item);
+});
+
 </script>
 
 <!-- === FOOTER === -->
