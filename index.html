@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>SabineClear.com</title>
-<link rel="shortcut icon" href="logo-removebg-preview.png" type="image/x-icon">
+<link rel="shortcut icon" href="icons/SC.png" type="image/x-icon">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +17,7 @@
 </div>
   
   <div class="logo">
-  <img src="logo-removebg-preview.png" alt="ShareSeries">
+  <img src="icons/SabineClear.png" alt="ShareSeries">
 </div>
 
   <input id="search" placeholder="Buscar películas..." />
@@ -44,6 +44,7 @@ Si decides permanecer en ShareFilms, quiere decir que has leído, comprendido y 
     <li><a href="series.html">Series</a></li>
     <li><a href="sagas.html">Sagas</a></li>
     <li><a href="anime.html">Animes</a></li>
+    <li><a href="productoras.html">Productoras</a></li>
     <li class="dropdown">
   <span class="drop-btn">Géneros ▾</span>
   <ul class="dropdown-menu">
@@ -170,10 +171,13 @@ document.querySelectorAll(".dropdown-btn").forEach(btn => {
 
       <!-- CAMPO PASSWORD con ojo -->
       <div class="password-container">
-          <input type="password" id="loginPassword" name="password" placeholder="Contraseña" required>
-          <span class="toggle-password" onclick="togglePassword('loginPassword', this)">👁️</span>
-      </div>
-
+  <input type="password" id="registerPassword" name="password" placeholder="Contraseña" required>
+  <img 
+    src="icons/visible.png" 
+    class="toggle-password" 
+    onclick="toggleRegisterPassword(this)"
+    alt="Mostrar contraseña">
+</div>
       <button type="submit" class="btnBlue">Acceder</button>
     </form>
 
@@ -270,6 +274,19 @@ footer a:hover {
 }
 
 </style>
+<script>
+function toggleRegisterPassword(icon) {
+  const input = document.getElementById("registerPassword");
+
+  if (input.type === "password") {
+    input.type = "text";
+    icon.src = "icons/cifrado.png";
+  } else {
+    input.type = "password";
+    icon.src = "icons/visible.png";
+  }
+}
+</script>
 
 <script>
 document.getElementById("btnLogin").onclick = () => {
@@ -339,7 +356,8 @@ document.querySelectorAll(".dropdown").forEach(drop => {
 <a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
 <a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
 <a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms </a> · 
-<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a> · 
+<a href="https://sharefilmsoficial-arch.github.io/Vortex_by_ShareFilms" target="_blank">Share Films 3.1 - Vortex</a>
 </footer>
 </body>
 </html>
