@@ -355,16 +355,6 @@ body {
     width: 100%;
     padding-right: 40px;
 }
-
-.toggle-password {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 20px;
-    user-select: none;
-  }
   
 footer {
   text-align:center;
@@ -682,4 +672,99 @@ footer a:hover {
 .prime-btn:hover{
   background:#5a5a5a;
   transform: scale(1.05);
+}
+/* ===== CONTRASEÑA (FIX FINAL) ===== */
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-container input {
+  width: 100%;
+  padding-right: 38px; /* espacio para el ojo */
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 20px;     /* 👁️ tamaño REAL */
+  height: 20px;
+
+  cursor: pointer;
+  user-select: none;
+
+  display: block;
+  object-fit: contain;
+  opacity: 0.75;
+}
+
+.toggle-password:hover {
+  opacity: 1;
+}
+.login-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+.login-content {
+  background: #071223;
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.login-content input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #0b1b26;
+  color: white;
+}
+.btn-cancelar {
+  background: #444;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cancelar:hover {
+  background: #666;
+}
+
+/* X de cerrar */
+.cerrar-login {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.cerrar-login:hover {
+  color: #ff4d4d;
+}
+
+/* Botones abajo */
+.acciones-login {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 16px;
 }
