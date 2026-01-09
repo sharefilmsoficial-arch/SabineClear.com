@@ -589,6 +589,69 @@ PRIME_MOVIES.forEach(m => {
 });
 
 </script>
+<script>
+// =============================
+// 🎡 LÓGICA CARRUSEL AMAZON PRIME (igual al primero)
+// =============================
+let galleryPosition = 0;
+const galleryCardWidth = 165; // ajusta si tus cards son más grandes
+const galleryVisibleCards = 5;
+
+const galleryPrev = document.getElementById("galleryPrev");
+const galleryNext = document.getElementById("galleryNext");
+
+galleryNext.addEventListener("click", () => moveGallery(-galleryCardWidth));
+galleryPrev.addEventListener("click", () => moveGallery(galleryCardWidth));
+
+function moveGallery(amount) {
+  galleryPosition += amount;
+
+  const maxScroll = -(galleryCardWidth * (PRIME_MOVIES.length - galleryVisibleCards));
+
+  if (galleryPosition < maxScroll) galleryPosition = 0;       // loop
+  if (galleryPosition > 0) galleryPosition = maxScroll;      // loop
+
+  galleryTrack.style.transform = `translateX(${galleryPosition}px)`;
+}
+
+// =============================
+// 🔁 AUTO DESPLAZAMIENTO
+// =============================
+let galleryAuto = setInterval(() => moveGallery(-galleryCardWidth), 3000);
+
+document.querySelector("#gallerySection .carousel-container")
+  .addEventListener("mouseenter", () => clearInterval(galleryAuto));
+
+document.querySelector("#gallerySection .carousel-container")
+  .addEventListener("mouseleave", () => {
+    galleryAuto = setInterval(() => moveGallery(-galleryCardWidth), 3000);
+  });
+
+// =============================
+// 📱 TOUCH / MOUSE SWIPE
+// =============================
+let galleryStartX = 0;
+
+galleryTrack.addEventListener("touchstart", e => {
+  galleryStartX = e.touches[0].clientX;
+});
+
+galleryTrack.addEventListener("touchend", e => {
+  const endX = e.changedTouches[0].clientX;
+  if (endX < galleryStartX - 40) moveGallery(-galleryCardWidth);
+  if (endX > galleryStartX + 40) moveGallery(galleryCardWidth);
+});
+
+galleryTrack.addEventListener("mousedown", e => {
+  galleryStartX = e.clientX;
+});
+
+galleryTrack.addEventListener("mouseup", e => {
+  const endX = e.clientX;
+  if (endX < galleryStartX - 40) moveGallery(-galleryCardWidth);
+  if (endX > galleryStartX + 40) moveGallery(galleryCardWidth);
+});
+</script>
 
 <!-- === FOOTER === -->
 <footer>
