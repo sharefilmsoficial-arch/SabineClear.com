@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Acción – Share Films</title>
+
+<link rel="shortcut icon" href="logo-removebg-preview.png" type="image/x-icon">
+<link rel="stylesheet" href="style.css">
+
+<!-- Scripts -->
+<script src="movies.js" defer></script>
+<script src="accion.js" defer></script>
+</head>
+<body>
+
+<!-- === TOPBAR === -->
+<header class="topbar">
+  <div class="menu-toggle" id="menuToggle">
+    <span></span><span></span><span></span>
+  </div>
+  
+  <div class="logo">
+    <a href="index.html">
+      <img src="logo-removebg-preview.png" alt="ShareFilms">
+    </a>
+  </div>
+
+  <input id="search" placeholder="Buscar películas..." />
+
+  <!-- Botones -->
+  <button id="btnLogin" class="btnBlue">Iniciar sesión</button>
+  <button id="btnRegister" class="btnBlue">Crear cuenta</button>
+</header>
+
+<!-- === MENÚ LATERAL === -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="series.html">Series</a></li>
+    <li><a href="sagas.html">Sagas</a></li>
+    <li><a href="anime.html">Animes</a></li>
+    <li class="dropdown">
+  <span class="drop-btn">Géneros ▾</span>
+  <ul class="dropdown-menu">
+    <li><a href="accion.html">Acción</a></li>
+    <li><a href="animacion.html">Animación</a></li>
+    <li><a href="comedia.html">Comedia</a></li>
+    <li><a href="terror.html">Terror</a></li>
+    <li><a href="jokefilms.html">Joke</a></li>
+  </ul>
+    </li>
+
+    <li class="dropdown">
+  <span class="drop-btn">Más ▾</span>
+  <ul class="dropdown-menu">
+    <li><a href="proximamente.html">Próximamente</a></li>
+    <li><a href="mas-recientes.html">Más Recientes</a></li>
+    <li><a href="mas-viejitas.html">Más Viejitas</a></li>
+  </ul>
+    </li>
+  </ul>
+</nav>
+
+<!-- === CONTENIDO PRINCIPAL === -->
+<main>
+
+  <h2 style="padding:20px; color:#00C0FF; text-shadow:0 0 10px #00c0ff75;">
+    Acción
+  </h2>
+
+  <section class="gallery" id="accion-gallery"></section>
+
+</main>
+
+<!-- === Modal Login === -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <h2>Iniciar Sesión</h2>
+
+    <form action="api/login.php" method="POST">
+      <input type="email" name="email" placeholder="Correo" required>
+
+      <div class="password-container">
+          <input type="password" id="loginPassword" name="password" placeholder="Contraseña" required>
+          <span class="toggle-password" onclick="togglePassword('loginPassword', this)">👁️</span>
+      </div>
+
+      <button type="submit" class="btnBlue">Acceder</button>
+    </form>
+  </div>
+</div>
+
+<!-- === Modal Registro === -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <h2>Crear Cuenta</h2>
+
+    <form action="api/registrar.php" method="POST">
+      <input type="text" name="nombre" placeholder="Nombre completo" required>
+      <input type="email" name="email" placeholder="Correo" required>
+
+      <div class="password-container">
+          <input type="password" id="registerPassword" name="password" placeholder="Contraseña" required>
+          <span class="toggle-password" onclick="togglePassword('registerPassword', this)">👁️</span>
+      </div>
+
+      <button type="submit" class="btnBlue">Registrarme</button>
+    </form>
+  </div>
+</div>
+
+<style>
+.btnBlue {
+  background: #0099ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+}
+.modal-content {
+  background: #071223;
+  padding: 20px;
+  margin: 10% auto;
+  width: 300px;
+  border-radius: 10px;
+  color: white;
+}
+</style>
+
+<script>
+// Mostrar login
+document.getElementById("btnLogin").onclick = () => {
+  document.getElementById("loginModal").style.display = "block";
+};
+// Mostrar registro
+document.getElementById("btnRegister").onclick = () => {
+  document.getElementById("registerModal").style.display = "block";
+};
+</script>
+
+<!-- Menú lateral -->
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const sideMenu = document.getElementById("sideMenu");
+
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  sideMenu.classList.toggle("active");
+});
+document.addEventListener("click", (e) => {
+  if (!sideMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+    sideMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+  }
+});
+</script>
+
+<!-- Mostrar/Ocultar Password -->
+<script>
+function togglePassword(id, icon) {
+  const input = document.getElementById(id);
+  if (input.type === "password") {
+    input.type = "text";
+    icon.textContent = "🙈";
+  } else {
+    input.type = "password";
+    icon.textContent = "👁️";
+  }
+}
+</script>
+
+<!-- === Menú Desplegable(Funcion de desplegamiento) === -->
+<script>
+document.querySelectorAll(".dropdown").forEach(drop => {
+  const btn = drop.querySelector(".drop-btn");
+  const menu = drop.querySelector(".dropdown-menu");
+
+  btn.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  });
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const search = document.getElementById("search");
+  const gallery = document.getElementById("accion-gallery");
+
+  if (typeof MOVIES === "undefined") {
+    console.error("MOVIES no está definido");
+    return;
+  }
+
+  /* === FILTRAR SOLO ACCIÓN (UNA VEZ) === */
+  const ACCION = MOVIES.filter(m => {
+    if (Array.isArray(m.genres)) {
+      return m.genres.some(g => g.toLowerCase().includes("accion"));
+    }
+    if (typeof m.genre === "string") {
+      return m.genre.toLowerCase().includes("accion");
+    }
+    return false;
+  });
+
+  /* === PINTAR TARJETAS === */
+  function pintar(lista) {
+    gallery.innerHTML = "";
+
+    if (lista.length === 0) {
+      gallery.innerHTML = `
+        <p style="color:#aaa; padding:20px;">
+          No se encontraron resultados
+        </p>`;
+      return;
+    }
+
+    lista.forEach(m => {
+      const card = createMovieCard(m);
+      if (card) gallery.appendChild(card);
+    });
+  }
+
+  /* Mostrar todo al cargar */
+  pintar(ACCION);
+
+  /* === BUSCADOR (IGUAL A SAGAS) === */
+  search.addEventListener("input", e => {
+    const q = e.target.value.toLowerCase();
+
+    const resultado = ACCION.filter(m =>
+      (m.title || m.name || "").toLowerCase().includes(q)
+    );
+
+    pintar(resultado);
+  });
+
+});
+</script>
+
+<!-- === FOOTER === -->
+<footer>
+© 2025 Share Films — Todos los derechos reservados.<br>
+<a href="https://whatsapp.com/channel/0029VbBtBvR2UPBOALdRU71t" target="_blank">WhatsApp Channel🪀</a> ·
+<a href="https://chat.whatsapp.com/HesN0nsEOeN0PbAJFevL37?mode=wwt" target="_blank">WhatsApp Group🪀</a> ·
+<a href="https://apeiros173.github.io/ZonaDeportiva.com/">Zona Deportiva</a> ·
+<a href="https://apeiros173.github.io/ShareFilms-Peliculas-Gratis/">Share Films 1 - Prototipo</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/PrimeFilms/" target="_blank">Share Films 2 - PrimeFilms</a> ·
+<a href="https://sharefilmsoficial-arch.github.io/ShareFilms3.PeliculasGratis/" target="_blank">Share Films 3.0</a>
+</footer>
+
+</body>
+</html>
