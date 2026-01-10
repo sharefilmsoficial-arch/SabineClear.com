@@ -193,63 +193,6 @@ document.querySelectorAll(".dropdown").forEach(drop => {
 });
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const search = document.getElementById("search");
-  const gallery = document.getElementById("accion-gallery");
-
-  if (typeof MOVIES === "undefined") {
-    console.error("MOVIES no está definido");
-    return;
-  }
-
-  /* === FILTRAR SOLO ACCIÓN (UNA VEZ) === */
-  const ACCION = MOVIES.filter(m => {
-    if (Array.isArray(m.genres)) {
-      return m.genres.some(g => g.toLowerCase().includes("accion"));
-    }
-    if (typeof m.genre === "string") {
-      return m.genre.toLowerCase().includes("accion");
-    }
-    return false;
-  });
-
-  /* === PINTAR TARJETAS === */
-  function pintar(lista) {
-    gallery.innerHTML = "";
-
-    if (lista.length === 0) {
-      gallery.innerHTML = `
-        <p style="color:#aaa; padding:20px;">
-          No se encontraron resultados
-        </p>`;
-      return;
-    }
-
-    lista.forEach(m => {
-      const card = createMovieCard(m);
-      if (card) gallery.appendChild(card);
-    });
-  }
-
-  /* Mostrar todo al cargar */
-  pintar(ACCION);
-
-  /* === BUSCADOR (IGUAL A SAGAS) === */
-  search.addEventListener("input", e => {
-    const q = e.target.value.toLowerCase();
-
-    const resultado = ACCION.filter(m =>
-      (m.title || m.name || "").toLowerCase().includes(q)
-    );
-
-    pintar(resultado);
-  });
-
-});
-</script>
-
 <!-- === FOOTER === -->
 <footer>
 © 2025 Share Films — Todos los derechos reservados.<br>
