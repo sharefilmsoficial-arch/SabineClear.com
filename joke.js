@@ -39,7 +39,7 @@ const MOVIES = [
   },
   {
     id: "inside-snout2",
-    title: "Intenso Hozico 2",
+    title: "Salvajemente 2",
     year: 2023,
     year: 2024,
     duration: "1h 36m",
