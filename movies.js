@@ -16,7 +16,7 @@ const MOVIES = [
     image: "images/spiderman-into-the-spiderverse.webp",
     post : "posters/spiderman-into-the-spiderverse.webp",
     movie: "https://drive.google.com/file/d/1Gp-v1xvRausPDh9c88yxOSFusXM9dkwE/preview",
-    productoras: ["Sony Pictures Entertainment","Marvel Entertainment","Columbia Pictures","Sony Pictures Animation","Avi Arad Productions","Lord Miller"]
+    producer: ["Sony Pictures Entertainment","Marvel Entertainment","Columbia Pictures","Sony Pictures Animation","Avi Arad Productions","Lord Miller"]
   },
   {
     id: "spiderman2-across-the-spiderverse",
@@ -40,7 +40,7 @@ const MOVIES = [
     genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
     description: "[Próximamente]",
     image: "images/beyond-the-spiderverse.jpg",
-    post: "https://m.media-amazon.com/images/M/MV5BMjQwZWExNzAtOTEzZC00NTI3LTk1MDctYjQ1M2M1MzQ5YzljXkEyXkFqcGc@._V1_.jpg",
+    post: "spiderman3-beyond-into-the-spiderverse.webp",
     trailerUrl: "",
     movie: "aun-no"
   },
@@ -81,7 +81,7 @@ const MOVIES = [
       "Daniel se muda a California y sufre acoso hasta que un sabio maestro de karate, el Sr. Miyagi, le enseña el arte del equilibrio y la disciplina.",
     trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
     image: "https://m.media-amazon.com/images/S/pv-target-images/8525873a8c8da460d36c6230856d1080c6a995670b1e15100fd796d18d56bc3e.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/36c87917428a50fdbb5d7481433ddbddf544083e8d6d2b141ec61e84f5a5448c.jpg",
+    post: "posters/karate-kid-1984.webp",
     movie: "https://drive.google.com/file/d/1vytWPJ8SuHa5cLsXWXQFHsCA26jYspc5/preview"
   },
   {
@@ -125,6 +125,19 @@ const MOVIES = [
     post: "posters/the-next-karate-kid.webp",
     movie: "Próximamente",
     estreno: "Próximamente"
+  },
+  {
+    id: "karate-kid",
+    title: "Karate Kid (2010)",
+    year: 2010,
+    duration: "2h 6min",
+    rating: "PG",
+    genres: ["Drama", "Deportes", "Inspiradora"],
+    description:"",
+    trailerUrl: "cLsXWXQFHsCA26jYspc5/preview",
+    image: "images/karate-kid-2010.webp",
+    post: "posters/karate-kid-2010.webp",
+    movie: "Próximamente"
   },
   {
     id: "karate-kid-legends",
@@ -219,7 +232,7 @@ const MOVIES = [
     description: "Cinco años después de haber renunciado a sus poderes, Leo San Juan se encuentra en Veracruz acompañando a Nando cuando una antigua maldición local regresa. Esta vez, Leo no tiene poderes, no tiene amigos, tiempo y, al parecer… tampoco oportunidad.",
     trailerUrl: "trailers/la-leyenda-de-los-chaneques.mp4",
     image: "https://m.media-amazon.com/images/S/pv-target-images/1640bf4852cbd0ae978d1277489dc5849a7c1455ba9f5edcfaa60f631ae58bef.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/234088d196d0e848255707bf370ce9bfec12e57d2c77d1e5bc9dcacf001b5108.jpg",
+    post: "posters/la-leyenda-de-los-chaneques.webp",
     movie: "https://drive.google.com/file/d/1j2-DvVDho1-u6DoJhZpr3fG6mpyAMGL5/preview"
   },
   {
@@ -312,7 +325,7 @@ const MOVIES = [
     description:"Hipo, un adolescente vikingo inadaptado ve la oportunidad de cambiar el curso del futuro de su clan cuando se hace amigo de un dragón herido.",
     trailerUrl: "trailers/dragon.mp4",
     image: "images/dragon.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/2216969f4080744c6652d39f24f3889577623e22dbb36656145b4c2d4939a107.jpg",
+    post: "posters/how-train-your-dragon.webp",
     movie: "https://drive.google.com/file/d/1SogsL2NEz3IsfK2FnIj0RaWSrwXpGOLP/preview"
   },
   {
@@ -325,7 +338,7 @@ const MOVIES = [
     description:"Cinco años después de la paz en Berk, Hipo y Desdentao exploran nuevas tierras donde descubren una cueva de hielo con cientos de dragones salvajes y a una misteriosa jinete llamada Valka. Pronto se dan cuenta de que Valka, su madre que se creía muerta, protege a los dragones de un cazador llamado Eret, y que este trabaja para Drago Puño Sangrientor, un villano que quiere esclavizar a todos los dragones para su ejército. Berk se ve amenazada por Drago y su dragón alfa, lo que lleva a una batalla épica en la que Hipo, con la ayuda de su madre y Valka, debe detenerlo y asegurar la paz para siempre.",
     trailerUrl: "trailers/dragon2.mp4",
     image: "https://m.media-amazon.com/images/S/pv-target-images/23015dc809dd71e28155b18cc36279bb1874028facfc0419c23a1505e198970b.jpg",
-    post: "https://m.media-amazon.com/images/S/pv-target-images/d58b307c15c88f7018175db9c3f91476d73f2bd82956cc099be1ee1a4099ca41.jpg",
+    post: "posters/how-train-your-dragon-2.webp",
     movie: "https://drive.google.com/file/d/1HoxHuCgIgetLZk6nuFE6nN9a_1YK9Py_/preview"
   },
   {
@@ -338,7 +351,7 @@ const MOVIES = [
     description: "Hipo y Chimuelo enfrentando una nueva amenaza en forma de un cazador de dragones llamado Grimmel, que quiere capturar a Desdentado. Mientras tanto, el descubrimiento de una Furia Luminosa, una dragona salvaje, pone a prueba la relación entre Hipo y Chimuelo.",
     trailerUrl: "trailers/dragon3.mp4",
     image: "https://m.media-amazon.com/images/S/pv-target-images/daf0864124d5b8b8bf1881a9b0b9e577b3ea10d8af5ec1ffb8e46c5a290d745c.jpg",
-    post: "https://criticinema.com/wp-content/uploads/2019/02/C%C3%B3mo-entrenar-a-tu-drag%C3%B3n-3-cover-1024x436.jpg",
+    post: "posters/how-train-your-dragon-3.webp",
     movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
   },
   {
@@ -376,7 +389,7 @@ const MOVIES = [
     description: "Jake Sully y Neytiri se ven obligados a huir de su hogar debido al regreso de la RDA humana, quienes buscan colonizar Pandora y explotar sus recursos. La familia Sully busca refugio con el clan Metkayina, adaptándose a un nuevo entorno acuático y enfrentándose a un resucitado coronel Quarich, ahora en un cuerpo avatar y buscando venganza.",
     trailerUrl: "trailers/avatar2-elcaminodelagua.mp4",
     image: "images/avatar2.jpeg",
-    post: "https://media.gq.com.mx/photos/639b5e4d8a20ef7d5f5a8c05/16:9/w_2560%2Cc_limit/Avatar%25202-GQ3.jpg",
+    post: "posters/avatar-2.webp",
     movie: "https://drive.google.com/file/d/12RRSn0kLKUea3RbJlg32Z7zLZE7v__B5/preview"
   },
   {
@@ -446,7 +459,7 @@ const MOVIES = [
     movie: "https://drive.google.com/file/u/0/d/1yn5s7n8Cf3hnMtJdND3xG6gMq0DO3kfO/preview"
   },
   {
-    id: "fast-and-furious5",
+    id: "fast-and-furious-5",
     title: "Rápidos y Furiosos 5",
     year: 2011,
     duration: "2h 10min",
@@ -481,7 +494,7 @@ const MOVIES = [
     description:"Marinette viaja a Shanghái para visitar a su tío Wang, pero le roban su bolso con Tikki y el Miraculous de Ladybug. Sola, conoce a Fei, una joven ingeniosa que inicialmente le roba el bolso, pero que se convierte en su aliada. Juntas, descubren una nueva joya mágica llamada Prodigio, que Hawk Moth también está buscando en la ciudad.",
     trailerUrl: "trailers/miraculous-world2.mp4",
     image: "images/miraculous-world-2.webp",
-    post: "https://bandai.com.mx/blog/wp-content/uploads/2022/09/maxresdefault-1024x576.jpeg",
+    post: "posters/miraculous-world2.webp",
     movie: "https://drive.google.com/file/d/1yA_UuoOznsItmT7W0CkAFq8KTgBAQGt5/preview"
   },
   {
@@ -534,7 +547,7 @@ const MOVIES = [
     description:"Un guardián de joyas mágicas convierte a una chica peculiar y a un chico popular en superhéroes. No obstante, jamás podrán revelar su verdadera identidad, ni siquiera el uno al otro.",
     trailerUrl: "trailers/miraculous-awakening.mp4",
     image: "https://preview.redd.it/predictions-hopes-for-the-miraculous-awakening-sequels-v0-i9xn116q7jtb1.jpg?width=640&crop=smart&auto=webp&s=282d8dd69dbe6cce784798e6029b62fb3ca7fbfa",
-    post: "https://miraculous.to/global_data/img/S0E03_2025-08-18_17-38-16.webp",
+    post: "posters/miraculous-awakening.webp",
     movie: "https://drive.google.com/file/d/1LxopTMByDv1hArzUF0mnjodfHOoHJx4h/preview"
   },
   {
@@ -547,7 +560,7 @@ const MOVIES = [
     description:"Sonic intenta atravesar las complejidades de la vida en la Tierra con su nuevo mejor amigo, un humano llamado Tom Wachowski. Deberán unir sus fuerzas para evitar que el malvado Dr. Robotnik capture a Sonic y use sus poderes para dominar el mundo.",
     trailerUrl: "trailers/sonic-the-hedgehog.mp4",
     image: "https://upload.wikimedia.org/wikipedia/en/4/45/Sonic_the_Hedgehog_film_poster.jpg",
-    post: "https://thumbnails.cbsig.net/CBS_Production_Entertainment_VMS/2021/04/22/1888618563964/STH_SAlone_16_9_1920x1080_2995303_1920x1080.jpg",
+    post: "posters/sonic-the-hedgehog.webp",
     movie: "https://drive.google.com/file/d/1aYLsDe1HnNSqVjS7v_tiT-ztdcG3z7eU/preview"
   },
   {
@@ -560,7 +573,7 @@ const MOVIES = [
     description:"Dr. Robotnik escapó del planeta hongo y busca aliarse con Knuckles para encontrar la Esmeralda Maestra, que tiene el poder de hacer realidad los pensamientos. Sonic, ahora intentando ser un héroe, se une con Tails para encontrar la gema antes que sus enemigos.",
     trailerUrl: sampleTrailer,
     image: "https://es.web.img3.acsta.net/pictures/22/02/18/10/20/5195258.jpg",
-    post: "https://diariodevenusville.com/wp-content/uploads/2022/04/sonic_the_hedgehog_two_00.jpg",
+    post: "posters/sonic-2.webp",
     movie: "https://drive.google.com/file/d/1F6fK3gCNh5afr7ARKLWIRgvZ6iyUWnko/preview"
   },
   {
@@ -573,7 +586,7 @@ const MOVIES = [
     description:"Sonic, Tails y Knuckles se enfrentan a un nuevo y poderoso rival, Shadow, un erizo oscuro con poderes similares a los de Sonic. Shadow, que ha estado en estasis por 50 años, es despertado por el Dr. Gerald Robotnik, abulo del Dr. Eggman, quien desea usarlo para sus planes.",
     trailerUrl: sampleTrailer,
     image: "https://dx35vtwkllhj9.cloudfront.net/paramountpictures/sonic-the-hedgehog-3/images/regions/ar/onesheet.jpg",
-    post: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSTsxRDCZ5qygQdB8rPXOfIXWt3-5HIMVoQVEDdfbcqPm2SxYzlIXlR5GbfeJRTKeaPeDQTDRWg1fhUxensydQeNGWoZ7huNzPH5flmZBeQN1R4oBoddLJW_NN_cqsYGF1d2KntyJSjK6n42AJF0VbVoC3xMbsgsHlU7O_ZTXvfnr17hU2P-bgc0dNdhQN/s1196/69.jpg",
+    post: "posters/sonic-the-hedgehog-3.webp",
     movie: "https://drive.google.com/file/d/1GtqiL5g7amckqmsdJyKFsWWEnaolY44g/preview"
   },
   {
@@ -586,7 +599,7 @@ const MOVIES = [
     description:"Mike Schmidt, un guardia de seguridad con problemas que empieza a trabajar en el turno de noche de la abandonada pizzería Freddy Fazbear's Pizza. A medida que pasa sus noches en el trabajo, descubre que las mascotas animatrónicas del lugar cobran vida de manera aterradora, lo que lleva a situaciones de suspense y terror. La trama explora el oscuro secreto de la pizzería, donde los animatrónicos están poseídos por las almas de niños secuestrados.",
     trailerUrl: "trailers/five-nights-at-freddys.mp4",
     image: "https://m.media-amazon.com/images/M/MV5BNzFkMDE2ZmEtOWMwNy00MWM2LThlNjMtZWQzNWY5MTJjZjcxXkEyXkFqcGc@._V1_.jpg",
-    post: "https://www.nintenderos.com/wp-content/uploads/2023/09/fnaf-pelicula-1.jpg",
+    post: "posters/five-nights-at-freddys.webp",
     movie: "https://drive.google.com/file/d/1NTEnMppzmWsNF0ufujXQp_6tr9i09JPF/preview"
   },
   {
@@ -599,7 +612,7 @@ const MOVIES = [
     description:"Ha pasado un año desde la pesadilla sobrenatural en la pizzería Freddy Fazbear. La historia de lo que ocurrió allí se ha convertido en leyenda local, dando pie al primer “Fazfest”. Mike y Vanessa han mantenido en secreto la verdad a Abby, la hermana de 11 años de Mike. Pero cuando Abby decide reencontrarse con Freddy, Bonnie, Chica y Foxy, desata una serie de eventos aterradores que revelarán oscuros secretos sobre el origen de Freddy’s, desvelando un horror oculto por décadas.",
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
     image: "images/five-nights-at-freddys2.webp",
-    post: "https://i.ytimg.com/vi/D0hX6VvGgBg/maxresdefault.jpg",
+    post: "posters/five-nights-at-freddys2.webp",
     movie: "https://drive.google.com/file/d/1KUJquo9WMVegVQWaanyXAuWEWo4PjdAF/preview"
   },
   {
@@ -681,7 +694,7 @@ const MOVIES = [
     description:"Wade Wilson (Deadpool) abandona su retiro para unirse a una versión alterna de Wolverine, con el objetivo de salvar el multiverso de una amenaza externa. La historia comienza cuando la Autoridad de Variación Temporal (TVA) interrumpe la vida de Wade, llevándolo a una misión para enfrentar una crisis que podría borrar su universo de la existencia.",
     trailerUrl: sampleTrailer,
     image: "https://moviepostermexico.com/cdn/shop/files/deadpool_and_wolverine_ver6_xlg_1024x1024@2x.jpg?v=1725044429",
-    post: "https://d2d7ho1ae66ldi.cloudfront.net/ArquivoNoticias/1facf04c-c215-11ee-aa78-d602bea5d5c0/deadpool-3-trailer.jpg",
+    post: "posters/deadpool-3.webp",
     movie: "https://drive.google.com/file/d/1w9pPohiLbkp3GTjTJNqPsh60khrX68Ab/preview"
   },
   {
@@ -746,7 +759,7 @@ const MOVIES = [
     description:"Desde el mundo de Peter Pan, llega una aventura sobre Zarina, un hada inteligente y ambiciosa cautivada por el polvillo de hada azul y sus infinitas posibilidades. Cuando las ideas salvajes de Zarina la meten en problemas, huye de la tierra de las hadas y se une a los piratas intrigantes de Skull Rock. Tinker Bell y sus amigos deben encontrar a Zarina, y luchan contra la banda de piratas liderada por un grumete llamado James, quien pronto se hará conocido como el propio capitán Garfio.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/080efd725db32d326b330fc571906f45804046d1f387839a0d66b12a0e1ca22c.jpg",
-    post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/3fb1340f-6ae4-48c5-8b96-d249d828aec6/compose?aspectRatio=1.78&format=webp&width=1200",
+    post: "posters/tinkerbell-5.webp",
     movie: "https://drive.google.com/file/d/1TYB_T6hH39nAcvvpARykmTiNOdw2rKAQ/preview"
   },
   {
@@ -799,7 +812,7 @@ const MOVIES = [
     description:"Una mujer trata de conseguir pruebas contra una empresa biológica que es culpable por la muerte de su prometido. En compañía de un amigo, la mujer se dirige a una isla en la que ocurren demasiadas muertes sospechosas.",
     trailerUrl: sampleTrailer,
     image: "images/Deep-Sea-Mutant-Snake.webp",
-    post: "https://i.ytimg.com/vi/DN9hIg5Qx6s/maxresdefault.jpg",
+    post: "posters/Deep-Sea-Mutant-Snake.webp",
     movie: "aun no",
     estreno: "Próximamente"
   },
@@ -1057,8 +1070,8 @@ const MOVIES = [
     genres: ["Acción", "Aventura"],
     description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
     trailerUrl: sampleTrailer,
-    post: "https://todoinfantil.com/img/not_img/civil-war-capitan-america-marvel.png",
     image: "images/captain-america3.webp",
+    post: "posters/capitan-america3.webp",
     movie: "https://drive.google.com/file/d/15rJMLextuATJNTDphVzNpwHTre1XCMAr/preview"
   },
   {
@@ -1869,7 +1882,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/spiderman-far-from-home.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1884,7 +1897,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/spiderman-home-coming.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1899,7 +1912,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/spiderman-brand-new-day.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1914,7 +1927,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/avengers-doomsday.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1929,7 +1942,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/avengers-end-game.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1944,7 +1957,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/avengers-infinity-war.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1959,7 +1972,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/avengers-age-of-ultron.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1974,7 +1987,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/avengers.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -1989,7 +2002,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/the-grinch-stole-christmas.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2004,7 +2017,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/the-grinch.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2019,13 +2032,13 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/ghost-rider.webp",
     movie: "",
     estreno: "Próximamente"
 },
 {
     id: "movie-13",
-    title: "Proximamente | Ghost Rider 2",
+    title: "Proximamente | Ghost Rider 2: Espirítu de Venganza",
     year: 2014,
     duration: "1h ",
     rating: "B",
@@ -2034,7 +2047,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: loading,
+    post: "posters/ghost-rider-spirit-of-vengeance.webp",
     movie: "",
     estreno: "Próximamente"
 },
