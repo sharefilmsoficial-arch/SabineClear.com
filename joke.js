@@ -10,7 +10,7 @@ const MOVIES = [
     genres: ["Animación", "Aventura"],
     description: "",
     trailerUrl: sampleTrailer,
-    image: "jokes/the-karate-kid-2.jpg",
+    image: "jokes/images/the-karate-kid-2.jpg",
     movie: ""
   },
   {
@@ -21,7 +21,7 @@ const MOVIES = [
     rating: "PG",
     genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
     description: "",
-    image: "jokes/incredibulls-3.jpg",
+    image: "jokes/images/incredibulls-3.jpg",
     trailerUrl: "trailers/",
     movie: ""
   },
@@ -33,7 +33,7 @@ const MOVIES = [
     rating: "PG",
     genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
     description: "",
-    image: "jokes/meowana.jpg",
+    image: "jokes/images/meowana.jpg",
     trailerUrl: "trailers/",
     movie: ""
   },
@@ -48,7 +48,7 @@ const MOVIES = [
     genres: ["Infantil","Comedia","Animación"],
     description:"Ahora que es adolescente, Riley experimenta nuevos sentimientos como Ansiedad y Envidia, que se imponen a los viejos mientras ella duda sobre si abandonar a sus antiguas amigas por otras de la escuela secundaria.",
     trailerUrl: sampleTrailer,
-    image: "jokes/inside-snout2.jpg",
+    image: "jokes/images/inside-snout2.jpg",
     post: "posters/inside-out2.webp",
     movie: "https://drive.google.com/file/d/19t0x3ixt8Xbf9ZV9dqhqdGWZevUsnt-K/preview"
   },
@@ -60,7 +60,7 @@ const MOVIES = [
     rating: "PG",
     genres: ["Animación", "Acción", "Aventura", "Superhéroes"],
     description: "",
-    image: "jokes/fast_and_the_fragile_the_final_lap.jpg",
+    image: "jokes/images/fast_and_the_fragile_the_final_lap.jpg",
     trailerUrl: "trailers/across-the-spiderverse.mp4",
     movie: ""
   },
@@ -74,7 +74,7 @@ const MOVIES = [
     genres: ["Infantil","Comedia","Animación"],
     description:"Ahora que es adolescente, Riley experimenta nuevos sentimientos como Ansiedad y Envidia, que se imponen a los viejos mientras ella duda sobre si abandonar a sus antiguas amigas por otras de la escuela secundaria.",
     trailerUrl: sampleTrailer,
-    image: "jokes/vicio-intenso2.jpg",
+    image: "jokes/images/vicio-intenso2.jpg",
     post: "posters/inside-out2.webp",
     movie: "https://drive.google.com/file/d/19t0x3ixt8Xbf9ZV9dqhqdGWZevUsnt-K/preview"
   },
@@ -92,6 +92,19 @@ const MOVIES = [
     movie: ""
   },
   {
+    id: "five-nights-at-suputamadre",
+    title: "Five Nights At Suputamadre: Próximamente",
+    year: 2026,
+    duration: "1h 45min",
+    rating: "PG-13",
+    genres: ["Terror","Misterio"],
+    description:"Ha pasado un año desde la pesadilla sobrenatural en la pizzería Freddy Fazbear. La historia de lo que ocurrió allí se ha convertido en leyenda local, dando pie al primer “Fazfest”. Mike y Vanessa han mantenido en secreto la verdad a Abby, la hermana de 11 años de Mike. Pero cuando Abby decide reencontrarse con Freddy, Bonnie, Chica y Foxy, desata una serie de eventos aterradores que revelarán oscuros secretos sobre el origen de Freddy’s, desvelando un horror oculto por décadas.",
+    trailerUrl: "trailers/five-nights-at-freddys2.mp4",
+    image: "jokes/images/five-nights-at-suputamadre.jpg",
+    post: "jokes/posters/five-nights-at-suputamadre.jpg",
+    movie: ""
+  },
+  {
     id: "futbolito",
     title: "futbolito",
     year: 2026,
@@ -100,7 +113,7 @@ const MOVIES = [
     genres: [""],
     description:"",
     trailerUrl: "trailers/",
-    image: "jokes/futbolito.jpg",
+    image: "jokes/images/futbolito.jpg",
     post: "jokes/.png",
     movie: ""
   },
@@ -113,7 +126,7 @@ const MOVIES = [
     genres: ["Terror","Misterio"],
     description:"Ha pasado un año desde la pesadilla sobrenatural en la pizzería Freddy Fazbear. La historia de lo que ocurrió allí se ha convertido en leyenda local, dando pie al primer “Fazfest”. Mike y Vanessa han mantenido en secreto la verdad a Abby, la hermana de 11 años de Mike. Pero cuando Abby decide reencontrarse con Freddy, Bonnie, Chica y Foxy, desata una serie de eventos aterradores que revelarán oscuros secretos sobre el origen de Freddy’s, desvelando un horror oculto por décadas.",
     trailerUrl: "trailers/five-nights-at-freddys2.mp4",
-    image: "jokes/la-desnutricion-del-87.jpg",
+    image: "jokes/images/la-desnutricion-del-87.jpg",
     post: "jokes/",
     movie: ""
   },
@@ -126,7 +139,7 @@ const MOVIES = [
     genres: [""],
     description:"",
     trailerUrl: "trailers/",
-    image: "jokes/la-cariñosa-del-87.jpg",
+    image: "jokes/images/la-cariñosa-del-87.jpg",
     post: "jokes/",
     movie: ""
   },
@@ -139,7 +152,7 @@ const MOVIES = [
     genres: [""],
     description:"",
     trailerUrl: "trailers/",
-    image: "jokes/cloudy-with-achance-of-awa.webp",
+    image: "jokes/images/cloudy-with-achance-of-awa.webp",
     post: "jokes/",
     movie: ""
   },
@@ -152,7 +165,7 @@ const MOVIES = [
     genres: [""],
     description:"",
     trailerUrl: "trailers/",
-    image: "jokes/naruto-live-action.jpg",
+    image: "jokes/images/naruto-live-action.jpg",
     post: "jokes/",
     movie: ""
   },
@@ -165,7 +178,7 @@ const MOVIES = [
     genres: [""],
     description:"",
     trailerUrl: "trailers/",
-    image: "jokes/pvz-live-action.jpg",
+    image: "jokes/images/pvz-live-action.jpg",
     post: "jokes/",
     movie: ""
   },
@@ -178,7 +191,7 @@ const MOVIES = [
     genres: [""],
     description:"",
     trailerUrl: "trailers/",
-    image: "jokes/ratatouille-live-action.jpg",
+    image: "jokes/images/ratatouille-live-action.jpg",
     post: "jokes/",
     movie: ""
   },
@@ -192,7 +205,7 @@ const MOVIES = [
     genres: ["Infantil","Aventura","Animación"],
     description:"El hijo de un tiburón mafioso muere cuando le cae un ancla encima. Un pez con mucho descaro y sueños de grandeza se encontraba en la escena del crimen y, para darse importancia, se atribuye la muerte. Sin duda, un grave error.",
     trailerUrl: sampleTrailer,
-    image: "jokes/espanta-viejas.png",
+    image: "jokes/images/espanta-viejas.png",
     post: "posters/shark-tale.webp",
     movie: "https://drive.google.com/file/d/1DVb8BQ_YxwUtDA_HBRh0PK2Ez16AB7S5/preview"
 },
@@ -205,9 +218,74 @@ const MOVIES = [
     genres: ["Comedia", "Acción","Animación"],
     description:"El Secreto de las Alas 2: Más Allá del Resplandor (2025) cautiva al público con un mágico regreso a Pixie Hollow, donde Campanilla y sus amigas hadas se embarcan en una nueva aventura que combina imágenes impresionantes, momentos emotivos y emocionantes descubrimientos. Esta secuela profundiza el vínculo entre Tink y Periwinkle, a la vez que presenta nuevos reinos y desafíos que celebran la unidad y la maravilla.",
     trailerUrl: sampleTrailer,
-    image: "jokes/Secret-of-the-Wings-2-Beyond-the-Glow.jpg",
+    image: "jokes/images/Secret-of-the-Wings-2-Beyond-the-Glow.jpg",
     post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/1ca81c90-6871-47be-b6f1-3057b17e48e5/compose?aspectRatio=1.78&format=webp&width=1200",
     movie: "https://drive.google.com/file/d/1FbnSkyTL26eRGxc-PZGHgQLz7Kqpa0GB/preview"
+  },
+  {
+    id: "mi-vecino-toretto",
+    title: "Mi Vecino Toretto",
+    year: 2026,
+    duration: "1h 45min",
+    rating: "PG-13",
+    genres: ["Terror","Misterio"],
+    description:"",
+    trailerUrl: "trailers/five-nights-at-freddys2.mp4",
+    image: "jokes/images/mi-vecino-toretto.jpg",
+    post: "jokes/posters/mi-vecino-toretto.jpg",
+    movie: ""
+  },
+  {
+    id: "five-nights-with-freddy",
+    title: "Faiv Naigs With Freddy: Próximamente",
+    year: 2026,
+    duration: "1h 45min",
+    rating: "PG-13",
+    genres: ["Terror","Misterio"],
+    description:"",
+    trailerUrl: "trailers/five-nights-at-freddys2.mp4",
+    image: "jokes/images/five-nights-with-freddy.jpg",
+    post: "jokes/faiv-naigs-at-freddys2.png",
+    movie: ""
+  },
+  {
+    id: "enredados",
+    title: "Enredados: Próximamente",
+    year: 2026,
+    duration: "1h 45min",
+    rating: "PG-13",
+    genres: ["Terror","Misterio"],
+    description:"",
+    trailerUrl: "trailers/five-nights-at-freddys2.mp4",
+    image: "jokes/images/enredados.jpg",
+    post: "jokes/faiv-naigs-at-freddys2.png",
+    movie: ""
+  },
+  {
+    id: "capitana-rubia",
+    title: "Capitana Rubia: Próximamente",
+    year: 2026,
+    duration: "1h 45min",
+    rating: "PG-13",
+    genres: ["Terror","Misterio"],
+    description:"",
+    trailerUrl: "trailers/five-nights-at-freddys2.mp4",
+    image: "jokes/images/capitana-rubia.jpg",
+    post: "jokes/faiv-naigs-at-freddys2.png",
+    movie: ""
+  },
+  {
+    id: "juego-de-gemelas",
+    title: "Juego de Gemelas: Próximamente",
+    year: 2026,
+    duration: "1h 45min",
+    rating: "PG-13",
+    genres: ["Terror","Misterio"],
+    description:"",
+    trailerUrl: "trailers/five-nights-at-freddys2.mp4",
+    image: "jokes/images/juego-de-gemelas.jpg",
+    post: "jokes/faiv-naigs-at-freddys2.png",
+    movie: ""
   }
 ];
 
