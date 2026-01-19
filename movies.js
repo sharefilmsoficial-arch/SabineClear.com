@@ -53,7 +53,7 @@ const MOVIES = [
     genres: ["Acción", "Thriller", "Crimen"],
     description:  "Un agente del FBI se somete a una cirugía experimental para asumir la identidad del terrorista que mató a su hijo. Pero las cosas salen terriblemente mal.",
     trailerUrl: "7tp_UB4jTKujqn/preview",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/c2668312b9f29fb8e5780ddcb9a183831f4acc01347c3b704e098f48477df639.jpg",
+    image: "images/face-off.webp",
     post: "posters/face-off.webp",
     movie: "https://drive.google.com/file/d/1FsEqOKWlq4zMSeYOF-7tp_UB4jTKujqn/preview"
   },
@@ -223,6 +223,20 @@ const MOVIES = [
     estreno: "Próximamente"
   },
   {
+    id: "las-leyendas_el-origen",
+    title: "La Leyendas - El Origen",
+    year: 2018,
+    duration: "1h ",
+    rating: "A",
+    genres: ["Animación", "Fantasía", "Aventura"],
+    description: "",
+    trailerUrl: "trailers/",
+    image: "images/las-leyendas_el-origen.webp",
+    post: "posters/las-leyendas_el-origen.webp",
+    movie: "",
+    estreno: "Próximamente"
+  },
+  {
     id: "la-leyenda-de-los-chaneques",
     title: "La Leyenda de los Chaneques",
     year: 2023,
@@ -231,9 +245,23 @@ const MOVIES = [
     genres: ["Animación", "Fantasía", "Aventura"],
     description: "Cinco años después de haber renunciado a sus poderes, Leo San Juan se encuentra en Veracruz acompañando a Nando cuando una antigua maldición local regresa. Esta vez, Leo no tiene poderes, no tiene amigos, tiempo y, al parecer… tampoco oportunidad.",
     trailerUrl: "trailers/la-leyenda-de-los-chaneques.mp4",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/1640bf4852cbd0ae978d1277489dc5849a7c1455ba9f5edcfaa60f631ae58bef.jpg",
+    image: "images/la-leyenda-de-los-chaneques.webp",
     post: "posters/la-leyenda-de-los-chaneques.webp",
     movie: "https://drive.google.com/file/d/1j2-DvVDho1-u6DoJhZpr3fG6mpyAMGL5/preview"
+  },
+  {
+    id: "la-venganza-del-charro-negro",
+    title: "La Venganza del Charro Negro",
+    year: 2018,
+    duration: "1h ",
+    rating: "A",
+    genres: ["Animación", "Fantasía", "Aventura"],
+    description: "",
+    trailerUrl: "trailers/",
+    image: image,
+    post: "posters/la-venganza-del-charro-negro.jpg",
+    movie: "",
+    estreno: "Próximamente"
   },
   {
     id: "venom",
@@ -244,7 +272,7 @@ const MOVIES = [
     genres: ["Acción", "Ciencia ficción"],
     description: "El periodista Eddie Brock está investigando a Carlton Drake, el célebre fundador de Life Foundation. Brock establece una simbiosis con un ente alienígena que le ofrece superpoderes, pero el ser se apodera de su personalidad y lo vuelve perverso.",
     trailerUrl: "trailers/venom.mp4",
-    image: image,
+    image: "images/venom.webp",
     post: "posters/venom.webp",
     movie: "Próximamente",
     estreno: "Próximamente"
@@ -272,7 +300,7 @@ const MOVIES = [
     genres: ["Acción", "Ciencia ficción"],
     description: "Eddie y Venom están huyendo. Perseguidos por sus dos mundos y con la red cerrándose, el dúo se ve obligado a tomar una decisión devastadora que echará el telón al último baile de Venom y Eddie.",
     trailerUrl: "trailers/venom-3.mp4",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/c2d6430ada2a73209fc05ff1e79cd3dfdf46c92326bed76262d40bd5033e2bb4.jpg",
+    image: "images/venom-the-last-dance.webp",
     post: "posters/venom-the-last-dance.webp",
     movie: "https://drive.google.com/file/d/1-I98WaJ_C622i2YMeBFjcEn43808KgmR/preview"
   },
@@ -285,7 +313,7 @@ const MOVIES = [
     genres: ["Suspenso", "Drama", "Ciencia ficción"],
     description: "Un adolescente y su amigo deben salvar a su padre de un hombre que ha pedido la construcción de dispositivo de tiempo.",
     trailerUrl: "_i5endV/preview",
-    image: "https://m.media-amazon.com/images/M/MV5BYzhmZTExNjktYWNmYS00YzdmLTllZjktYTU5M2ViMDk1MTU4XkEyXkFqcGc@._V1_.jpg",
+    image: "images/clockstoppers.webp",
     post: "https://m.media-amazon.com/images/S/pv-target-images/498665c87a32081ff493eb39995ff60e6c42705eb9c3fc54fbca741099a7f2bd.jpg",
     movie: "https://drive.google.com/file/d/1mi8Ltlqx01KVDLKIIQXL0l05A_i5endV/preview"
   },
@@ -298,7 +326,7 @@ const MOVIES = [
     genres: ["Animación", "Aventura"],
     description: "Buzz Lightyear se embarca en una aventura intergaláctica con un grupo de reclutas ambiciosos y su compañero robot. Los amigos tendrán que aprender a trabajar juntos para escapar del malvado Zurg y su ejército de robots.",
     trailerUrl: "trailers/lightyear.mp4",
-    image: "https://m.media-amazon.com/images/I/71EgLo5pqnL._AC_UF894,1000_QL80_.jpg",
+    image: "images/lightyear.webp",
     post: "https://cdn.bolivia.com/sdi/2022/07/21/lightyear-fecha-estreno-chris-evans-disney-plus-1050224.jpg",
     movie: "https://drive.google.com/file/d/1m5gLKdgBV2loj5qCDIgLakOnUS7SN5T4/preview"
   },
@@ -312,7 +340,7 @@ const MOVIES = [
     description:"Una inundación separa al cachorro Mufasa de sus padres, pero el rey de los leones lo acoge como a uno de los suyos tras demostrar su valentía.Al crecer, una manada de leones desterrados y los celos de su hermano adoptivo lo pondrán en peligro.",
     trailerUrl: "trailers/mufasa.mp4",
     image: "https://images.justwatch.com/poster/326095284/s718/mufasa-el-rey-leon.jpg",
-    post: "https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/018ffc14-acb8-44c6-82c7-3c4dd3091c3f/compose?aspectRatio=1.78&format=webp&width=1200",
+    post: "posters/mufasa.webp",
     movie: "https://drive.google.com/file/d/1kpAxZOwLmSTcZZnHZ_vDlfNHqv9ZtGgz/preview"
   },
   {
@@ -337,7 +365,7 @@ const MOVIES = [
     genres: ["Animación","Aventura","Infantil","Acción"],
     description:"Cinco años después de la paz en Berk, Hipo y Desdentao exploran nuevas tierras donde descubren una cueva de hielo con cientos de dragones salvajes y a una misteriosa jinete llamada Valka. Pronto se dan cuenta de que Valka, su madre que se creía muerta, protege a los dragones de un cazador llamado Eret, y que este trabaja para Drago Puño Sangrientor, un villano que quiere esclavizar a todos los dragones para su ejército. Berk se ve amenazada por Drago y su dragón alfa, lo que lleva a una batalla épica en la que Hipo, con la ayuda de su madre y Valka, debe detenerlo y asegurar la paz para siempre.",
     trailerUrl: "trailers/dragon2.mp4",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/23015dc809dd71e28155b18cc36279bb1874028facfc0419c23a1505e198970b.jpg",
+    image: "images/how-train-your-dragon-2.webp",
     post: "posters/how-train-your-dragon-2.webp",
     movie: "https://drive.google.com/file/d/1HoxHuCgIgetLZk6nuFE6nN9a_1YK9Py_/preview"
   },
@@ -350,7 +378,7 @@ const MOVIES = [
     genres: ["Animación","Aventura","Infantil","Acción"],
     description: "Hipo y Chimuelo enfrentando una nueva amenaza en forma de un cazador de dragones llamado Grimmel, que quiere capturar a Desdentado. Mientras tanto, el descubrimiento de una Furia Luminosa, una dragona salvaje, pone a prueba la relación entre Hipo y Chimuelo.",
     trailerUrl: "trailers/dragon3.mp4",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/daf0864124d5b8b8bf1881a9b0b9e577b3ea10d8af5ec1ffb8e46c5a290d745c.jpg",
+    image: "images/how-train-your-dragon-3.webp",
     post: "posters/how-train-your-dragon-3.webp",
     movie: "https://drive.google.com/file/d/1x4CYvRvkriWKcL2aE0nqOJY1tPAq71I2/preview"
   },
@@ -443,7 +471,7 @@ const MOVIES = [
     genres: ["Animación", "Drama"],
     description: "Un gato debe aprender a convivir con otros animales en un barco que flota sobre un mundo inundado.",
     trailerUrl: "trailers/flow.mp4",
-    image: "https://m.media-amazon.com/images/S/pv-target-images/6cc5f6739b1bf93cc4a740df55f5fbc40211fe9303b91f1ab68311bd68265c73.png",
+    image: "images/flow.webp",
     post: "posters/flow.webp",
     movie: "https://drive.google.com/file/d/1VVd1JCyxkHXGpsYr-3-SaD68pijn1XFS/preview"
   },
@@ -846,9 +874,8 @@ const MOVIES = [
   },
   {
     id: "oni-goroshi",
-    title: "Oni Goroshi - La Ciudad de los Demonios: Próximamente",
+    title: "Oni Goroshi - La Ciudad de los Demonios",
     year: 2025,
-    estreno: "Proximamente",
     duration: "1h 47min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia"],
@@ -856,13 +883,12 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://images.justwatch.com/poster/326314627/s718/demon-city.jpg",
     post: "https://a.storyblok.com/f/178900/960x506/416c7809b7/onigoroshi-live-action-header.jpg",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
+    movie: "https://drive.google.com/file/d/1jt6rbdUhTubCxDENjaOg6AA3yhEj5ZZn/preview",
     estreno: "Próximamente"
   },
   {
     id: "a_minecraft-movie",
-    title: "Una Pelicula de Minecraft: Próximamente",
-    estreno: "Proximamente",
+    title: "Una Pelicula de Minecraft",
     year: 2025,
     duration: "1h 41min",
     rating: "PG-13",
@@ -871,7 +897,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/76646f9affd837b3a4cae5e4ceca49c647c2ac1e2974112eb11d51741676e14d.jpg",
     post: "posters/a-minecraft-movie.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
+    movie: "https://drive.google.com/file/d/1rn1wlYMRHZvY6AZwNRAqlFbDMUAUqOAe/preview",
     estreno: "Próximamente"
   },
   {
@@ -1105,7 +1131,7 @@ const MOVIES = [
   {
     id: "toy-story",
     title: "Toy Story: Próximamente",
-    year: 2016,
+    year: 1995,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
@@ -1119,7 +1145,7 @@ const MOVIES = [
   {
     id: "toy-story-2",
     title: "Toy Story 2: Próximamente",
-    year: 2016,
+    year: 1999,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
@@ -1132,22 +1158,21 @@ const MOVIES = [
   },
   {
     id: "toy-story-3",
-    title: "Toy Story 3: Próximamente",
-    year: 2016,
+    title: "Toy Story 3",
+    year: 2010,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    description:"Woody, Buzz y el resto de los juguetes terminan en una guardería después de que Andy se vaya a la universidad.",
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/a460a32bc1a4a2cbd111a1fd95d11291b6fa6542aae39cc67c1f8def4d6a6d58.jpg",
     post: "posters/toy-story-3.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1M_0XPGEAR8UyTqiWJ3d0oK0oRWjKvICm/preview"
   },
   {
     id: "toy-story-4",
     title: "Toy Story 4",
-    year: 2016,
+    year: 2019,
     duration: "1h 37min",
     rating: "PG-13",
     genres: ["Acción", "Aventura","Comedia","Animación"],
