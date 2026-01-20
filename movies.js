@@ -1022,15 +1022,15 @@ const MOVIES = [
   {
     id: "The_Gangster_The_Cop_The_Devil",
     title: "El Gangster, El Policía y El Diablo: Próximamente",
-    year: 2016,
-    duration: "1h 37min",
+    year: 2019,
+    duration: "1h 50m",
     rating: "PG-13",
-    genres: ["Acción", "Aventura"],
-    description:"Cuando Dory, la olvidadiza pez cirujano, recuerda que tiene una familia que podría estar buscándola, va en una aventura con Marlin y Nemo para encontrarla con ayuda de Hank, un pulpo gruñón, Bailey, una beluga convencida de que sus sonar biológico anda mal, y Destiny, una tiburón ballena miope.",
+    genres: ["Acción", "Crimen"],
+    description:"Un despiadado jefe de una organización criminal sobrevive a un ataque por parte de un asesino en serie. Para vengarse y capturar al criminal, forma una inusual alianza con un detective de policía.",
     trailerUrl: sampleTrailer,
     image: "images/The_Gangster_The_Cop_The_Devil.jpg",
     post: "posters/The_Gangster_The_Cop_The_Devil.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
+    movie: "https://drive.google.com/file/d/1uGJlaD3Fo3nXcufUrIK_Ntym-H9EiUnC/preview",
     estreno: "Próximamente"
   },
   {
@@ -1044,7 +1044,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/destino-final-lazos-de-sangre.webp",
     post: "posters/final-destination_6-bloodlines.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
+    movie: "https://drive.google.com/file/d/1jTX24zDJmFsCDS_qDMHAIAAIYiVWDAp0/preview",
     estreno: "Próximamente"
   },
   {
