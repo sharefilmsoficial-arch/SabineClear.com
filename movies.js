@@ -1021,7 +1021,7 @@ const MOVIES = [
   },
   {
     id: "The_Gangster_The_Cop_The_Devil",
-    title: "El Gangster, El Policía y El Diablo: Próximamente",
+    title: "El Gangster, El Policía y El Diablo",
     year: 2019,
     duration: "1h 50m",
     rating: "PG-13",
@@ -1030,12 +1030,11 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/The_Gangster_The_Cop_The_Devil.jpg",
     post: "posters/The_Gangster_The_Cop_The_Devil.webp",
-    movie: "https://drive.google.com/file/d/1uGJlaD3Fo3nXcufUrIK_Ntym-H9EiUnC/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1uGJlaD3Fo3nXcufUrIK_Ntym-H9EiUnC/preview"
   },
   {
     id: "final-destination_6-bloodlines",
-    title: "Destino Final - Lazos de Sangre: Próximamente",
+    title: "Destino Final - Lazos de Sangre",
     year: 2025,
     duration: "1h 50min",
     rating: "C",
@@ -1044,8 +1043,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/destino-final-lazos-de-sangre.webp",
     post: "posters/final-destination_6-bloodlines.webp",
-    movie: "https://drive.google.com/file/d/1jTX24zDJmFsCDS_qDMHAIAAIYiVWDAp0/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1jTX24zDJmFsCDS_qDMHAIAAIYiVWDAp0/preview"
   },
   {
     id: "ironman",
