@@ -846,6 +846,19 @@ const MOVIES = [
     estreno: "Próximamente"
   },
   {
+    id: "finding-nemo",
+    title: "Buscando a Nemo: Próximamente",
+    year: 2003,
+    duration: "1h 37min",
+    rating: "PG-13",
+    genres: ["Acción", "Aventura","Comedia","Animación"],
+    description:"Una esposa(Coral) es brutalmente asesinada por un asesino serial, y su hijo(Nemo) queda con un problema físico, tiempo después su hijo es secuestrado y el padre(Marlin) tiene que rastrear y perseguir al secuestrador por varios kilómetros con ayuda de una mujer(Dory) que tiene una discapacidad mental.",
+    trailerUrl: sampleTrailer,
+    image: "images/finding-nemo.jpeg",
+    post: "posters/finding-nemo.webp",
+    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+  },
+  {
     id: "finding-dory-2016",
     title: "Buscando a Dory",
     year: 2016,
@@ -883,8 +896,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://images.justwatch.com/poster/326314627/s718/demon-city.jpg",
     post: "https://a.storyblok.com/f/178900/960x506/416c7809b7/onigoroshi-live-action-header.jpg",
-    movie: "https://drive.google.com/file/d/1jt6rbdUhTubCxDENjaOg6AA3yhEj5ZZn/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1jt6rbdUhTubCxDENjaOg6AA3yhEj5ZZn/preview"
   },
   {
     id: "a_minecraft-movie",
@@ -897,8 +909,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "https://m.media-amazon.com/images/S/pv-target-images/76646f9affd837b3a4cae5e4ceca49c647c2ac1e2974112eb11d51741676e14d.jpg",
     post: "posters/a-minecraft-movie.webp",
-    movie: "https://drive.google.com/file/d/1rn1wlYMRHZvY6AZwNRAqlFbDMUAUqOAe/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1rn1wlYMRHZvY6AZwNRAqlFbDMUAUqOAe/preview"
   },
   {
     id: "the-truman-show",
