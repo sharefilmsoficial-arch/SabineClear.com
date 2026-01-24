@@ -581,7 +581,7 @@ const MOVIES = [
   },
   {
     id: "miraculous-world5",
-    title: "Proximamente (2026): Miraculous World Tokio: Fuerza Estelar",
+    title: "Muy Proximamente (2026): Miraculous World Tokio: Fuerza Estelar",
     year: 2025,
     duration: "52min",
     rating: "TV-G",
@@ -842,21 +842,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/finding-nemo.jpeg",
     post: "posters/finding-nemo.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
-    estreno: "Próximamente"
-  },
-  {
-    id: "finding-nemo",
-    title: "Buscando a Nemo: Próximamente",
-    year: 2003,
-    duration: "1h 37min",
-    rating: "PG-13",
-    genres: ["Acción", "Aventura","Comedia","Animación"],
-    description:"Una esposa(Coral) es brutalmente asesinada por un asesino serial, y su hijo(Nemo) queda con un problema físico, tiempo después su hijo es secuestrado y el padre(Marlin) tiene que rastrear y perseguir al secuestrador por varios kilómetros con ayuda de una mujer(Dory) que tiene una discapacidad mental.",
-    trailerUrl: sampleTrailer,
-    image: "images/finding-nemo.jpeg",
-    post: "posters/finding-nemo.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview"
+    movie: "https://drive.google.com/file/d/1eRLGeVxZcURgos3c0X3IfJ0H45Fi8PnU/preview"
   },
   {
     id: "finding-dory-2016",
@@ -939,7 +925,7 @@ const MOVIES = [
   },
   {
     id: "bright-burn",
-    title: "El Hijo de la Oscuridad: Próximamente",
+    title: "El Hijo de la Oscuridad",
     year: 2019,
     duration: "1h 30min",
     rating: "B-15",
@@ -948,8 +934,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/bright-burn.webp",
     post: "posters/bright-burn.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1-7nmin65M_jCfI6gOuoc_P113sbaMr-K/preview"
   },
   {
     id: "shrek",
@@ -1121,8 +1106,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/captain-america2.jpg",
     post: "posters/captain-america2.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/134-NOEqn11K6JLwhcgfFMbbCMC1aR1cc/preview"
   },
   {
     id: "captain-america3",
@@ -1148,8 +1132,7 @@ const MOVIES = [
     trailerUrl: sampleTrailer,
     image: "images/toy-story.webp",
     post: "posters/toy-story.webp",
-    movie: "https://drive.google.com/file/d/1x5il-6bRAx6IGrwWnZlNrNwbc-GW16WK/preview",
-    estreno: "Próximamente"
+    movie: "https://drive.google.com/file/d/1-7nmin65M_jCfI6gOuoc_P113sbaMr-K/preview"
   },
   {
     id: "toy-story-2",
@@ -2107,7 +2090,8 @@ const MOVIES = [
     image: image,
     post: "posters/avengers.webp",
     movie: "",
-    estreno: "Próximamente"
+    estreno: "Próximamente",
+    PT:"https://drive.google.com/file/d/1wsVGR8kAjk5zvTaEgm1i8d6KYsxTU4as/preview"
 },
 {
     id: "movie-10",
