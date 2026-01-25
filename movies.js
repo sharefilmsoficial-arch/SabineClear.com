@@ -833,7 +833,7 @@ const MOVIES = [
   },
   {
     id: "finding-nemo",
-    title: "Buscando a Nemo: Próximamente",
+    title: "Buscando a Nemo",
     year: 2003,
     duration: "1h 37min",
     rating: "PG-13",
@@ -1123,7 +1123,7 @@ const MOVIES = [
   },
   {
     id: "toy-story",
-    title: "Toy Story: Próximamente",
+    title: "Toy Story",
     year: 1995,
     duration: "1h 37min",
     rating: "PG-13",
