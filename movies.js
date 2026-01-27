@@ -555,7 +555,7 @@ const MOVIES = [
   },
   {
     id: "miraculous-world3",
-    title: "Miraculous World París: Las Aventuras de Shadowbug y Claw Noir",
+    title: "Miraculous World París: Las Aventuras de Shadowbug[Toxinelle] y Claw Noir[Griffe Noir]",
     year: 2022,
     duration: "52min",
     rating: "PTV-G",
@@ -727,7 +727,7 @@ const MOVIES = [
     estreno: "Próximamente"
   },
   {
-    id: "deadpool2",
+    id: "deadpool-2",
     title: "DeadPool 2: Próximamente",
     year: 2018,
     duration: "2h 08min",
@@ -741,7 +741,7 @@ const MOVIES = [
     estreno: "Próximamente"
   },
   {
-    id: "deadpool3",
+    id: "deadpool-3",
     title: "DeadPool 3 • Wolverine",
     year: 2024,
     duration: "2h 08min",
@@ -2179,7 +2179,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/batman-azteca.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2194,7 +2194,7 @@ const MOVIES = [
     description: "No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/red-notice.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2209,7 +2209,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/madagascar-3_europe_s-most-wanted.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2359,7 +2359,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/the-legend-of-aang_the-last-airbender.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2404,13 +2404,13 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/return-to-silent-hill.webp",
     movie: "",
     estreno: "Próximamente"
 },
 {
     id: "movie-30",
-    title: "Proximamente | Goat: El Cabrón | 12 de Febrero sólo en cines",
+    title: "Proximamente | Goat: El Cabrón Que Cambió EL Juego | 12 de Febrero sólo en cines",
     year: 2026,
     duration: "1h ",
     rating: "B",
@@ -2419,7 +2419,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/goat.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2454,7 +2454,7 @@ const MOVIES = [
     estreno: "Próximamente"
 },
 {
-    id: "movie-32",
+    id: "movie-32-1",
     title: "Proximamente | El Diablo Viste a la Moda 2 | 1 de Mayo sólo en cines",
     year: 2026,
     duration: "1h ",
@@ -2464,7 +2464,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/the-devil-wears-prada-2.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2719,7 +2719,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/mune-guardian-of-the-moon.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2734,7 +2734,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/greenland-2-migration.webp",
     movie: "",
     estreno: "Próximamente"
 },
