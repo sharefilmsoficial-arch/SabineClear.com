@@ -1742,7 +1742,7 @@ const MOVIES = [
     genres: ["Acción","Crimen"],
     description:"F",
     trailerUrl: "trailers/",
-    image: "images/transporter.webp",
+    image: image,
     post: "posters/transporter.webp",
     movie: ""
 },
@@ -1756,7 +1756,7 @@ const MOVIES = [
     genres: ["Acción","Crimen"],
     description:"F",
     trailerUrl: "trailers/",
-    image: "images/transporter-2.webp",
+    image: image,
     post: "posters/transporter-2.webp",
     movie: ""
 },
@@ -1856,7 +1856,7 @@ const MOVIES = [
     genres: ["Infantil","Musical","Animación"],
     description:"",
     trailerUrl: "trailers/",
-    image: "images/the-king-lion.webp",
+    image: image,
     post: "posters/the-king-lion.webp",
     movie: ""
 },
@@ -1870,7 +1870,7 @@ const MOVIES = [
     genres: ["Infantil","Musical","Animación"],
     description:"",
     trailerUrl: "trailers/",
-    image: "images/the-king-lion_live-action.webp",
+    image: image,
     post: "posters/the-king-lion_live-action.webp",
     movie: ""
 },
@@ -2224,13 +2224,13 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/lilo-&-stitch.webp",
     movie: "",
     estreno: "Próximamente"
 },
 {
     id: "movie-18",
-    title: "Proximamente | Stich",
+    title: "Proximamente | Stich | Live Action",
     year: 2014,
     duration: "1h ",
     rating: "B",
@@ -2239,7 +2239,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/stitch.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2269,7 +2269,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/the-incredibles.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2284,7 +2284,22 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/the-incredibles-2.webp",
+    movie: "",
+    estreno: "Próximamente"
+},
+{
+    id: "movie-21.1",
+    title: "Proximamente | Los Increibles 2",
+    year: 2014,
+    duration: "1h ",
+    rating: "B",
+    calidad: "360p",
+    genres: ["..."],
+    description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
+    trailerUrl: "trailers/",
+    image: image,
+    post: "posters/the-incredibles-3.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2299,7 +2314,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/stephin-king_s-it.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2314,7 +2329,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/it.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2329,7 +2344,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/cloudy-with-chance-of-meatballs.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2344,22 +2359,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
-    movie: "",
-    estreno: "Próximamente"
-},
-{
-    id: "movie-26",
-    title: "Proximamente | Avatar: El Último Maestro del Aire",
-    year: 2014,
-    duration: "1h ",
-    rating: "B",
-    calidad: "360p",
-    genres: ["..."],
-    description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
-    trailerUrl: "trailers/",
-    image: image,
-    post: "posters/the-legend-of-aang_the-last-airbender.webp",
+    post: "posters/cloudy-with-chance-of-meatballs-2.webp",
     movie: "",
     estreno: "Próximamente"
 },
@@ -2584,7 +2584,7 @@ const MOVIES = [
     description:"No comparta este enlace ahora, este enlace dejará de existir al actualizarse la info de la pelicula.",
     trailerUrl: "trailers/",
     image: image,
-    post: "posters/.webp",
+    post: "posters/the-legend-of-aang_the-last-airbender.webp",
     movie: "",
     estreno: "Próximamente"
 },
