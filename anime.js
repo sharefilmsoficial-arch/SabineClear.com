@@ -1,77 +1,64 @@
-const container = document.getElementById("animeGrid");
-const searchInput = document.getElementById("search");
+let ANIMES = [];
+let SERIES = JSON.parse(localStorage.getItem('seriesData')) || [];
 
-// 🔥 Redirección inteligente
-function goToWatch(id, type) {
-  if (type === "serie") {
-    window.location.href = `watch.html?serie=${id}&ep=1`;
-  } else {
-    window.location.href = `watch.html?id=${id}`;
-  }
-}
+document.addEventListener("DOMContentLoaded", () => {
 
-// 🎌 Render principal
-function renderAnime(filter = "") {
-  container.innerHTML = "";
+  // 🔥 ANIMES DE PELIS + SERIES
+  ANIMES = [
+    ...MOVIES.filter(m =>
+      Array.isArray(m.genres) &&
+      m.genres.includes("Anime")
+    ),
+    ...SERIES.filter(s =>
+      Array.isArray(s.genres) &&
+      s.genres.includes("Anime")
+    ).map(s => ({ ...s, isSeries: true }))
+  ];
 
-  // 🎬 Películas anime
-  const animeMovies = MOVIES.filter(m =>
-    m.genres &&
-    m.genres.includes("Anime") &&
-    m.title.toLowerCase().includes(filter.toLowerCase())
-  );
+  renderAnimes(ANIMES);
 
-  // 📺 Series anime
-  const animeSeries = SERIES.filter(s =>
-    s.genres &&
-    s.genres.includes("Anime") &&
-    s.title.toLowerCase().includes(filter.toLowerCase())
-  );
-
-  // 🎬 Render películas
-  animeMovies.forEach(movie => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.onclick = () => goToWatch(movie.id, "movie");
-
-    card.innerHTML = `
-      <div class="thumb">
-        <img src="${movie.image}" alt="${movie.title}">
-        <span class="time">${movie.duration || ""}</span>
-      </div>
-      <div class="info">
-        <h3>${movie.title}</h3>
-        <p>${movie.year}</p>
-      </div>
-    `;
-
-    container.appendChild(card);
+  // 🔍 BUSCADOR
+  const searchInput = document.getElementById("search");
+  searchInput.addEventListener("input", e => {
+    const q = e.target.value.toLowerCase();
+    const filtered = ANIMES.filter(a =>
+      a.title.toLowerCase().includes(q)
+    );
+    renderAnimes(filtered);
   });
 
-  // 📺 Render series
-  animeSeries.forEach(serie => {
-    const card = document.createElement("div");
-    card.className = "card";
-    card.onclick = () => goToWatch(serie.id, "serie");
-
-    card.innerHTML = `
-      <div class="thumb">
-        <img src="${serie.image}" alt="${serie.title}">
-      </div>
-      <div class="info">
-        <h3>${serie.title}</h3>
-        <p>${serie.year}</p>
-      </div>
-    `;
-
-    container.appendChild(card);
-  });
-}
-
-// 🔍 Buscador
-searchInput.addEventListener("input", e => {
-  renderAnime(e.target.value);
 });
 
-// 🚀 Inicial
-renderAnime();
+
+// 🧩 TARJETA
+function createAnimeCard(movie){
+  const link = document.createElement("a");
+  link.className = "card-link";
+
+  link.href = movie.isSeries
+    ? `serie.html?id=${movie.id}`
+    : `movie.html?id=${movie.id}`;
+
+  const card = document.createElement("div");
+  card.className = "card";
+  card.style.backgroundImage = `url(${movie.image})`;
+
+  const info = document.createElement("div");
+  info.className = "card-info";
+  info.innerHTML = `<h3>${movie.title}</h3>`;
+
+  card.appendChild(info);
+  link.appendChild(card);
+
+  return link;
+}
+
+
+// 🎨 RENDER
+function renderAnimes(list){
+  const container = document.getElementById("animeGallery");
+  container.innerHTML = "";
+  list.forEach(movie =>
+    container.appendChild(createAnimeCard(movie))
+  );
+}
