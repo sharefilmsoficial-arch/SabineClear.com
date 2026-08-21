@@ -37,7 +37,7 @@ const MOVIES = [
     description: "Con su increíble talento por discernir las esencias, Jean-Baptiste Grenouille se convierte en el aprendiz de un perfumista francés. Obsesionado con capturar un elusivo aroma, la esencia de una joven mujer, Baptiste se convierte en un asesino.",
     trailerUrl: sampleTrailer,
     image: "R-18/images/perfume.webp",
-    post: "R-18/posters/perfume.webp",
+    post: "R-18/posters/el-perfume_la-historia-de-un-asesino.webp",
     movie: "https://drive.google.com/file/d/14PZN2XzVBriEHj2mrA635U8HLoI1ack2/preview"
   }
 ];
